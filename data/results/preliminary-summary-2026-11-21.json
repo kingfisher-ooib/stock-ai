@@ -1,0 +1,152 @@
+{
+  "role": "preliminary_reference_only_not_verified_not_for_profitability_evaluation",
+  "not_verified": true,
+  "data_source": "yahoo-finance",
+  "periods": {
+    "dev": "2024",
+    "val": "2025",
+    "ref": "2026"
+  },
+  "strategies": {
+    "cash": {
+      "dev": {
+        "total_pnl": 0,
+        "trades": 0,
+        "wins": 0,
+        "losses": 0,
+        "total_cost": 0.0,
+        "final_equity": 100000
+      },
+      "val": {
+        "total_pnl": 0,
+        "trades": 0,
+        "wins": 0,
+        "losses": 0,
+        "total_cost": 0.0,
+        "final_equity": 100000
+      },
+      "ref": {
+        "total_pnl": 0,
+        "trades": 0,
+        "wins": 0,
+        "losses": 0,
+        "total_cost": 0.0,
+        "final_equity": 100000
+      }
+    },
+    "hold": {
+      "dev": {
+        "total_pnl": 905.6175000000003,
+        "trades": 1,
+        "wins": 1,
+        "losses": 0,
+        "total_cost": 5.3825,
+        "final_equity": 100905.61750000001
+      },
+      "val": {
+        "total_pnl": 648.7470000000003,
+        "trades": 1,
+        "wins": 1,
+        "losses": 0,
+        "total_cost": 3.253,
+        "final_equity": 100648.747
+      },
+      "ref": {
+        "total_pnl": -3253.9959999999996,
+        "trades": 1,
+        "wins": 0,
+        "losses": 1,
+        "total_cost": 1.996,
+        "final_equity": 96746.004
+      }
+    },
+    "A": {
+      "dev": {
+        "total_pnl": -183.2119499999974,
+        "trades": 28,
+        "wins": 14,
+        "losses": 14,
+        "total_cost": 80.71195000000003,
+        "final_equity": 99816.78804999994
+      },
+      "val": {
+        "total_pnl": -1039.5758499999906,
+        "trades": 42,
+        "wins": 11,
+        "losses": 31,
+        "total_cost": 154.0758499999999,
+        "final_equity": 98960.42414999996
+      },
+      "ref": {
+        "total_pnl": -558.4354499999915,
+        "trades": 34,
+        "wins": 11,
+        "losses": 23,
+        "total_cost": 111.13544999999999,
+        "final_equity": 99441.56455
+      }
+    },
+    "B": {
+      "dev": {
+        "total_pnl": -251.6301499999936,
+        "trades": 34,
+        "wins": 17,
+        "losses": 17,
+        "total_cost": 98.73014999999998,
+        "final_equity": 99748.36985000002
+      },
+      "val": {
+        "total_pnl": 360.8755500000075,
+        "trades": 29,
+        "wins": 15,
+        "losses": 14,
+        "total_cost": 99.82445,
+        "final_equity": 100360.87554999997
+      },
+      "ref": {
+        "total_pnl": -271.22679999998854,
+        "trades": 44,
+        "wins": 16,
+        "losses": 28,
+        "total_cost": 152.22680000000003,
+        "final_equity": 99728.77320000003
+      }
+    },
+    "C": {
+      "dev": {
+        "total_pnl": 0,
+        "trades": 0,
+        "wins": 0,
+        "losses": 0,
+        "total_cost": 0.0,
+        "final_equity": 100000
+      },
+      "val": {
+        "total_pnl": -309.4570999999992,
+        "trades": 5,
+        "wins": 0,
+        "losses": 5,
+        "total_cost": 18.457100000000004,
+        "final_equity": 99690.54289999999
+      },
+      "ref": {
+        "total_pnl": -91.54049999999916,
+        "trades": 4,
+        "wins": 1,
+        "losses": 3,
+        "total_cost": 12.140500000000001,
+        "final_equity": 99908.4595
+      }
+    }
+  },
+  "key_findings": [
+    "全5銘柄で結果が同一 (同一戦略・同一データのため)",
+    "Strategy A (トレンド): 全期間マイナス (-183, -1040, -558)",
+    "Strategy B (押し目): valのみプラス (+361), dev/refはマイナス",
+    "Strategy C (ブレイクアウト): 全期間マイナスまたは0",
+    "Hold (単純保有): dev/valプラスだがref大幅マイナス (-3254)",
+    "Cash: 0 (基準)",
+    "全戦略が全期間プラスはなし",
+    "データはYahoo Finance、JPX公式値と照合未了"
+  ]
+}

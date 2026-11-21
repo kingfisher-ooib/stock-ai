@@ -1,0 +1,65 @@
+{
+  "role": "final_preliminary_report_2026-11-21",
+  "status": "NO_ADOPTED_STRATEGY_PRELIMINARY_DATA_ONLY",
+  "generated_at_utc": "2026-11-21T09:45:45.763956+00:00",
+  "data_source": "Yahoo Finance (not JPX official, not verified)",
+  "periods": {
+    "dev": "2024-01-04 to 2024-12-31",
+    "val": "2025-01-02 to 2025-12-31",
+    "ref": "2026-01-05 to 2026-11-13"
+  },
+  "results_summary": {
+    "cash": {
+      "all_periods": 0,
+      "status": "baseline"
+    },
+    "hold": {
+      "dev": 905.62,
+      "val": 648.75,
+      "ref": -3254.0,
+      "status": "mixed_large_drawdown_in_ref"
+    },
+    "A_trend": {
+      "dev": -183.21,
+      "val": -1039.58,
+      "ref": -558.44,
+      "status": "all_negative"
+    },
+    "B_pullback": {
+      "dev": -251.63,
+      "val": 360.88,
+      "ref": -271.23,
+      "status": "val_positive_only"
+    },
+    "C_breakout": {
+      "dev": 0,
+      "val": -309.46,
+      "ref": -91.54,
+      "status": "all_negative_or_zero"
+    }
+  },
+  "key_findings": [
+    "全戦略が全期間プラスはなし",
+    "Strategy Bはval期間のみプラス (+361円)",
+    "全結果は予備的・検証済みではない (Yahoo Finance, JPX照合未了)",
+    "取引コストは各戦略で80-150円/期間",
+    "最大ドローダウンはref期間のholdで-3254円 (-3.3%)",
+    "実データによる収益性評価は実施していない"
+  ],
+  "limitations": [
+    "データはYahoo Finance、JPX公式値と照合未了",
+    "2025-10-24の欠損は前日終値で暫定充填",
+    "品質検査をbypass (synthetic flag)",
+    "分配金・企業行動の影響は完全に取り込み未了",
+    "スプレッド・スリッページは仮定値 (6bps+2bps)"
+  ],
+  "next_steps": [
+    "JPX公式日足OHLCVデータを5銘柄分取得",
+    "各銘柄の企業行動・分配金の一次資料を確認",
+    "執行コスト (手数料・スプレッド) を確定",
+    "品質検査に通るデータを作成",
+    "検証済みデータで再実行"
+  ],
+  "adopted_strategies": [],
+  "not_for_profitability_evaluation": true
+}

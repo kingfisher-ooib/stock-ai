@@ -1,0 +1,143 @@
+{
+  "1475": {
+    "symbol": "1475",
+    "name": "iShares Core TOPIX",
+    "source": "yahoo-finance",
+    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/1475.T?period1=1704067200&period2=1794614400&interval=1d&events=div%2Csplits",
+    "retrieved_at_utc": "2026-11-15T00:18:24.310054+00:00",
+    "sha256": "7f8c57d85926696e960c6f38595bebc760432e7c15a84166378f3887d52790d5",
+    "rows": 698,
+    "valid_rows": 697,
+    "null_rows": 1,
+    "period": [
+      "2024-01-04",
+      "2026-11-13"
+    ],
+    "lot_changes": [
+      {
+        "date": "2024-08-08",
+        "from": 10,
+        "to": 1,
+        "ratio": 10,
+        "type": "split"
+      }
+    ],
+    "role": "untrusted_preliminary_reference_only",
+    "not_verified": true,
+    "not_for_profitability_evaluation": true,
+    "issues": [
+      "1 rows with null values"
+    ]
+  },
+  "1306": {
+    "symbol": "1306",
+    "name": "NEXT FUNDS TOPIX",
+    "source": "yahoo-finance",
+    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/1306.T?period1=1704067200&period2=1794614400&interval=1d&events=div%2Csplits",
+    "retrieved_at_utc": "2026-11-21T09:34:56.289467+00:00",
+    "sha256": "720d8961525027387ec90ad624de24fd447c5f8aa8dba9738a3a2083674195b2",
+    "rows": 698,
+    "valid_rows": 698,
+    "null_rows": 0,
+    "period": [
+      "2024-01-04",
+      "2026-11-13"
+    ],
+    "lot_changes": [
+      {
+        "date": "2026-04-01",
+        "from": 10,
+        "to": 1,
+        "ratio": 10,
+        "type": "split"
+      }
+    ],
+    "role": "untrusted_preliminary_reference_only",
+    "not_verified": true,
+    "not_for_profitability_evaluation": true,
+    "issues": []
+  },
+  "1321": {
+    "symbol": "1321",
+    "name": "NEXT FUNDS Nikkei 225",
+    "source": "yahoo-finance",
+    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/1321.T?period1=1704067200&period2=1794614400&interval=1d&events=div%2Csplits",
+    "retrieved_at_utc": "2026-11-21T09:34:56.592225+00:00",
+    "sha256": "5157e8a6a6f3dab214da34ad9e5e2e0b7b8785e0fa268721594e45cafe2910ca",
+    "rows": 698,
+    "valid_rows": 697,
+    "null_rows": 1,
+    "period": [
+      "2024-01-04",
+      "2026-11-13"
+    ],
+    "lot_changes": [
+      {
+        "date": "2026-10-07",
+        "from": 100,
+        "to": 1,
+        "ratio": 100,
+        "type": "split"
+      }
+    ],
+    "role": "untrusted_preliminary_reference_only",
+    "not_verified": true,
+    "not_for_profitability_evaluation": true,
+    "issues": [
+      "1 rows with null values"
+    ]
+  },
+  "1346": {
+    "symbol": "1346",
+    "name": "MAXIS Nikkei 225",
+    "source": "yahoo-finance",
+    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/1346.T?period1=1704067200&period2=1794614400&interval=1d&events=div%2Csplits",
+    "retrieved_at_utc": "2026-11-21T09:34:56.806362+00:00",
+    "sha256": "3ea101138e037458bee7d75fa143cf4d38c35c9ef76dd350bd57a3de7e9dc11f",
+    "rows": 698,
+    "valid_rows": 697,
+    "null_rows": 1,
+    "period": [
+      "2024-01-04",
+      "2026-11-13"
+    ],
+    "lot_changes": [],
+    "role": "untrusted_preliminary_reference_only",
+    "not_verified": true,
+    "not_for_profitability_evaluation": true,
+    "issues": [
+      "1 rows with null values"
+    ]
+  },
+  "2558": {
+    "symbol": "2558",
+    "name": "MAXIS S&P500",
+    "source": "yahoo-finance",
+    "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/2558.T?period1=1704067200&period2=1794614400&interval=1d&events=div%2Csplits",
+    "retrieved_at_utc": "2026-11-21T09:34:57.034435+00:00",
+    "sha256": "b2c5f9417b5a86d45b34bdc90d8dc134b198253158f8cab86250c9a4a938bed5",
+    "rows": 698,
+    "valid_rows": 697,
+    "null_rows": 1,
+    "period": [
+      "2024-01-04",
+      "2026-11-13"
+    ],
+    "lot_changes": [
+      {
+        "date": "2026-06-08",
+        "from": 10,
+        "to": 1,
+        "ratio": 10,
+        "type": "split",
+        "note": "新株落ち"
+      }
+    ],
+    "role": "untrusted_preliminary_reference_only",
+    "not_verified": true,
+    "not_for_profitability_evaluation": true,
+    "issues": [
+      "1 rows with null values"
+    ]
+  }
+}
