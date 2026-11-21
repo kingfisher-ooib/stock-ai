@@ -1,0 +1,4 @@
+symbol: TEST
+forecast_horizon: 5
+model_cache: "~/.cache/huggingface"
+max_context_length: 512

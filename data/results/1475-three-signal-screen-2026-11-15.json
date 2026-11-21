@@ -1,0 +1,524 @@
+{
+  "status": "SCREEN_COMPLETE_NO_VALIDATED_RULE",
+  "symbol": "1475",
+  "source_parquet_sha256": "3a0969b0e86a658bb9f049feab259b23b2d38e970dbc8f25edb20a9c468a371b",
+  "plan": "docs/superpowers/specs/2026-11-15-three-signal-screen-design.md",
+  "rules": {
+    "trend": "SMA20 > SMA60",
+    "trend_pullback": "SMA20 > SMA60 and prior close < EMA20",
+    "volume_momentum": "SMA20 > SMA60 and MACD histogram > 0 and volume ratio >= 1.0"
+  },
+  "primary_cost_condition": "5bp adverse price impact per side; fixed commission 0 JPY assumed",
+  "fee_warning": "Actual Rakuten account course and execution cost remain unconfirmed.",
+  "screening_gate": {
+    "interval": "development only",
+    "cost": "5bp_per_side",
+    "minimum_trade_count": 30,
+    "net_pnl_yen": "> 0",
+    "profit_factor": "> 1",
+    "expectancy_bootstrap_95pct_lower_yen": "> 0"
+  },
+  "later_interval_warning": "2026 results were already seen and are not untouched validation.",
+  "results": {
+    "trend": {
+      "development": {
+        "0bp_per_side": {
+          "period": [
+            "2024-01-04",
+            "2025-12-30"
+          ],
+          "days": 488,
+          "trade_count": 313,
+          "net_pnl_yen": 25.622626177241727,
+          "expectancy_yen": 0.0818614254863953,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -2.0676749428599877,
+            2.4668355850167347
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 1.0105296557997452,
+          "daily_sharpe_unannualized": 0.0032637899285591567,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.0033762505831215588,
+          "win_count": 140,
+          "loss_count": 166,
+          "skips": {
+            "insufficient_history": 60,
+            "open_below_stop": 14,
+            "risk_rejected:minimum lot exceeds risk or position limit": 4,
+            "signal_inactive": 97
+          }
+        },
+        "5bp_per_side": {
+          "period": [
+            "2024-01-04",
+            "2025-12-30"
+          ],
+          "days": 488,
+          "trade_count": 313,
+          "net_pnl_yen": -914.6521851357443,
+          "expectancy_yen": -2.922211454107809,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -5.056034855631668,
+            -0.5523792842675679
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 0.6916934462612231,
+          "daily_sharpe_unannualized": -0.1133571116927878,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.009408396176995184,
+          "win_count": 123,
+          "loss_count": 190,
+          "skips": {
+            "insufficient_history": 60,
+            "open_below_stop": 14,
+            "risk_rejected:minimum lot exceeds risk or position limit": 4,
+            "signal_inactive": 97
+          }
+        },
+        "10bp_per_side": {
+          "period": [
+            "2024-01-04",
+            "2025-12-30"
+          ],
+          "days": 488,
+          "trade_count": 312,
+          "net_pnl_yen": -1817.860996448826,
+          "expectancy_yen": -5.826477552720596,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -7.9386496007735365,
+            -3.4995954082740286
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 0.48358172879186756,
+          "daily_sharpe_unannualized": -0.22426570926279582,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.018244378438786985,
+          "win_count": 110,
+          "loss_count": 202,
+          "skips": {
+            "insufficient_history": 60,
+            "open_below_stop": 14,
+            "risk_rejected:minimum lot exceeds risk or position limit": 5,
+            "signal_inactive": 97
+          }
+        }
+      },
+      "later_evaluation_already_seen": {
+        "0bp_per_side": {
+          "period": [
+            "2026-01-05",
+            "2026-11-13"
+          ],
+          "days": 210,
+          "trade_count": 140,
+          "net_pnl_yen": -105.64978185064263,
+          "expectancy_yen": -0.7546412989331616,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -6.154455103113872,
+            3.8170205656318426
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 0.9378768145104661,
+          "daily_sharpe_unannualized": -0.021226924205123635,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.004811874609456217,
+          "win_count": 69,
+          "loss_count": 70,
+          "skips": {
+            "risk_rejected:minimum lot exceeds risk or position limit": 31,
+            "open_below_stop": 14,
+            "signal_inactive": 25
+          }
+        },
+        "5bp_per_side": {
+          "period": [
+            "2026-01-05",
+            "2026-11-13"
+          ],
+          "days": 210,
+          "trade_count": 135,
+          "net_pnl_yen": -774.7574569596549,
+          "expectancy_yen": -5.738944125627073,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -11.157722525337173,
+            -0.9973866038322354
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 0.6111697598660635,
+          "daily_sharpe_unannualized": -0.15862149385077723,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.008764423673215277,
+          "win_count": 61,
+          "loss_count": 74,
+          "skips": {
+            "risk_rejected:minimum lot exceeds risk or position limit": 36,
+            "open_below_stop": 14,
+            "signal_inactive": 25
+          }
+        },
+        "10bp_per_side": {
+          "period": [
+            "2026-01-05",
+            "2026-11-13"
+          ],
+          "days": 210,
+          "trade_count": 124,
+          "net_pnl_yen": -1238.0021320687354,
+          "expectancy_yen": -9.98388816184464,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -15.695815243400064,
+            -4.822001351404045
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 0.42500025260503516,
+          "daily_sharpe_unannualized": -0.25903651059506555,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.013102114765356344,
+          "win_count": 50,
+          "loss_count": 74,
+          "skips": {
+            "risk_rejected:minimum lot exceeds risk or position limit": 47,
+            "open_below_stop": 14,
+            "signal_inactive": 25
+          }
+        }
+      }
+    },
+    "trend_pullback": {
+      "development": {
+        "0bp_per_side": {
+          "period": [
+            "2024-01-04",
+            "2025-12-30"
+          ],
+          "days": 488,
+          "trade_count": 73,
+          "net_pnl_yen": 324.26723014862034,
+          "expectancy_yen": 4.442016851350964,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -1.3244082911526973,
+            11.384441378058664
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 1.5974712568718021,
+          "daily_sharpe_unannualized": 0.06496391418508407,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.0014363090133471738,
+          "win_count": 40,
+          "loss_count": 33,
+          "skips": {
+            "insufficient_history": 60,
+            "signal_inactive": 347,
+            "open_below_stop": 6,
+            "risk_rejected:minimum lot exceeds risk or position limit": 2
+          }
+        },
+        "5bp_per_side": {
+          "period": [
+            "2024-01-04",
+            "2025-12-30"
+          ],
+          "days": 488,
+          "trade_count": 73,
+          "net_pnl_yen": 113.66009653356912,
+          "expectancy_yen": 1.5569876237475222,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -4.139538294798978,
+            8.404603931465893
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 1.177429112584376,
+          "daily_sharpe_unannualized": 0.023197219489396504,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.0018548962462401634,
+          "win_count": 35,
+          "loss_count": 38,
+          "skips": {
+            "insufficient_history": 60,
+            "signal_inactive": 347,
+            "open_below_stop": 6,
+            "risk_rejected:minimum lot exceeds risk or position limit": 2
+          }
+        },
+        "10bp_per_side": {
+          "period": [
+            "2024-01-04",
+            "2025-12-30"
+          ],
+          "days": 488,
+          "trade_count": 73,
+          "net_pnl_yen": -96.94703708150485,
+          "expectancy_yen": -1.3280416038562308,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -6.976617900773632,
+            5.4585862321109415
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 0.8714852461129788,
+          "daily_sharpe_unannualized": -0.019830707675333813,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.0024648957762750797,
+          "win_count": 32,
+          "loss_count": 41,
+          "skips": {
+            "insufficient_history": 60,
+            "signal_inactive": 347,
+            "open_below_stop": 6,
+            "risk_rejected:minimum lot exceeds risk or position limit": 2
+          }
+        }
+      },
+      "later_evaluation_already_seen": {
+        "0bp_per_side": {
+          "period": [
+            "2026-01-05",
+            "2026-11-13"
+          ],
+          "days": 210,
+          "trade_count": 37,
+          "net_pnl_yen": 185.02269063887297,
+          "expectancy_yen": 5.000613260510081,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -5.308350299263242,
+            15.09466688541191
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 1.5728659112457832,
+          "daily_sharpe_unannualized": 0.07643586174716788,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.001992950129466938,
+          "win_count": 21,
+          "loss_count": 16,
+          "skips": {
+            "signal_inactive": 151,
+            "risk_rejected:minimum lot exceeds risk or position limit": 16,
+            "open_below_stop": 6
+          }
+        },
+        "5bp_per_side": {
+          "period": [
+            "2026-01-05",
+            "2026-11-13"
+          ],
+          "days": 210,
+          "trade_count": 36,
+          "net_pnl_yen": -1.220820706428185,
+          "expectancy_yen": -0.03391168628967181,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -10.044956453790666,
+            9.986677025857048
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 0.9968692234543695,
+          "daily_sharpe_unannualized": -0.0004676388631121763,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.002367614443679265,
+          "win_count": 19,
+          "loss_count": 17,
+          "skips": {
+            "signal_inactive": 151,
+            "risk_rejected:minimum lot exceeds risk or position limit": 17,
+            "open_below_stop": 6
+          }
+        },
+        "10bp_per_side": {
+          "period": [
+            "2026-01-05",
+            "2026-11-13"
+          ],
+          "days": 210,
+          "trade_count": 32,
+          "net_pnl_yen": -180.10433205175048,
+          "expectancy_yen": -5.628260376617202,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -16.611021424811202,
+            5.419366476626919
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 0.5907801666615489,
+          "daily_sharpe_unannualized": -0.07899006900801457,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.002650576323592658,
+          "win_count": 15,
+          "loss_count": 17,
+          "skips": {
+            "signal_inactive": 151,
+            "risk_rejected:minimum lot exceeds risk or position limit": 21,
+            "open_below_stop": 6
+          }
+        }
+      }
+    },
+    "volume_momentum": {
+      "development": {
+        "0bp_per_side": {
+          "period": [
+            "2024-01-04",
+            "2025-12-30"
+          ],
+          "days": 488,
+          "trade_count": 53,
+          "net_pnl_yen": -163.94435112566953,
+          "expectancy_yen": -3.0932896438805573,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -8.06966596539675,
+            1.7139191353669285
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 0.6533538232659704,
+          "daily_sharpe_unannualized": -0.05729422958638272,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.001759320358831568,
+          "win_count": 23,
+          "loss_count": 30,
+          "skips": {
+            "insufficient_history": 60,
+            "signal_inactive": 369,
+            "open_below_stop": 6
+          }
+        },
+        "5bp_per_side": {
+          "period": [
+            "2024-01-04",
+            "2025-12-30"
+          ],
+          "days": 488,
+          "trade_count": 53,
+          "net_pnl_yen": -323.7793789500887,
+          "expectancy_yen": -6.1090448858507305,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -11.052436010462515,
+            -1.2514570549695985
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 0.42783272461883176,
+          "daily_sharpe_unannualized": -0.10889084868651079,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.0032846315083269223,
+          "win_count": 21,
+          "loss_count": 32,
+          "skips": {
+            "insufficient_history": 60,
+            "signal_inactive": 369,
+            "open_below_stop": 6
+          }
+        },
+        "10bp_per_side": {
+          "period": [
+            "2024-01-04",
+            "2025-12-30"
+          ],
+          "days": 488,
+          "trade_count": 53,
+          "net_pnl_yen": -483.6144067745272,
+          "expectancy_yen": -9.124800127821269,
+          "expectancy_block_bootstrap_95pct_yen": [
+            -14.035206055528503,
+            -4.240289052029769
+          ],
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 0.27421122067006554,
+          "daily_sharpe_unannualized": -0.15354800004613536,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.004849668160754998,
+          "win_count": 18,
+          "loss_count": 35,
+          "skips": {
+            "insufficient_history": 60,
+            "signal_inactive": 369,
+            "open_below_stop": 6
+          }
+        }
+      },
+      "later_evaluation_already_seen": {
+        "0bp_per_side": {
+          "period": [
+            "2026-01-05",
+            "2026-11-13"
+          ],
+          "days": 210,
+          "trade_count": 24,
+          "net_pnl_yen": -215.08852688968489,
+          "expectancy_yen": -8.96202195373687,
+          "expectancy_block_bootstrap_95pct_yen": null,
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 0.5345296098618927,
+          "daily_sharpe_unannualized": -0.08709955302415197,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.0027894068832486963,
+          "win_count": 8,
+          "loss_count": 16,
+          "skips": {
+            "signal_inactive": 182,
+            "risk_rejected:minimum lot exceeds risk or position limit": 3,
+            "open_below_stop": 1
+          }
+        },
+        "5bp_per_side": {
+          "period": [
+            "2026-01-05",
+            "2026-11-13"
+          ],
+          "days": 210,
+          "trade_count": 22,
+          "net_pnl_yen": -384.1809826262306,
+          "expectancy_yen": -17.46277193755594,
+          "expectancy_block_bootstrap_95pct_yen": null,
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 0.2749126714925248,
+          "daily_sharpe_unannualized": -0.15824087134459247,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.003895763812215356,
+          "win_count": 5,
+          "loss_count": 17,
+          "skips": {
+            "signal_inactive": 182,
+            "risk_rejected:minimum lot exceeds risk or position limit": 5,
+            "open_below_stop": 1
+          }
+        },
+        "10bp_per_side": {
+          "period": [
+            "2026-01-05",
+            "2026-11-13"
+          ],
+          "days": 210,
+          "trade_count": 21,
+          "net_pnl_yen": -488.1084383627842,
+          "expectancy_yen": -23.24325896965639,
+          "expectancy_block_bootstrap_95pct_yen": null,
+          "bootstrap_definition": "1000 fixed-seed resamples of 5-trading-day blocks; None if <30 trades",
+          "profit_factor": 0.18874721984776452,
+          "daily_sharpe_unannualized": -0.19165262200737823,
+          "sharpe_definition": "mean/std of daily equity returns, sample std, risk-free=0, no annualization",
+          "max_drawdown_ratio": 0.004881084383627894,
+          "win_count": 3,
+          "loss_count": 18,
+          "skips": {
+            "signal_inactive": 182,
+            "risk_rejected:minimum lot exceeds risk or position limit": 6,
+            "open_below_stop": 1
+          }
+        }
+      }
+    }
+  },
+  "candidate_decisions": {
+    "trend": {
+      "development_gate_passed": false,
+      "validated_for_trading": false,
+      "reason": "Failed the fixed development gate."
+    },
+    "trend_pullback": {
+      "development_gate_passed": false,
+      "validated_for_trading": false,
+      "reason": "Failed the fixed development gate."
+    },
+    "volume_momentum": {
+      "development_gate_passed": false,
+      "validated_for_trading": false,
+      "reason": "Failed the fixed development gate."
+    }
+  }
+}

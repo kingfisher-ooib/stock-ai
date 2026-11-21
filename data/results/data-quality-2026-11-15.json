@@ -1,0 +1,76 @@
+{
+  "as_of": "2026-11-15",
+  "instrument": "1475",
+  "purpose": "data_quality_only_no_trading_pnl",
+  "raw_sha256": "7f8c57d85926696e960c6f38595bebc760432e7c15a84166378f3887d52790d5",
+  "row_count": 698,
+  "first_date": "2024-01-04",
+  "last_date": "2026-11-13",
+  "missing_ohlcv_dates": [
+    "2025-10-24"
+  ],
+  "extreme_close_moves_over_30pct": [
+    {
+      "date": "2024-08-08",
+      "close_to_close_pct": -90.07
+    },
+    {
+      "date": "2024-08-13",
+      "close_to_close_pct": 923.91
+    }
+  ],
+  "split_timing": {
+    "market_price_and_trading_unit_change": "2024-08-08",
+    "beneficial_interest_split_effective": "2024-08-13",
+    "ratio": "10:1",
+    "source": "https://www.blackrock.com/jp/individual/ja/literature/publication/blkj-publication-ishares-announcement-20240716.pdf"
+  },
+  "provider_errors": [
+    {
+      "dates": [
+        "2024-08-08",
+        "2024-08-09"
+      ],
+      "field": "OHLC",
+      "observed_yahoo_close": [
+        25.23,
+        25.51
+      ],
+      "independent_close": [
+        252.3,
+        255.1
+      ],
+      "interpretation": "Yahoo values are one tenth of the post-split market price on these two dates; raw series is unusable across this window without validation and correction",
+      "independent_sources": [
+        "https://www.jpx.co.jp/markets/statistics-equities/daily/mklp77000000dt4a-att/stq_20240808.pdf",
+        "https://www.jpx.co.jp/markets/statistics-equities/daily/mklp77000000dwls-att/stq_20240809.pdf"
+      ],
+      "volume_note": "Yahoo volume is 10x JPX reported volume on 2024-08-08 and 2024-08-09 as well."
+    },
+    {
+      "dates": [
+        "2025-10-24"
+      ],
+      "field": "OHLCV",
+      "interpretation": "Yahoo all-null row despite JPX reporting trades: open 337.8, final close 337.7, volume 646030",
+      "independent_source": "https://www.jpx.co.jp/markets/statistics-equities/daily/um3qrc0000028a0i-att/stq_20251024.pdf"
+    }
+  ],
+  "qwen_review": {
+    "model": "qwen3.8:27b-mlx",
+    "calls": 1,
+    "decision": "NONE",
+    "accepted_interpretation": "No complete testable rule proposed. No backtest run.",
+    "rejected_claim": "The response asserted that no predictive pattern exists and that a hypothesis is impossible; neither is established by the available evidence.",
+    "prompt_scope": "One falsifiable long-only 1475 daily-OHLCV hypothesis, prior-day signal, next-open buy and same-day-close sell, or NONE.",
+    "generation": {
+      "think": false,
+      "temperature": 0.1,
+      "num_predict": 500,
+      "done_reason": "stop",
+      "eval_count": 424
+    }
+  },
+  "decision": "HOLD_BACKTEST_UNTIL_DATA_REPAIRED_AND_RULE_PREREGISTERED",
+  "note": "No returns, expectation, profit factor, Sharpe ratio, or PnL calculated."
+}

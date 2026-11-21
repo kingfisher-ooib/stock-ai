@@ -1,0 +1,16 @@
+{
+  "symbol": "1475",
+  "rows": 698,
+  "period": [
+    "2024-01-04",
+    "2026-11-13"
+  ],
+  "source_sha256": "c8bc63deed9698febcaff405240fb551d4af0c0d8a6102855d1e85cb11dccf9d",
+  "parquet_sha256": "3a0969b0e86a658bb9f049feab259b23b2d38e970dbc8f25edb20a9c468a371b",
+  "source_observed_at_utc": "2026-11-15T00:18:24.310054+00:00",
+  "jpx_replacement_rows": 3,
+  "availability_note": "Next-calendar-day 00:00 JST is an assumption, not observed provider delivery time.",
+  "verified_rows": 3,
+  "unverified_rows": 695,
+  "use": "research_only_no_ordering"
+}

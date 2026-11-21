@@ -1,0 +1,259 @@
+{
+  "role": "independent_monthly_aggregate_audit_not_order_validation",
+  "symbol": "1475",
+  "period": [
+    "2024-01",
+    "2026-10"
+  ],
+  "daily_csv_sha256": "c8bc63deed9698febcaff405240fb551d4af0c0d8a6102855d1e85cb11dccf9d",
+  "source_pages": [
+    "https://www.jpx.co.jp/markets/statistics-equities/price/00-archives-02.html",
+    "https://www.jpx.co.jp/markets/statistics-equities/price/00-archives-01.html",
+    "https://www.jpx.co.jp/markets/statistics-equities/price/index.html"
+  ],
+  "source_files": [
+    {
+      "year_month": "202401",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/skc8fn0000001vzu-att/ivt_202401.xlsx",
+      "sha256": "e2a79f97bf8a110de369506f97e206df0bbf07c2e0922680d2a5d3fa808a17e7",
+      "bytes": 102177
+    },
+    {
+      "year_month": "202402",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/mklp770000001rtp-att/ivt_202402.xlsx",
+      "sha256": "d2c2703dcda9179b198cbb211afe4c27e5e361a985dac8c247e8a5a4ba138b22",
+      "bytes": 102397
+    },
+    {
+      "year_month": "202403",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/mklp770000003tnw-att/ivt_202403.xlsx",
+      "sha256": "49d055d383e490c0436dc520ed90b2643ecdd8eac4545d85da5bc2235a19ee13",
+      "bytes": 102929
+    },
+    {
+      "year_month": "202404",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/mklp770000006epz-att/ivt_202404.xlsx",
+      "sha256": "be7384346a1e822f209309ec733f3dbd01fbd6ebe069ec93b6dbc015747921a9",
+      "bytes": 103770
+    },
+    {
+      "year_month": "202405",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/mklp770000008qrq-att/ivt_202405.xlsx",
+      "sha256": "0977313b6933f49b813638d94c477872a9fc8a448294f4a13100373f1530174c",
+      "bytes": 104751
+    },
+    {
+      "year_month": "202406",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/mklp77000000b0k3-att/ivt_202406.xlsx",
+      "sha256": "c3eb0f5ceb4d41923be70e6739500140a75e75a11440eb54b32d6115f5ac5d3b",
+      "bytes": 104790
+    },
+    {
+      "year_month": "202407",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/mklp77000000dplq-att/ivt_202407.xlsx",
+      "sha256": "537ca2999c4b67ea9522a51c1a17d0cf4ec835283ce32ddca374b1ddd873b90b",
+      "bytes": 105974
+    },
+    {
+      "year_month": "202408",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/mklp77000000gbwp-att/ivt_202408.xlsx",
+      "sha256": "02a005def86478a544b2fefc35d95b891e0f74f07b1bf2fb26b8cc14a761bfc7",
+      "bytes": 106220
+    },
+    {
+      "year_month": "202409",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/mklp77000000igmf-att/ivt_202409.xlsx",
+      "sha256": "6045fdeb031af5b241745c2bd788d598e1ea31cfc34d5325ffc7aafce8f69c61",
+      "bytes": 106683
+    },
+    {
+      "year_month": "202410",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/mklp77000000kzmb-att/ivt_202410.xlsx",
+      "sha256": "1a03a3e628a954071a4ed84bfc27ed274e521c9d4a4eb16df9c226269e09d328",
+      "bytes": 107386
+    },
+    {
+      "year_month": "202411",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/mklp77000000n5rp-att/ivt_202411.xlsx",
+      "sha256": "9cdd1067da629afbf7631453af9081fbeb8a507c26cfb05f948785ea3febf0f7",
+      "bytes": 106833
+    },
+    {
+      "year_month": "202412",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/mklp77000000pk9l-att/ivt_202412.xlsx",
+      "sha256": "618c4d658acf90fa3645f9b79c0440041d5eaecd21c17b7ec9266464cc1a8b8f",
+      "bytes": 108751
+    },
+    {
+      "year_month": "202501",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/um3qrc000000m8fs-att/ivt_202501.xlsx",
+      "sha256": "0596e9a679558fa4923be9736382c4cfc333a62906bdb6ce1b44cad0cefebfb2",
+      "bytes": 108246
+    },
+    {
+      "year_month": "202502",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/um3qrc00000111hx-att/ivt_202502.xlsx",
+      "sha256": "f24c08b8b6e83487d9c50506347a139d4faeb8a3cdde5327c5285cd81f6dd58b",
+      "bytes": 107696
+    },
+    {
+      "year_month": "202503",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/um3qrc0000015082-att/ivt_202503.xlsx",
+      "sha256": "0fbb78c3ca100bf41c0ac6bf8de6cdff343a51a3ad3b2903ce0e2baa5b8dbfce",
+      "bytes": 108655
+    },
+    {
+      "year_month": "202504",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/um3qrc000001g4yw-att/ivt_202504.xlsx",
+      "sha256": "f444aa4ae96a15067bc464c50eb9879837f5a101f518a7f0b167f8a48135f0b9",
+      "bytes": 109484
+    },
+    {
+      "year_month": "202505",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/um3qrc000001k15g-att/ivt_202505.xlsx",
+      "sha256": "a8218b6a9c663004aa2cd6d6b73b5da376d12d190f9f2abd76bd04a0768d51db",
+      "bytes": 109532
+    },
+    {
+      "year_month": "202506",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/um3qrc000001o45w-att/ivt_202506.xlsx",
+      "sha256": "968ec9561107db461882366f57efe2eb51c3e32d5806a5f9f50a5aac363e23bb",
+      "bytes": 110915
+    },
+    {
+      "year_month": "202507",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/um3qrc000001sik1-att/ivt_202507.xlsx",
+      "sha256": "208490f7521a451ad38307faf4c1dd885a7878439dfd52e09c17f75dbe7d1a16",
+      "bytes": 112017
+    },
+    {
+      "year_month": "202508",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/um3qrc000002310o-att/ivt_202508.xlsx",
+      "sha256": "8a44d667d2a0f8b3eeb9279c72345beed8f3e056e2db10a334e8ba4d4dcbb870",
+      "bytes": 112803
+    },
+    {
+      "year_month": "202509",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/um3qrc00000272jk-att/ivt_202509.xlsx",
+      "sha256": "6847408c09e8ff0361786d7830877aea90cecb3e20056f54fbbef7de0e1e985f",
+      "bytes": 113363
+    },
+    {
+      "year_month": "202510",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/t13vrt0000003w4v-att/ivt_202510.xlsx",
+      "sha256": "7986e8e63b209bcb7fb386c0dc760883566b00d8ed52c86b1552934d3d824ec9",
+      "bytes": 114264
+    },
+    {
+      "year_month": "202511",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/t13vrt000000c99j-att/ivt_202511.xlsx",
+      "sha256": "9c6ff2cb7b16dd685f596b21b807fa89d9c7ea810fe11eeadfb3c993e93dd809",
+      "bytes": 115865
+    },
+    {
+      "year_month": "202512",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/t13vrt000000gnji-att/ivt_202512.xlsx",
+      "sha256": "461741d37b8aa2c362582e876917f17420e9b1a8715a2acea6f2c1965ad2ec52",
+      "bytes": 116861
+    },
+    {
+      "year_month": "202601",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/t13vrt000000khuh-att/ivt_202601.xlsx",
+      "sha256": "87c1b4ece5c6a0e7e47f019f2d987b7c314348a6bec10c172e19b4fc76f3d65e",
+      "bytes": 119037
+    },
+    {
+      "year_month": "202602",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/t13vrt000000ox7c-att/ivt_202602.xlsx",
+      "sha256": "d55db6b8d446bc05ab6309506ce0aeab2eb9d33c76e4b43e6aba7239c0b10dff",
+      "bytes": 119047
+    },
+    {
+      "year_month": "202603",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/t13vrt000000xpuw-att/ivt_202603.xlsx",
+      "sha256": "7a411635165a8944f18b40cca9638d8aca4157b4746959b2b544d47f49aadbd9",
+      "bytes": 122745
+    },
+    {
+      "year_month": "202604",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/t13vrt0000014f67-att/ivt_202604.xlsx",
+      "sha256": "57db330eef417422594db88a08005b5629c74fb175fef2409d660e4a947566c3",
+      "bytes": 123361
+    },
+    {
+      "year_month": "202605",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/t13vrt000001f44j-att/ivt_202605.xlsx",
+      "sha256": "3a8b9a5b4bf936ce2573abc9d2bcc610c8d7ffb0af505aa8e4fb229613b75a6c",
+      "bytes": 125190
+    },
+    {
+      "year_month": "202606",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/t13vrt000001j2us-att/ivt_202606.xlsx",
+      "sha256": "e5affb1f83a29d243c2892db4365aee45995202bae11a353948ec01efb83a0df",
+      "bytes": 126057
+    },
+    {
+      "year_month": "202607",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/t13vrt000001rjt5-att/ivt_202607.xlsx",
+      "sha256": "4028cde24976cc1121806336e1e43292ece2b65dee29f5b50a35e9ed946375e3",
+      "bytes": 126730
+    },
+    {
+      "year_month": "202608",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/t13vrt000001xwps-att/ivt_202608.xlsx",
+      "sha256": "7e82291b6a50094c770408f1c4681e662e6062cffe43dc1574a020128542dfab",
+      "bytes": 125970
+    },
+    {
+      "year_month": "202609",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/t13vrt0000029lp3-att/ivt_202609.xlsx",
+      "sha256": "e2c2f20c313fc3f4acc4a3771654fb0ce13a4b73babebe12d97bf37a454a4cc9",
+      "bytes": 127562
+    },
+    {
+      "year_month": "202610",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/t13vrt000002kk2c-att/ivt_202610.xlsx",
+      "sha256": "c790c3c445969faa43d64eb9862a9f51eb2a1e308c315bd4dee9be0b77eb0f13",
+      "bytes": 129064
+    }
+  ],
+  "method": "Compare split-normalized monthly OHLC, JPX total volume minus ToSTNeT, and days traded; price tolerance 0.02 JPY.",
+  "limitations": [
+    "Monthly agreement cannot prove each daily OHLCV row is correct.",
+    "JPX monthly files are published after each month, so this is retrospective validation.",
+    "JPX monthly volume reflects retrospective corrections and total minus ToSTNeT may include off-floor distributions; a volume mismatch does not by itself identify a faulty daily bar.",
+    "No opening/closing bid-ask or actual execution costs are supplied."
+  ],
+  "segments": 35,
+  "audited_rows": 689,
+  "issues": [
+    {
+      "segment": "2024-01-04/2024-01-31",
+      "field": "volume",
+      "official": 66679840,
+      "observed": 62820320,
+      "difference": -3859520
+    },
+    {
+      "segment": "2024-03-01/2024-03-29",
+      "field": "close",
+      "official": 286.7,
+      "observed": 286.2,
+      "difference": -0.5
+    },
+    {
+      "segment": "2024-03-01/2024-03-29",
+      "field": "volume",
+      "official": 91952460,
+      "observed": 90864160,
+      "difference": -1088300
+    },
+    {
+      "segment": "2024-04-01/2024-04-30",
+      "field": "open",
+      "official": 287.4,
+      "observed": 285.5,
+      "difference": -1.8999999999999773
+    }
+  ]
+}

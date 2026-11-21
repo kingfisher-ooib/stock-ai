@@ -1,0 +1,54 @@
+{
+  "instrument": "1475",
+  "role": "data_preparation_only_no_trading_pnl",
+  "raw_path": "/Users/yuki/dev/stock-pj/data/raw/1475-yahoo-chart-2024-2026.json",
+  "raw_sha256": "7f8c57d85926696e960c6f38595bebc760432e7c15a84166378f3887d52790d5",
+  "output_path": "/Users/yuki/dev/stock-pj/data/processed/1475-daily-split-normalized-2024-2026.csv",
+  "output_sha256": "c8bc63deed9698febcaff405240fb551d4af0c0d8a6102855d1e85cb11dccf9d",
+  "rows": 698,
+  "period": [
+    "2024-01-04",
+    "2026-11-13"
+  ],
+  "official_replacements": [
+    {
+      "date": "2024-08-08",
+      "ohlcv": [
+        250.8,
+        257.4,
+        249.0,
+        252.3,
+        1030890
+      ],
+      "source": "https://www.jpx.co.jp/markets/statistics-equities/daily/mklp77000000dt4a-att/stq_20240808.pdf"
+    },
+    {
+      "date": "2024-08-09",
+      "ohlcv": [
+        257.0,
+        257.4,
+        250.1,
+        255.1,
+        3383820
+      ],
+      "source": "https://www.jpx.co.jp/markets/statistics-equities/daily/mklp77000000dwls-att/stq_20240809.pdf"
+    },
+    {
+      "date": "2025-10-24",
+      "ohlcv": [
+        337.8,
+        338.7,
+        336.3,
+        337.7,
+        646030
+      ],
+      "source": "https://www.jpx.co.jp/markets/statistics-equities/daily/um3qrc0000028a0i-att/stq_20251024.pdf"
+    }
+  ],
+  "price_basis": "Post-2024-08-08 split-adjusted units; Yahoo pre-split quotes were already divided by 10.",
+  "limitations": [
+    "Only three identified errors were replaced; all other bars remain unverified Yahoo data.",
+    "No historical bid/ask or executable fills are supplied.",
+    "Dividend adjustments are not applied to OHLC; distributions require separate handling for overnight positions."
+  ]
+}
