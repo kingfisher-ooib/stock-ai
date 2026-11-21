@@ -1,0 +1,46 @@
+{
+  "role": "manual_official_price_crosscheck_no_pnl",
+  "symbol": "1475",
+  "date": "2024-03-29",
+  "pdf_sha256": "c4a68e659b9b2d467a7407a24c313933a982397080f9e08239fc55041032512f",
+  "pdf_page_1_based": 981,
+  "source": "User supplied JPX historical PDF; exact source URL unconfirmed",
+  "unit_note": "JPX prices before 2024 split; divide by 10 only for comparison with existing post-split-adjusted CSV",
+  "jpx_original": {
+    "morning": [
+      2855,
+      2868,
+      2852,
+      2867
+    ],
+    "afternoon": [
+      2865,
+      2871,
+      2859,
+      2867
+    ]
+  },
+  "jpx_full_day_adjusted": {
+    "open": 285.5,
+    "high": 287.1,
+    "low": 285.2,
+    "close": 286.7
+  },
+  "existing_csv": {
+    "open": 285.5,
+    "high": 286.8,
+    "low": 285.2,
+    "close": 286.2,
+    "volume": 3891990
+  },
+  "differences_adjusted_yen": {
+    "open": 0,
+    "high": 0.3,
+    "low": 0,
+    "close": 0.5
+  },
+  "volume": "not present in this PDF; unverified",
+  "csv_sha256": "c8bc63deed9698febcaff405240fb551d4af0c0d8a6102855d1e85cb11dccf9d",
+  "source_data_modified": false,
+  "previous_results_modified": false
+}

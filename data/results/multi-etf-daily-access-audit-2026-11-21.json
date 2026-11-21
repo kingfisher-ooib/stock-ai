@@ -1,0 +1,131 @@
+{
+  "role": "daily_source_access_and_calendar_audit_not_profitability",
+  "collector_requests": [
+    {
+      "name": "jpx-daily-202403-index",
+      "url": "https://www.jpx.co.jp/automation/markets/statistics-equities/daily/json/tsedaily_report_202403.html",
+      "request_started_at_utc": "2026-11-21T06:34:01.424780+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "retry_count": 0,
+      "retrieved_at_utc": "2026-11-21T06:34:01.812275+00:00"
+    },
+    {
+      "name": "jpx-daily-202401-index",
+      "url": "https://www.jpx.co.jp/automation/markets/statistics-equities/daily/json/tsedaily_report_202401.html",
+      "request_started_at_utc": "2026-11-21T06:34:01.813393+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "retry_count": 0,
+      "retrieved_at_utc": "2026-11-21T06:34:02.119035+00:00"
+    },
+    {
+      "name": "jpx-daily-202404-index",
+      "url": "https://www.jpx.co.jp/automation/markets/statistics-equities/daily/json/tsedaily_report_202404.html",
+      "request_started_at_utc": "2026-11-21T06:34:02.119801+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "retry_count": 0,
+      "retrieved_at_utc": "2026-11-21T06:34:02.344206+00:00"
+    },
+    {
+      "name": "jpx-daily-past-guide",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/daily/03.html",
+      "request_started_at_utc": "2026-11-21T06:34:18.946998+00:00",
+      "status": 200,
+      "final_url": "https://www.jpx.co.jp/markets/statistics-equities/daily/03.html",
+      "content_type": "text/html",
+      "path": "data/raw/multi-etf-official-20261121-v4/jpx-daily-past-guide.html",
+      "sha256": "cfdbdf0df36fccade5d2620ececcd34e0bb2f2e779810c2a74fb68ba72bd5c7a",
+      "bytes": 33127,
+      "retrieved_at_utc": "2026-11-21T06:34:19.154955+00:00"
+    },
+    {
+      "name": "jpx-20240115",
+      "url": "https://www.jpx.co.jp/english/markets/statistics-equities/daily/o4sio70000005r5s-att/stq_20240115.pdf",
+      "request_started_at_utc": "2026-11-21T06:34:19.155311+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "retry_count": 0,
+      "retrieved_at_utc": "2026-11-21T06:34:19.480163+00:00"
+    },
+    {
+      "name": "jpx-20240401",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/daily/mklp770000003i2z-att/stq_20240401.pdf",
+      "request_started_at_utc": "2026-11-21T06:34:19.481098+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found",
+      "retry_count": 0,
+      "retrieved_at_utc": "2026-11-21T06:34:19.689465+00:00"
+    },
+    {
+      "name": "cabinet-holidays",
+      "url": "https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv",
+      "request_started_at_utc": "2026-11-21T06:36:42.004428+00:00",
+      "status": "FAILED",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>",
+      "retry_count": 0,
+      "retrieved_at_utc": "2026-11-21T06:36:42.078467+00:00"
+    },
+    {
+      "name": "jpx-session-rules",
+      "url": "https://www.jpx.co.jp/faq/others_general.html",
+      "request_started_at_utc": "2026-11-21T06:36:42.078754+00:00",
+      "status": 200,
+      "final_url": "https://www.jpx.co.jp/faq/others_general.html",
+      "content_type": "text/html",
+      "path": "data/raw/multi-etf-official-20261121-v5/jpx-session-rules.html",
+      "sha256": "a6e86784db19e931d8a63e1647e884b39f0fecc7278c18c62c01502dfda2cf51",
+      "bytes": 43377,
+      "retrieved_at_utc": "2026-11-21T06:36:42.360959+00:00"
+    },
+    {
+      "name": "cabinet-holidays",
+      "url": "https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv",
+      "request_started_at_utc": "2026-11-21T06:37:01.774928+00:00",
+      "status": 200,
+      "final_url": "https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv",
+      "content_type": "text/csv",
+      "path": "data/raw/multi-etf-official-20261121-v6/cabinet-holidays.csv",
+      "sha256": "cec37a743c96995cdb9cb52b685c9003634682a9b0e1a640a6b9b96881fe964a",
+      "bytes": 21538,
+      "retrieved_at_utc": "2026-11-21T06:37:01.850279+00:00"
+    }
+  ],
+  "source_policy": {
+    "url": "https://www.jpx.co.jp/markets/statistics-equities/daily/03.html",
+    "observed": "Manual acquisition requested; automatic historical acquisition stopped",
+    "local_evidence_sha256": "cfdbdf0df36fccade5d2620ececcd34e0bb2f2e779810c2a74fb68ba72bd5c7a"
+  },
+  "tls_failure_resolution": "Retried Cabinet Office with existing certifi trusted CA bundle; certificate verification stayed enabled",
+  "calendar": {
+    "expected": 698,
+    "observed": 698,
+    "missing": 0,
+    "unexpected": 0,
+    "duplicates": 0,
+    "annual": {
+      "2024": 245,
+      "2025": 243,
+      "2026": 210
+    }
+  },
+  "market_pnl_runs": 0,
+  "pytest": {
+    "passed": 114,
+    "failed": 0
+  },
+  "legacy_tracked_research_files_unchanged": 69,
+  "next_required_source": {
+    "priority": 1,
+    "kind": "manually acquired JPX March 2024 stock price original",
+    "target_symbol": "1475",
+    "target_date": "2024-03-29",
+    "entry_url": "https://www.jpx.co.jp/markets/statistics-equities/daily/03.html",
+    "reason": "Resolve daily high, close and trading-volume discrepancy without replacing original"
+  },
+  "unsupported_claims": [
+    "No daily OHLCV has been newly verified",
+    "Calendar match does not establish profitability"
+  ]
+}

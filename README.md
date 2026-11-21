@@ -190,3 +190,22 @@ PYTHONPATH=src python scripts/import_1475_forward_bars.py \
 - [楽天証券：現物取引手数料](https://www.rakuten-sec.co.jp/web/domestic/stock/commission.html)
 - [楽天証券：SOR注文の基本ルール](https://www.rakuten-sec.co.jp/web/domestic/sor/rule/ground_rules.html)
 - [楽天証券：ゼロコースの寄付・引け注文FAQ](https://www.rakuten-sec.co.jp/web/info/info20230831-03.html)
+
+## 複数ETFスイング研究（2026-11-21）
+
+1475/1306/1321/1346/2558候補に対する研究基盤を追加しました。現金、配分上限付き単純保有、固定したA（トレンド）/B（押し目）/C（ブレイクアウト）を比較できます。初期資金10万円、最大3銘柄、損失予算100円、最大ポジション5%を専用の`config/swing.yaml`に設定しています。
+
+**現時点は採用戦略なし。監査済み日足・企業行動・分配金・執行費用が未整備のため、実データによる収益性評価は未実施です。** 150通りの合成実行は実装テスト専用です。既存1475の結果、AI構成、ペーパーフォワード状態は保持しています。
+
+```bash
+PYTHONPATH=src .venv/bin/python -m pytest -q
+PYTHONPATH=src .venv/bin/python scripts/run_multi_etf_swing.py --output /tmp/multi-etf-exclusions-new.json
+PYTHONPATH=src .venv/bin/python scripts/run_multi_etf_swing.py --synthetic --output /tmp/multi-etf-synthetic-new.json
+```
+
+出力は上書き禁止です。再実行時は新しい出力名を使ってください。
+[事前固定計画](docs/multi-etf/plan.md)、[候補調査](docs/multi-etf/investigation.md)、[結果・リスク・開発優先順位](docs/multi-etf/results.md)、[入力仕様](docs/multi-etf/input-schema.md)を参照してください。
+
+実データ整備の追加進捗：JPX原本67ファイルから5候補の174価格区間・165気配統計を抽出、1475の2026年210営業日のカレンダー一致を確認しました。公式NAV履歴は取引所OHLCVと区別して保存しています。[取得結果・残る不足・再実行手順](docs/multi-etf/data-progress-2026-11-21.md)を参照してください。追加後のpytestは99成功・0失敗です。
+
+続く監査で、内閣府祝日CSVとJPX休場規則から1475の全698営業日（2024〜2026年11月13日）の日付一致を確認しました。旧日報URLの404と過去株価原本の手動取得方針を記録し、ローカル原本登録機能を追加しています。[全期間カレンダー監査・手動取得が必要な資料](docs/multi-etf/daily-access-2026-11-21.md)を参照してください。テストは114成功・0失敗。実データ収益性評価は未実施です。

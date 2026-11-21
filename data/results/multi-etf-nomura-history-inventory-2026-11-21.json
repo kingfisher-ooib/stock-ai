@@ -1,0 +1,310 @@
+{
+  "role": "official_NAV_and_distribution_evidence_not_OHLCV",
+  "funds": [
+    {
+      "source": {
+        "name": "nf-1306-history",
+        "url": "https://www.nomura-am.co.jp/fund/etf/history/ETF_1306.csv",
+        "request_started_at_utc": "2026-11-21T06:30:20.838595+00:00",
+        "status": 200,
+        "final_url": "https://www.nomura-am.co.jp/fund/etf/history/ETF_1306.csv",
+        "content_type": "text/csv",
+        "path": "data/raw/multi-etf-official-20261121-v2/nf-1306-history.csv",
+        "sha256": "9b4117514025ace4b0825de9d4ef0a18c4543a190e2b4b3973d02f799dde8f2c",
+        "bytes": 521383,
+        "retrieved_at_utc": "2026-11-21T06:30:21.194344+00:00"
+      },
+      "symbol": "1306",
+      "price_basis": "issuer_split_adjusted_NAV_not_exchange_OHLCV",
+      "adjustment_notice": "当ファンドは2026年4月1日に受益権の分割を行なっています。分割日をまたいで計算している値（受益権口数、基準価額、分配金）は、分割の影響を受けないよう調整しています。",
+      "row_count": 6227,
+      "period": [
+        "2001-07-11",
+        "2026-11-19"
+      ],
+      "distribution_records": [
+        {
+          "date": "2002-07-10",
+          "adjusted_nav": 104.193,
+          "adjusted_distribution": 0.244
+        },
+        {
+          "date": "2003-07-10",
+          "adjusted_nav": 98.018,
+          "adjusted_distribution": 0.709
+        },
+        {
+          "date": "2004-07-10",
+          "adjusted_nav": 115.293,
+          "adjusted_distribution": 1.116
+        },
+        {
+          "date": "2005-07-10",
+          "adjusted_nav": 118.089,
+          "adjusted_distribution": 1.514
+        },
+        {
+          "date": "2006-07-10",
+          "adjusted_nav": 160.29,
+          "adjusted_distribution": 1.405
+        },
+        {
+          "date": "2007-07-10",
+          "adjusted_nav": 180.109,
+          "adjusted_distribution": 1.6
+        },
+        {
+          "date": "2008-07-10",
+          "adjusted_nav": 130.159,
+          "adjusted_distribution": 1.944
+        },
+        {
+          "date": "2009-07-10",
+          "adjusted_nav": 87.994,
+          "adjusted_distribution": 1.88
+        },
+        {
+          "date": "2010-07-10",
+          "adjusted_nav": 86.82,
+          "adjusted_distribution": 1.61
+        },
+        {
+          "date": "2011-07-10",
+          "adjusted_nav": 87.834,
+          "adjusted_distribution": 2.07
+        },
+        {
+          "date": "2012-07-10",
+          "adjusted_nav": 76.409,
+          "adjusted_distribution": 1.51
+        },
+        {
+          "date": "2013-07-10",
+          "adjusted_nav": 120.991,
+          "adjusted_distribution": 1.94
+        },
+        {
+          "date": "2014-07-10",
+          "adjusted_nav": 127.782,
+          "adjusted_distribution": 2.06
+        },
+        {
+          "date": "2015-07-10",
+          "adjusted_nav": 161.179,
+          "adjusted_distribution": 2.3
+        },
+        {
+          "date": "2016-07-10",
+          "adjusted_nav": 122.884,
+          "adjusted_distribution": 2.73
+        },
+        {
+          "date": "2017-07-10",
+          "adjusted_nav": 164.884,
+          "adjusted_distribution": 2.6
+        },
+        {
+          "date": "2018-07-10",
+          "adjusted_nav": 175.624,
+          "adjusted_distribution": 3.05
+        },
+        {
+          "date": "2019-07-10",
+          "adjusted_nav": 161.117,
+          "adjusted_distribution": 3.33
+        },
+        {
+          "date": "2020-07-10",
+          "adjusted_nav": 158.098,
+          "adjusted_distribution": 3.29
+        },
+        {
+          "date": "2021-07-10",
+          "adjusted_nav": 197.283,
+          "adjusted_distribution": 3.66
+        },
+        {
+          "date": "2022-07-10",
+          "adjusted_nav": 194.612,
+          "adjusted_distribution": 4.64
+        },
+        {
+          "date": "2023-07-10",
+          "adjusted_nav": 232.207,
+          "adjusted_distribution": 5.21
+        },
+        {
+          "date": "2024-07-10",
+          "adjusted_nav": 301.988,
+          "adjusted_distribution": 5.79
+        },
+        {
+          "date": "2025-07-10",
+          "adjusted_nav": 292.093,
+          "adjusted_distribution": 6.95
+        },
+        {
+          "date": "2026-07-10",
+          "adjusted_nav": 420.64,
+          "adjusted_distribution": 7.9
+        }
+      ],
+      "qualified_for_daily_backtest": false,
+      "ex_dates_verified": false,
+      "pay_dates_verified": false
+    },
+    {
+      "source": {
+        "name": "nf-1321-history",
+        "url": "https://www.nomura-am.co.jp/fund/etf/history/ETF_1321.csv",
+        "request_started_at_utc": "2026-11-21T06:30:21.194805+00:00",
+        "status": 200,
+        "final_url": "https://www.nomura-am.co.jp/fund/etf/history/ETF_1321.csv",
+        "content_type": "text/csv",
+        "path": "data/raw/multi-etf-official-20261121-v2/nf-1321-history.csv",
+        "sha256": "59950a19d9723c5f047ea20d9fc8e3bc7e7e44b38e7ad7b909b5ce0d6b4fd33c",
+        "bytes": 521335,
+        "retrieved_at_utc": "2026-11-21T06:30:21.517879+00:00"
+      },
+      "symbol": "1321",
+      "price_basis": "issuer_split_adjusted_NAV_not_exchange_OHLCV",
+      "adjustment_notice": "当ファンドは2026年10月7日に受益権の分割を行なっています。分割日をまたいで計算している値（受益権口数、基準価額、分配金）は、分割の影響を受けないよう調整しています。",
+      "row_count": 6228,
+      "period": [
+        "2001-07-09",
+        "2026-11-19"
+      ],
+      "distribution_records": [
+        {
+          "date": "2002-07-08",
+          "adjusted_nav": 107.768,
+          "adjusted_distribution": 0.473
+        },
+        {
+          "date": "2003-07-08",
+          "adjusted_nav": 98.841,
+          "adjusted_distribution": 0.915
+        },
+        {
+          "date": "2004-07-08",
+          "adjusted_nav": 113.174,
+          "adjusted_distribution": 0.605
+        },
+        {
+          "date": "2005-07-08",
+          "adjusted_nav": 115.93,
+          "adjusted_distribution": 0.597
+        },
+        {
+          "date": "2006-07-08",
+          "adjusted_nav": 153.927,
+          "adjusted_distribution": 0.801
+        },
+        {
+          "date": "2007-07-08",
+          "adjusted_nav": 182.758,
+          "adjusted_distribution": 1.16
+        },
+        {
+          "date": "2008-07-08",
+          "adjusted_nav": 131.228,
+          "adjusted_distribution": 2.018
+        },
+        {
+          "date": "2009-07-08",
+          "adjusted_nav": 94.519,
+          "adjusted_distribution": 2.06
+        },
+        {
+          "date": "2010-07-08",
+          "adjusted_nav": 95.596,
+          "adjusted_distribution": 1.53
+        },
+        {
+          "date": "2011-07-08",
+          "adjusted_nav": 101.942,
+          "adjusted_distribution": 1.38
+        },
+        {
+          "date": "2012-07-08",
+          "adjusted_nav": 91.019,
+          "adjusted_distribution": 1.46
+        },
+        {
+          "date": "2013-07-08",
+          "adjusted_nav": 143.0,
+          "adjusted_distribution": 1.87
+        },
+        {
+          "date": "2014-07-08",
+          "adjusted_nav": 155.473,
+          "adjusted_distribution": 1.99
+        },
+        {
+          "date": "2015-07-08",
+          "adjusted_nav": 200.891,
+          "adjusted_distribution": 2.3
+        },
+        {
+          "date": "2016-07-08",
+          "adjusted_nav": 153.657,
+          "adjusted_distribution": 2.69
+        },
+        {
+          "date": "2017-07-08",
+          "adjusted_nav": 203.232,
+          "adjusted_distribution": 2.86
+        },
+        {
+          "date": "2018-07-08",
+          "adjusted_nav": 222.456,
+          "adjusted_distribution": 3.5
+        },
+        {
+          "date": "2019-07-08",
+          "adjusted_nav": 220.001,
+          "adjusted_distribution": 4.09
+        },
+        {
+          "date": "2020-07-08",
+          "adjusted_nav": 229.771,
+          "adjusted_distribution": 3.89
+        },
+        {
+          "date": "2021-07-08",
+          "adjusted_nav": 288.285,
+          "adjusted_distribution": 3.65
+        },
+        {
+          "date": "2022-07-08",
+          "adjusted_nav": 271.684,
+          "adjusted_distribution": 4.97
+        },
+        {
+          "date": "2023-07-08",
+          "adjusted_nav": 332.995,
+          "adjusted_distribution": 5.76
+        },
+        {
+          "date": "2024-07-08",
+          "adjusted_nav": 420.147,
+          "adjusted_distribution": 6.17
+        },
+        {
+          "date": "2025-07-08",
+          "adjusted_nav": 409.086,
+          "adjusted_distribution": 7.23
+        },
+        {
+          "date": "2026-07-08",
+          "adjusted_nav": 691.381,
+          "adjusted_distribution": 8.12
+        }
+      ],
+      "qualified_for_daily_backtest": false,
+      "ex_dates_verified": false,
+      "pay_dates_verified": false
+    }
+  ],
+  "warning": "CSV date is not verified ex-date or payment date; adjusted amounts must not be applied to raw historical holdings"
+}

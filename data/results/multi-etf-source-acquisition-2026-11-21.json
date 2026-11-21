@@ -1,0 +1,133 @@
+{
+  "role": "evidence_collection_not_strategy_evaluation",
+  "official_requests": [
+    {
+      "name": "jpx-calendar",
+      "url": "https://www.jpx.co.jp/corporate/about-jpx/calendar/index.html",
+      "request_started_at_utc": "2026-11-21T06:28:42.058494+00:00",
+      "status": 200,
+      "final_url": "https://www.jpx.co.jp/corporate/about-jpx/calendar/index.html",
+      "content_type": "text/html",
+      "path": "data/raw/multi-etf-official-20261121-v1/jpx-calendar.html",
+      "sha256": "cda2f71c21cec168b8a30db5873e5542bac53575f392a2bcd7c4aab7409523d0",
+      "bytes": 31178,
+      "retrieved_at_utc": "2026-11-21T06:28:42.354379+00:00"
+    },
+    {
+      "name": "jpx-1475-unit",
+      "url": "https://www.jpx.co.jp/news/1030/20240722-01.html",
+      "request_started_at_utc": "2026-11-21T06:28:42.354862+00:00",
+      "status": 200,
+      "final_url": "https://www.jpx.co.jp/news/1030/20240722-01.html",
+      "content_type": "text/html",
+      "path": "data/raw/multi-etf-official-20261121-v1/jpx-1475-unit.html",
+      "sha256": "f57a9814ebb40907d6548adcb03060d05b5851e267e9157b31326eae03edfbb1",
+      "bytes": 26262,
+      "retrieved_at_utc": "2026-11-21T06:28:42.589445+00:00"
+    },
+    {
+      "name": "jpx-1321-unit",
+      "url": "https://www.jpx.co.jp/news/1030/20260915-01.html",
+      "request_started_at_utc": "2026-11-21T06:28:42.589919+00:00",
+      "status": 200,
+      "final_url": "https://www.jpx.co.jp/news/1030/20260915-01.html",
+      "content_type": "text/html",
+      "path": "data/raw/multi-etf-official-20261121-v1/jpx-1321-unit.html",
+      "sha256": "d2e74de916cc81a63538084efa005cd5933cb13c4a7f5f8c511803f06aca214e",
+      "bytes": 27857,
+      "retrieved_at_utc": "2026-11-21T06:28:42.792166+00:00"
+    },
+    {
+      "name": "nf-1306-split",
+      "url": "https://nextfunds.jp/news/2026/pd_260330a.html",
+      "request_started_at_utc": "2026-11-21T06:28:42.792624+00:00",
+      "status": 200,
+      "final_url": "https://nextfunds.jp/news/2026/pd_260330a.html",
+      "content_type": "text/html",
+      "path": "data/raw/multi-etf-official-20261121-v1/nf-1306-split.html",
+      "sha256": "aa3931dbb52dfba7a650f5d258f502ad4c7c1343dba0dbcc7c439a808aead769",
+      "bytes": 36891,
+      "retrieved_at_utc": "2026-11-21T06:28:42.875286+00:00"
+    },
+    {
+      "name": "nf-1321-product",
+      "url": "https://nextfunds.jp/lineup/1321/",
+      "request_started_at_utc": "2026-11-21T06:28:42.875820+00:00",
+      "status": 200,
+      "final_url": "https://nextfunds.jp/lineup/1321/",
+      "content_type": "text/html",
+      "path": "data/raw/multi-etf-official-20261121-v1/nf-1321-product.html",
+      "sha256": "c4b2e99ff579ef72ec75109d34c60299958756f35a0039b16c2a733653b7464f",
+      "bytes": 231864,
+      "retrieved_at_utc": "2026-11-21T06:28:43.732937+00:00"
+    },
+    {
+      "name": "jpx-daily-index",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/daily/index.html",
+      "request_started_at_utc": "2026-11-21T06:28:43.733397+00:00",
+      "status": 200,
+      "final_url": "https://www.jpx.co.jp/markets/statistics-equities/daily/index.html",
+      "content_type": "text/html",
+      "path": "data/raw/multi-etf-official-20261121-v1/jpx-daily-index.html",
+      "sha256": "370b2414c90b1d6a7a8e6e30846bd229d611e8abe051f64f818928e484df9760",
+      "bytes": 34031,
+      "retrieved_at_utc": "2026-11-21T06:28:43.938791+00:00"
+    },
+    {
+      "name": "nf-1321-split",
+      "url": "https://nextfunds.jp/news/2026/pd_261006a.html",
+      "request_started_at_utc": "2026-11-21T06:30:20.757697+00:00",
+      "status": 200,
+      "final_url": "https://nextfunds.jp/news/2026/pd_261006a.html",
+      "content_type": "text/html",
+      "path": "data/raw/multi-etf-official-20261121-v2/nf-1321-split.html",
+      "sha256": "02b324d9609eb989a0befe305d78910bd76ce64675461eb43e9ce1df6c23fdb2",
+      "bytes": 35943,
+      "retrieved_at_utc": "2026-11-21T06:30:20.838425+00:00"
+    },
+    {
+      "name": "nf-1306-history",
+      "url": "https://www.nomura-am.co.jp/fund/etf/history/ETF_1306.csv",
+      "request_started_at_utc": "2026-11-21T06:30:20.838595+00:00",
+      "status": 200,
+      "final_url": "https://www.nomura-am.co.jp/fund/etf/history/ETF_1306.csv",
+      "content_type": "text/csv",
+      "path": "data/raw/multi-etf-official-20261121-v2/nf-1306-history.csv",
+      "sha256": "9b4117514025ace4b0825de9d4ef0a18c4543a190e2b4b3973d02f799dde8f2c",
+      "bytes": 521383,
+      "retrieved_at_utc": "2026-11-21T06:30:21.194344+00:00"
+    },
+    {
+      "name": "nf-1321-history",
+      "url": "https://www.nomura-am.co.jp/fund/etf/history/ETF_1321.csv",
+      "request_started_at_utc": "2026-11-21T06:30:21.194805+00:00",
+      "status": 200,
+      "final_url": "https://www.nomura-am.co.jp/fund/etf/history/ETF_1321.csv",
+      "content_type": "text/csv",
+      "path": "data/raw/multi-etf-official-20261121-v2/nf-1321-history.csv",
+      "sha256": "59950a19d9723c5f047ea20d9fc8e3bc7e7e44b38e7ad7b909b5ce0d6b4fd33c",
+      "bytes": 521335,
+      "retrieved_at_utc": "2026-11-21T06:30:21.517879+00:00"
+    }
+  ],
+  "yahoo_probe": {
+    "method": "HEAD",
+    "symbol": "1306",
+    "url": "https://query1.finance.yahoo.com/v8/finance/chart/1306.T?period1=1704067200&period2=1794614400&interval=1d&events=div%2Csplits",
+    "sandbox_attempt": "DNS resolution failed",
+    "network_attempt_status": 429,
+    "server_date_utc": "2026-11-21T06:27:18+00:00",
+    "action": "No repeated Yahoo requests after 429; no daily JSON downloaded"
+  },
+  "original_files_unchanged": true,
+  "profitability_runs": 0,
+  "pytest": {
+    "passed": 99,
+    "failed": 0
+  },
+  "results": [
+    "data/results/multi-etf-official-inventory-2026-11-21.json",
+    "data/results/multi-etf-calendar-audit-2026-11-21.json",
+    "data/results/multi-etf-nomura-history-inventory-2026-11-21.json"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "date_jst": "2026-11-21",
+  "base_commit": "63a09f86ded397aaac5a5ca3d90d9763ccbce424",
+  "previous_tracked_research_files_unchanged": 69,
+  "pytest": {
+    "passed": 87,
+    "failed": 0
+  },
+  "real_market_runs": 0,
+  "synthetic_registered_comparisons": 150,
+  "cli_reproducibility_verified": true,
+  "overwrite_refusal_verified": true,
+  "sha256": {
+    "config/swing.yaml": "e56eee7a7d6978f2757717bed79e908c9ef0ed1b9b4b5f05d3488e8bce7f57b4",
+    "docs/multi-etf/plan.md": "96c1bf403415522d3f872bb7b3b762cc74fbf6149f4b450be848dd8b5b6e22c3",
+    "src/stock_ai/backtest/swing.py": "2b89dce0ab1c80b12c4ca3b64d6d23535033c3c881337450b199724a731d359e",
+    "src/stock_ai/data/multi_etf.py": "4b022cfddf3867804dcff3657257e008520508b90d7cd09b4753bbce1bece7d3",
+    "src/stock_ai/data/synthetic.py": "e06f7cb27a6796cdb3aefdc4ec6d09f10f5608ed4662a06e01a7988cdfca5872",
+    "scripts/run_multi_etf_swing.py": "17a3f642e64f08ef2fa05bfef08b5f4ee469f788f4e03e45fb3f8a381fb52576",
+    "tests/test_swing.py": "c31cb77f1cfb2b4d18848287a2f24d789281bed2643854c83b5a53bc10138a5a",
+    "data/results/multi-etf-swing-exclusions-2026-11-21.json": "884e1c2bb6abbe3e32a5cc4058ea7913f302bcfcaafd3d3cea9bc987ce04b1e4",
+    "data/results/multi-etf-swing-synthetic-2026-11-21.json": "36e78c437275e871d6fe35ebb0b996433286a23b1aa5ebbc78046fe7f84d7df3"
+  }
+}

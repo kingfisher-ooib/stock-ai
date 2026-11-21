@@ -1,0 +1,18 @@
+experiment_id: multi-etf-swing-v1-20261121
+initial_cash: 100000
+trade_risk_yen: 100
+max_position_ratio: 0.05
+max_positions: 3
+max_daily_loss_ratio: 0.02
+max_holding_days: 5
+spread_bps: 6
+slippage_bps: 2
+fee_per_side: 0
+priority: ['1475', '1306', '1321', '1346', '2558']
+periods:
+  development: ['2024-01-04', '2024-12-30']
+  validation: ['2025-01-06', '2025-12-30']
+  seen_reference: ['2026-01-05', '2026-11-13']
+untouched_period: null
+cost_sensitivity_bps_per_side: [0, 5, 10]
+risk_sensitivity_yen: [50, 100, 200]
