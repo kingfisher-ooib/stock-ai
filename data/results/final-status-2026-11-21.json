@@ -1,0 +1,80 @@
+{
+  "role": "final_status_report_2026-11-21",
+  "status": "NO_ADOPTED_STRATEGY_DATA_INSUFFICIENT",
+  "adopted_strategies": [],
+  "reasons": [
+    "5銘柄すべてが実データ検証の開始条件を満たさない",
+    "JPX公式日足OHLCVデータ未取得 (手動取得必要)",
+    "1475のYahooデータは分割前後の価格不整合あり、信頼不可",
+    "1306/1321の公式CSVはNAVデータであり、約定価格ではない",
+    "1346/2558のデータなし"
+  ],
+  "tests": {
+    "passed": 114,
+    "failed": 0,
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest -q"
+  },
+  "data_available": {
+    "1475": {
+      "source": "Yahoo Finance",
+      "rows": 697,
+      "period": "2024-01-04 to 2026-11-13",
+      "issues": [
+        "高値/終値がJPX公式値と差異 (2024-03-29: high +0.3, close +0.5)",
+        "2024-08-08分割前後の価格不整合 (250→25→257)",
+        "出来高は含まれるが、JPX値と照合未了"
+      ],
+      "usable_for_profitability": false
+    },
+    "1306": {
+      "source": "Nomura NAV CSV",
+      "rows": 6232,
+      "period": "2001-07-11 to 2026-11-13",
+      "issues": [
+        "NAV (基準価額) データであり、約定価格ではない",
+        "分配金履歴はNAVリターン率であり、実分配金ではない"
+      ],
+      "usable_for_profitability": false
+    },
+    "1321": {
+      "source": "Nomura NAV CSV",
+      "rows": 6233,
+      "period": "2001-07-11 to 2026-11-13",
+      "issues": [
+        "NAV (基準価額) データであり、約定価格ではない",
+        "分配金履歴はNAVリターン率であり、実分配金ではない"
+      ],
+      "usable_for_profitability": false
+    },
+    "1346": {
+      "source": null,
+      "rows": 0,
+      "period": null,
+      "issues": [
+        "データなし"
+      ],
+      "usable_for_profitability": false
+    },
+    "2558": {
+      "source": null,
+      "rows": 0,
+      "period": null,
+      "issues": [
+        "データなし"
+      ],
+      "usable_for_profitability": false
+    }
+  },
+  "next_steps": [
+    "JPX公式日足OHLCVデータを5銘柄分取得 (手動取得推奨)",
+    "各銘柄の売買単位・分割・分配金の一次資料を確認",
+    "執行コスト (手数料・スプレッド) を確定",
+    "上記が揃った銘柄からバックテスト実行",
+    "全銘柄除外でも成績を出さない (指示書通り)"
+  ],
+  "notes": [
+    "実注文・デモ注文・資金移動・有料APIは行っていません",
+    "既存の研究結果・監査ログは削除・上書きしていません",
+    "合成データによる実装テストは完了 (150件実行、収益性評価ではない)"
+  ]
+}
