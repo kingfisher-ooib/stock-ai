@@ -1,0 +1,494 @@
+{
+  "role": "Distribution inventory from NAV CSVs and unconfirmed price-index ETFs",
+  "extraction_time": "2026-11-21",
+  "note": "1306/1321は野村AMのNAV CSVから抽出。分配金はNAV基準値。市場価格の分配額、権利落ち日、支払日は未確認。1475/1346/2558は価格指数連動型と判断したが一次資料確認未完了。",
+  "distributions": {
+    "1306": {
+      "source": "data/raw/multi-etf-official-20261121-v2/nf-1306-history.csv",
+      "source_type": "NAV CSV from Nomura AM (not market prices)",
+      "total_entries": 25,
+      "note": "年1回、7月上旬。NAV基準値であり市場価格の分配額ではない。権利落ち日・支払日は別途確認が必要。",
+      "entries": [
+        {
+          "nav_date": "2002-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 0.244,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2003-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 0.709,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2004-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.116,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2005-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.514,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2006-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.405,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2007-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.6,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2008-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.944,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2009-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.88,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2010-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.61,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2011-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 2.07,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2012-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.51,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2013-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.94,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2014-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 2.06,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2015-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 2.3,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2016-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 2.73,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2017-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 2.6,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2018-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 3.05,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2019-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 3.33,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2020-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 3.29,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2021-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 3.66,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2022-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 4.64,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2023-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 5.21,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2024-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 5.79,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2025-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 6.95,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2026-07-10",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 7.9,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        }
+      ]
+    },
+    "1321": {
+      "source": "data/raw/multi-etf-official-20261121-v2/nf-1321-history.csv",
+      "source_type": "NAV CSV from Nomura AM (not market prices)",
+      "total_entries": 25,
+      "note": "年1回、7月上旬。NAV基準値であり市場価格の分配額ではない。権利落ち日・支払日は別途確認が必要。",
+      "entries": [
+        {
+          "nav_date": "2002-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 0.473,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2003-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 0.915,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2004-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 0.605,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2005-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 0.597,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2006-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 0.801,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2007-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.16,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2008-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 2.018,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2009-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 2.06,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2010-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.53,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2011-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.38,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2012-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.46,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2013-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.87,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2014-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 1.99,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2015-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 2.3,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2016-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 2.69,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2017-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 2.86,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2018-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 3.5,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2019-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 4.09,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2020-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 3.89,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2021-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 3.65,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2022-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 4.97,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2023-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 5.76,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2024-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 6.17,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2025-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 7.23,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        },
+        {
+          "nav_date": "2026-07-08",
+          "nav_date_note": "NAV基準日、権利落ち日ではない可能性あり",
+          "amount_per_unit_yen": 8.12,
+          "amount_basis": "NAV (1口当たり分配金)",
+          "payment_date": "未確認",
+          "ex_dividend_date": "未確認（基準日が権利落ち日か未確定）",
+          "lot_size_at_date": "未確認"
+        }
+      ]
+    },
+    "1475": {
+      "source": "未確認",
+      "source_type": "未取得",
+      "total_entries": 0,
+      "note": "iシェアーズ TOPIX ETF (price index)、価格指数連動型と判断したが一次資料での確認は未完了。分配金なしと断定していない。",
+      "entries": []
+    },
+    "1346": {
+      "source": "未確認",
+      "source_type": "未取得",
+      "total_entries": 0,
+      "note": "MAXIS 日経225 ETF (price index)、価格指数連動型と判断したが一次資料での確認は未完了。分配金なしと断定していない。",
+      "entries": []
+    },
+    "2558": {
+      "source": "未確認",
+      "source_type": "未取得",
+      "total_entries": 0,
+      "note": "MAXIS 米国S&P500 ETF (price index)、価格指数連動型と判断したが一次資料での確認は未完了。分配金なしと断定していない。",
+      "entries": []
+    }
+  }
+}
