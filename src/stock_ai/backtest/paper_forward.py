@@ -155,6 +155,15 @@ def advance_forward_state(
     if not history or history[-1]["bar_date"] != state.get("last_bar_date"):
         raise ValueError("history does not match state")
     bar = _validated_bar(new_bar, state)
+    bar_date = date.fromisoformat(bar["bar_date"])
+    observed_at = datetime.fromisoformat(bar["source_observed_at_utc"])
+    prior_decision_at = datetime.fromisoformat(state["last_source_observed_at_utc"])
+    market_open = datetime.combine(bar_date, time(9), JST).astimezone(timezone.utc)
+    evidence_class = (
+        "forward"
+        if observed_at.astimezone(JST).date() == bar_date and prior_decision_at < market_open
+        else "retrospective"
+    )
     updated = deepcopy(state)
     impact = float(state["bps_per_side"]) / 10_000
     fee_per_side = float(state["fee_yen_per_side"])
@@ -168,6 +177,9 @@ def advance_forward_state(
     settlements = {}
     for name in REGISTERED_SIGNALS:
         rule_state = updated["rules"][name]
+        if evidence_class == "retrospective":
+            settlements[name] = {"status": "retrospective_not_scored", "net_pnl_yen": 0.0}
+            continue
         pending = rule_state["pending"]
         if not pending["active"]:
             settlements[name] = {"status": "no_signal", "net_pnl_yen": 0.0}
@@ -214,6 +226,7 @@ def advance_forward_state(
     updated["forward_bars"].append(deepcopy(bar))
     record = {
         "event": "advance",
+        "evidence_class": evidence_class,
         "previous_hash": tail,
         "symbol": "1475",
         "input_bar": bar,

@@ -35,6 +35,7 @@ def main() -> None:
     append_checkpoint(STATE, JOURNAL, updated, record)
     print(json.dumps({
         "bar_date": updated["last_bar_date"],
+        "evidence_class": record["evidence_class"],
         "settlements": record["settlements"],
         "equity_after_yen": record["equity_after_yen"],
         "next_decisions": record["next_decisions"],

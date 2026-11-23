@@ -1,0 +1,44 @@
+{
+  "role": "bounded_free_increment_acquisition_plan",
+  "registered_at": "2026-11-23T06:36:19.767023+00:00",
+  "client_date": "2026-11-23",
+  "source_spec_urls": [
+    "https://jpx-jquants.com/ja/spec/data-spec",
+    "https://jpx-jquants.com/ja/spec/rate-limits",
+    "https://jpx-jquants.com/ja/spec/eq-bars-daily"
+  ],
+  "theoretical_free_window": [
+    "2024-08-31",
+    "2026-08-31"
+  ],
+  "period": [
+    "2026-08-31",
+    "2026-08-31"
+  ],
+  "candidate_priority": [
+    "1475",
+    "1306",
+    "1321",
+    "1346",
+    "2558"
+  ],
+  "max_requests": 5,
+  "max_pages_per_symbol": 1,
+  "min_request_start_interval_seconds": 13,
+  "retries": 0,
+  "stop_on_first_http_or_payload_failure": true,
+  "endpoint": "https://api.jquants.com/v2/equities/bars/daily",
+  "expected_raw_records_per_symbol": 1,
+  "acquisition_not_profitability": true,
+  "prior_coverage_sha256": "ca983b0a615c0d3bd3cc425d74a5165113892af1a87a9d89a3ccbdabcb049f90",
+  "fixed_config_sha256": "e56eee7a7d6978f2757717bed79e908c9ef0ed1b9b4b5f05d3488e8bce7f57b4",
+  "calendar_sha256": "709da30dc5203d587975a55ffd10561b03ff60b63da48467dd8ed9641e006396",
+  "restrictions": [
+    "No paid subscription or paid-only endpoint",
+    "No live/demo order or funds movement",
+    "No overwrite of raw/result/audit files",
+    "Do not use adjusted prices as raw",
+    "No comparison before complete quality/corporate/lot/distribution/execution gates",
+    "Account plan screen not accessed; existing user Free authorization only; abort on permissions failure"
+  ]
+}

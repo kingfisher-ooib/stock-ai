@@ -1,0 +1,17 @@
+{
+  "role": "focused_existing_entitlement_regression_test_receipt",
+  "recorded_at": "2026-11-23T07:04:32.615716+00:00",
+  "command": "PYTHONPATH=src .venv/bin/python -m pytest -q tests/test_entitlement_v3.py",
+  "passed": 27,
+  "failed": 0,
+  "last_full_suite_passed": 584,
+  "last_full_suite_failed": 0,
+  "full_suite_rerun": false,
+  "code_and_test_changes": false,
+  "sha256": {
+    "src/stock_ai/backtest/entitlement_v3.py": "c90ab774f2f870523b01243ea0f179c24ffef866917f6d9705b345e08e9e3eff",
+    "tests/test_entitlement_v3.py": "546f87e55ac1d91f793e2f77b9e9e564f631dcd21fa2e33bd88e6f0b47143be6",
+    "data/results/distribution-revision-audit-2026-11-23-v1.json": "258b15b92012b28d7aecfd9b31a7bbecda321f06fe49a669d06c0b0ca7252bf4"
+  },
+  "real_market_pnl_runs_this_step": 0
+}

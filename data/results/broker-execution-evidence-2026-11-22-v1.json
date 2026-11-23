@@ -1,0 +1,149 @@
+{
+  "role": "broker_cost_and_execution_evidence_not_account_confirmation",
+  "recorded_at": "2026-11-21T18:38:37.816563+00:00",
+  "sources": [
+    {
+      "name": "zero-course-launch",
+      "url": "https://www.rakuten-sec.co.jp/web/info/info20230831-03.html",
+      "started_at": "2026-11-21T18:36:18.511445+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://www.rakuten-sec.co.jp/web/info/info20230831-03.html",
+      "content_type": "text/html",
+      "file": "zero-course-launch.html",
+      "sha256": "73e9c785bce211dd3707c91e8b3b52ebbacea1d1a671ebf6a4a35f9341361a48",
+      "bytes": 218338,
+      "retrieved_at": "2026-11-21T18:36:18.746113+00:00",
+      "path": "data/raw/broker-evidence-20261121T183618511215Z/zero-course-launch.html"
+    },
+    {
+      "name": "old-etf-free-termination",
+      "url": "https://www.rakuten-sec.co.jp/smartphone/info/info20231027-03.html",
+      "started_at": "2026-11-21T18:36:18.746226+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://www.rakuten-sec.co.jp/smartphone/info/info20231027-03.html",
+      "content_type": "text/html",
+      "file": "old-etf-free-termination.html",
+      "sha256": "292c1b0c09cc5bf27cb6ea3b7c6f12615b91d83496db359a6b21eca22538c9c3",
+      "bytes": 116995,
+      "retrieved_at": "2026-11-21T18:36:18.950946+00:00",
+      "path": "data/raw/broker-evidence-20261121T183618511215Z/old-etf-free-termination.html"
+    },
+    {
+      "name": "cash-fees",
+      "url": "https://www.rakuten-sec.co.jp/smartphone/domestic/stock/commission.html",
+      "started_at": "2026-11-21T18:36:18.951050+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://www.rakuten-sec.co.jp/smartphone/domestic/stock/commission.html",
+      "content_type": "text/html",
+      "file": "cash-fees.html",
+      "sha256": "9e2935124dad967bc85deaf415612cdeb9b3d57d186f4c290056e02e1f8f00c5",
+      "bytes": 123536,
+      "retrieved_at": "2026-11-21T18:36:19.208723+00:00",
+      "path": "data/raw/broker-evidence-20261121T183618511215Z/cash-fees.html"
+    },
+    {
+      "name": "cash-order-help",
+      "url": "https://www.rakuten-sec.co.jp/smartphone/ispeed/help/iphone/order/stock_trade.html",
+      "started_at": "2026-11-21T18:36:19.208818+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://www.rakuten-sec.co.jp/smartphone/ispeed/help/iphone/order/stock_trade.html",
+      "content_type": "text/html",
+      "file": "cash-order-help.html",
+      "sha256": "7583fdc0cb26f39e030b49446d089628be85932e6f56329ceecf7ef4b13b48ca",
+      "bytes": 10888,
+      "retrieved_at": "2026-11-21T18:36:19.304871+00:00",
+      "path": "data/raw/broker-evidence-20261121T183618511215Z/cash-order-help.html"
+    },
+    {
+      "name": "cash-session",
+      "url": "https://www.rakuten-sec.co.jp/smartphone/domestic/stock/rule/session.html",
+      "started_at": "2026-11-21T18:36:19.304955+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://www.rakuten-sec.co.jp/smartphone/domestic/stock/rule/session.html",
+      "content_type": "text/html",
+      "file": "cash-session.html",
+      "sha256": "7f0826092afe46fbaf47b45c97319a01a134ed9e914a1730f2f899b001b083b5",
+      "bytes": 122674,
+      "retrieved_at": "2026-11-21T18:36:19.603613+00:00",
+      "path": "data/raw/broker-evidence-20261121T183618511215Z/cash-session.html"
+    }
+  ],
+  "facts": [
+    {
+      "id": "conditional_zero_commission",
+      "source": "zero-course-launch",
+      "status": "public_rule_confirmed",
+      "conditions": [
+        "zero-course selected",
+        "SOR/R-cross consent",
+        "tool/order exceptions and IFA eligibility apply"
+      ],
+      "fee_per_side_yen": 0,
+      "account_configuration_verified": false,
+      "historical_captured_version": false
+    },
+    {
+      "id": "old_etf_fee_waiver_ended",
+      "source": "old-etf-free-termination",
+      "end_date": "2023-12-29",
+      "status": "dated_public_notice_confirmed"
+    },
+    {
+      "id": "opening_and_closing_route",
+      "source": "zero-course-launch",
+      "market": "TSE",
+      "status": "public_rule_confirmed_for_zero_course"
+    },
+    {
+      "id": "opening_order_timing",
+      "source": "cash-order-help",
+      "status": "public_rule_confirmed",
+      "notes": [
+        "opening order must be submitted before the relevant session opening",
+        "during continuous trading it expires unexecuted"
+      ]
+    },
+    {
+      "id": "market_buy_reservation",
+      "source": "cash-order-help",
+      "status": "public_rule_confirmed",
+      "basis": "daily upper price limit times quantity plus applicable fees, not realized opening price"
+    },
+    {
+      "id": "price_tick",
+      "source": "cash-order-help",
+      "status": "public_rule_confirmed",
+      "basis": "limit price must obey daily price bands and ticks"
+    },
+    {
+      "id": "commission_55yen",
+      "source": "cash-fees",
+      "status": "current_public_rule_only",
+      "course": "super-discount standard",
+      "notional_up_to_yen": 50000,
+      "fee_per_side_yen": 55
+    }
+  ],
+  "unverified": [
+    "user account fee course and SOR consent",
+    "each ETF historical trading restrictions",
+    "historical quote spread and slippage",
+    "full-fill availability at opening and final close",
+    "historical daily price bands and ticks",
+    "exact historical session and service maintenance history"
+  ],
+  "implementation_review": {
+    "hold_daily_stop_mismatch": "fixed to match frozen no-stop baseline",
+    "active_open_equity_daily_stop_then_same_open_sale": "execution assumption not reproduced by a pre-opening order",
+    "opening_price_below_stop_cancels_buy": "ordinary opening limit buy alone does not encode a lower fill-price bound",
+    "historical_execution_verified": false
+  },
+  "qualified_for_backtest": false,
+  "api_calls_authenticated": 0,
+  "orders": 0
+}

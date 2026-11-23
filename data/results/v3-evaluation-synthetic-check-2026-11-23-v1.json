@@ -1,0 +1,77 @@
+{
+  "role": "synthetic_I6_test_record_not_market_strategy_comparison",
+  "created_at": "2026-11-23T06:18:51.437891+00:00",
+  "synthetic": true,
+  "qualified_for_real_data": false,
+  "artifact_sha256": {
+    "src/stock_ai/backtest/evaluation_v3.py": "11ed1d08c50cc0af0466be20db888b718a25bec70b619949a0c99408d6cd6445",
+    "src/stock_ai/backtest/experiment_v3.py": "13de61879ac46481eb348e1e614fd0d96e3ecfca3952165ee02583a721979a4d",
+    "scripts/run_synthetic_swing_v3.py": "39d6757d0f1bbfc594b5432edc8d33244cbccd39522a0aad89e198ba3d5a3933",
+    "tests/test_evaluation_v3.py": "fe1862bab47a4ec286c3144a3a2ea4585b458ae7596c3ea3595b1a5cf4d3579b",
+    "tests/test_experiment_v3.py": "72e2e3328f2be15285a6cdae406eecab769ecbc591748242444eddc8f71b307e",
+    "tests/test_synthetic_v3_cli.py": "647f0758dd24abca7c534e5bef12c3942f4dd55b3834c6a19fa9c7b143f8e710",
+    "docs/multi-etf/v3-evaluation-plan-2026-11-23-v1.md": "92f741f4381e2b97338a8a44913e527517ee00b4491bed0413d5921dd8ecf4fa",
+    "docs/multi-etf/v3-evaluation-implementation-2026-11-23-v1.md": "11b646a2c13e8d91a74109c31d571d1be2cc7e8214d39008985e0b90e2287452"
+  },
+  "code_bundle_sha256": {
+    "src/stock_ai/backtest/experiment_v3.py": "13de61879ac46481eb348e1e614fd0d96e3ecfca3952165ee02583a721979a4d",
+    "src/stock_ai/backtest/evaluation_v3.py": "11ed1d08c50cc0af0466be20db888b718a25bec70b619949a0c99408d6cd6445",
+    "src/stock_ai/backtest/swing_v3.py": "bb26f6188bf046bfda01e011048ef51e33e70bed77b574512f6b05de42dd37f5",
+    "src/stock_ai/backtest/terminal_v3.py": "61ccd9877fd0db7a8188ffe5b6a2eb45273cddc0fefc5b842e30401ee557f10d",
+    "src/stock_ai/backtest/positions_v3.py": "74f2ba6aab6bf8fbf9909faf1a9272a0111c49e3b2ee8e768e993a3d886bc7c2",
+    "src/stock_ai/backtest/cash_v3.py": "32a72f5f32dda24173214368595a17b84e5bfbf32a7d200b7e2d7bbe7468d8ec",
+    "src/stock_ai/backtest/entitlement_v3.py": "c90ab774f2f870523b01243ea0f179c24ffef866917f6d9705b345e08e9e3eff",
+    "src/stock_ai/data/swing_v3_schema.py": "bf4d59f216428c530bdc8cdf72b1637261d5180072da4ce447cdd4f98a33dc64",
+    "src/stock_ai/backtest/swing.py": "ee75751719aae3f7a501b9afe9cde00c16329838f1aa71b930374c609d39605d",
+    "src/stock_ai/features/technical.py": "a07b629bc7f72bfbd2a3151b7f9df0bcb1f17c6a9643ecb7c94aa785bd53e1e1",
+    "pyproject.toml": "25dd7601ff13d3eeb2e2c60bb75ae737414031cef5486b2f08e83ebe55d2df24",
+    "uv.lock": "6e119f9bcc1670b7350d95a6c7b1c4ce536cdc4b7df1d7663ab6100f0e67b21f",
+    "scripts/run_synthetic_swing_v3.py": "39d6757d0f1bbfc594b5432edc8d33244cbccd39522a0aad89e198ba3d5a3933"
+  },
+  "runtime": {
+    "python": [
+      3,
+      12,
+      16
+    ],
+    "pydantic": "2.14.3"
+  },
+  "tests": {
+    "evaluation_passed": 26,
+    "registration_passed": 22,
+    "cli_passed": 3,
+    "targeted_passed": 51,
+    "full_passed": 584,
+    "failed": 0,
+    "full_seconds": 4.35
+  },
+  "failure_history": [
+    {
+      "phase": "initial_evaluation_tests",
+      "passed": 20,
+      "failed": 1,
+      "case": "test_corrupted_accounting_cannot_be_reported_as_success[trade_holding]",
+      "reason": "holding duration tampering was not detected",
+      "resolution": "recompute holding duration and entry/exit chronology from source sessions"
+    }
+  ],
+  "new_strategy_comparisons_outside_tests": 0,
+  "new_registrations_outside_tests": 0,
+  "real_pnl_runs": 0,
+  "checks": [
+    "daily_and_final_cash_position_receivable_trade_reconciliation",
+    "costs_counted_once",
+    "D_R_risk_separation",
+    "CI_30_trade_and_annualization_branches",
+    "immutable_cases_profiles_priority_and_budget",
+    "saved_failures_stops_and_consumed_interruptions",
+    "CLI_real_input_rejection",
+    "all_excluded_without_metrics"
+  ],
+  "limitations": [
+    "Synthetic model assertions are not market evidence.",
+    "Real input contract, primary data coverage and execution conditions remain pending.",
+    "Global multi-registration comparison budget is not automatically aggregated.",
+    "No adopted strategy or untouched evaluation period."
+  ]
+}

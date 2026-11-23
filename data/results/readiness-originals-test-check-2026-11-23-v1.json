@@ -1,0 +1,25 @@
+{
+  "role": "offline_readiness_reaudit_test_receipt",
+  "recorded_at": "2026-11-23T08:51:10.206045+00:00",
+  "focused_tests": {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest -q tests/test_readiness_audit.py",
+    "passed": 28,
+    "failed": 0
+  },
+  "full_suite": {
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest -q",
+    "passed": 612,
+    "failed": 0,
+    "duration_seconds": 4.5
+  },
+  "input_and_artifact_sha256": {
+    "src/stock_ai/data/readiness_audit.py": "6263889e317a96c6248723303dfc2c5273bbdb1f5ad152fc8a7b9c8286c350da",
+    "scripts/audit_swing_readiness.py": "d8816db576112cea01be56192bf24a42e877a65d257185c0f229dfcf3f67cc5e",
+    "tests/test_readiness_audit.py": "198a8cccf443e17da3653baf41c502b97480fc47d9da93dc57213adcf2ae152e",
+    "tests/test_coverage_inventory.py": "0be5994900bebabde5ccf3209fcfb05f6f588ada83ec4ef4816f53b30b2237d6",
+    "data/results/readiness-originals-audit-2026-11-23-v1.json": "9e65432d0e1e8362e47fd41eaaf751f3f97ee5cdffa54e052724b288fef1fdcb",
+    "docs/multi-etf/readiness-originals-audit-2026-11-23-v1.md": "1a136671a066afad9af6586980fff9f8db640d1d32a68fe8b376e5f408819f35"
+  },
+  "real_data_pnl_runs_this_step": 0,
+  "real_market_release_enabled": false
+}

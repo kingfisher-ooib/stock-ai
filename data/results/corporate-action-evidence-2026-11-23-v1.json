@@ -1,0 +1,288 @@
+{
+  "role": "partial_corporate_action_evidence_not_backtest_input",
+  "created_at": "2026-11-23T06:31:43.892628+00:00",
+  "raw_directory": "data/raw/corporate-evidence-20261121T134035604899Z",
+  "sources": [
+    {
+      "name": "1475-split",
+      "url": "https://www.blackrock.com/jp/individual/ja/literature/publication/blkj-publication-ishares-announcement-20240716.pdf",
+      "started_at": "2026-11-21T13:40:35.605152+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://www.blackrock.com/jp/individual/ja/literature/publication/blkj-publication-ishares-announcement-20240716.pdf",
+      "file": "1475-split.pdf",
+      "sha256": "63ad023f43b90e42f11b73c5d924786187f5b7413174c47bf4dec735d6833eb6",
+      "bytes": 531044,
+      "retrieved_at": "2026-11-21T13:40:36.178707+00:00"
+    },
+    {
+      "name": "1306-split",
+      "url": "https://nextfunds.jp/data/2026/td_260217d.pdf",
+      "started_at": "2026-11-21T13:40:36.179144+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://nextfunds.jp/data/2026/td_260217d.pdf",
+      "file": "1306-split.pdf",
+      "sha256": "0f8dfa3a6d33072fe1b83bf9360c453b0df0e5d29fa91309716c0e82b9cab389",
+      "bytes": 446632,
+      "retrieved_at": "2026-11-21T13:40:36.456122+00:00"
+    },
+    {
+      "name": "1321-split",
+      "url": "https://nextfunds.jp/data/2026/td_260825a.pdf",
+      "started_at": "2026-11-21T13:40:36.456377+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://nextfunds.jp/data/2026/td_260825a.pdf",
+      "file": "1321-split.pdf",
+      "sha256": "4249029d796782fc55bf82d46a87519edf68e52c641029bc439dbd1012fde623",
+      "bytes": 522019,
+      "retrieved_at": "2026-11-21T13:40:36.750346+00:00"
+    },
+    {
+      "name": "2558-split",
+      "url": "https://www2.jpx.co.jp/disc/25590/140120251226527420.pdf",
+      "started_at": "2026-11-21T13:40:36.750522+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://www2.jpx.co.jp/disc/25590/140120251226527420.pdf",
+      "file": "2558-split.pdf",
+      "sha256": "9d1417eb48efa47ad8d93113f6d6f10bda7a751029ef8faf844cd80e08ad0e4a",
+      "bytes": 198066,
+      "retrieved_at": "2026-11-21T13:40:37.171338+00:00"
+    },
+    {
+      "name": "1475-20250325-correction",
+      "url": "https://www2.jpx.co.jp/disc/14750/140120250325500052.pdf",
+      "started_at": "2026-11-22T06:42:52.424155+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://www2.jpx.co.jp/disc/14750/140120250325500052.pdf",
+      "file": "1475-20250325-correction.pdf",
+      "sha256": "66f5114b926bb5dee3661bbc3089828991c4b0c9a9b772b4a1cdc6dd152975fc",
+      "bytes": 130810,
+      "retrieved_at": "2026-11-22T06:42:52.640835+00:00",
+      "path": "data/raw/remaining-distributions-20261122T064252423938Z/1475-20250325-correction.pdf"
+    },
+    {
+      "name": "1306-exrights-202603",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/monthly/t13vrt0000013821-att/17_kenri2603.pdf",
+      "started_at": "2026-11-21T13:46:11.271267+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://www.jpx.co.jp/markets/statistics-equities/monthly/t13vrt0000013821-att/17_kenri2603.pdf",
+      "file": "1306-exrights-202603.pdf",
+      "sha256": "3a33fc9599871a88c516b57e9d1255db57581dd6c3491082202e0a80d7219945",
+      "bytes": 228104,
+      "retrieved_at": "2026-11-21T13:46:11.541614+00:00",
+      "raw_path": "data/raw/split-exrights-evidence-20261121T134611271013Z/1306-exrights-202603.pdf"
+    },
+    {
+      "name": "1321-issuer-split-followup",
+      "url": "https://nextfunds.jp/news/2026/pd_261006a.html",
+      "started_at": "2026-11-23T06:26:10.244830+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://nextfunds.jp/news/2026/pd_261006a.html",
+      "file": "1321-issuer-split-followup.html",
+      "sha256": "02b324d9609eb989a0befe305d78910bd76ce64675461eb43e9ce1df6c23fdb2",
+      "bytes": 35943,
+      "retrieved_at": "2026-11-23T06:26:10.330874+00:00",
+      "path": "data/raw/readiness-primary-20261123T062609741466Z/1321-issuer-split-followup.html"
+    },
+    {
+      "name": "1321-monthly-202610",
+      "kind": "monthly",
+      "path": "data/raw/jpx-monthly/ivt_202610.xlsx",
+      "year_month": "202610",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/price/t13vrt000002kk2c-att/ivt_202610.xlsx",
+      "sha256": "c790c3c445969faa43d64eb9862a9f51eb2a1e308c315bd4dee9be0b77eb0f13",
+      "bytes": 129064
+    }
+  ],
+  "rows": [
+    {
+      "symbol": "1475",
+      "announced_on": "2024-07-16",
+      "ratio_new_per_old": 10,
+      "record_date": "2024-08-12",
+      "legal_effective_date": "2024-08-13",
+      "market_price_switch_date": "2024-08-08",
+      "lot_before": 1,
+      "lot_after": 10,
+      "lot_change_date": "2024-08-08",
+      "source": "1475-split",
+      "pages": [
+        1,
+        2
+      ],
+      "notes": [
+        "Original July practical schedule retained as source; formal split register date corrected by March 25, 2025 disclosure from August 9 to August 12.",
+        "Market switch August 8 and legal effective August 13 unchanged; dividend record August 9 is a separate event.",
+        "Example distribution and price figures in split announcement are hypothetical, not actual values."
+      ],
+      "actions_complete": false,
+      "distributions_complete": false,
+      "qualified_for_backtest": false,
+      "source_url": "https://www.blackrock.com/jp/individual/ja/literature/publication/blkj-publication-ishares-announcement-20240716.pdf",
+      "source_sha256": "63ad023f43b90e42f11b73c5d924786187f5b7413174c47bf4dec735d6833eb6",
+      "observed_at": "2026-11-21T13:40:36.178707+00:00",
+      "practical_record_session": "2024-08-09",
+      "record_date_status": "issuer_formal_correction",
+      "record_date_source": "1475-20250325-correction",
+      "record_date_source_page": 1,
+      "record_date_source_sha256": "66f5114b926bb5dee3661bbc3089828991c4b0c9a9b772b4a1cdc6dd152975fc",
+      "record_date_observed_at": "2026-11-22T06:42:52.640835+00:00"
+    },
+    {
+      "symbol": "1306",
+      "announced_on": "2026-02-17",
+      "ratio_new_per_old": 10,
+      "record_date": "2026-03-31",
+      "legal_effective_date": "2026-04-01",
+      "market_price_switch_date": "2026-03-30",
+      "lot_before": null,
+      "lot_after": null,
+      "lot_changed": false,
+      "source": "1306-split",
+      "pages": [
+        1,
+        2
+      ],
+      "notes": [
+        "Market switch March 30 consolidated from existing JPX monthly audit; legal effective April 1 remains distinct.",
+        "Issuer says trading unit unchanged at this split, but numeric lot snapshot 10 on 2025-08-20 does not certify the entire intervening history."
+      ],
+      "actions_complete": false,
+      "distributions_complete": false,
+      "qualified_for_backtest": false,
+      "source_url": "https://nextfunds.jp/data/2026/td_260217d.pdf",
+      "source_sha256": "0f8dfa3a6d33072fe1b83bf9360c453b0df0e5d29fa91309716c0e82b9cab389",
+      "observed_at": "2026-11-21T13:40:36.456122+00:00",
+      "market_date_source": "1306-exrights-202603",
+      "market_date_source_page": 3,
+      "market_date_status": "JPX_monthly_split_ex_rights_date_previously_audited",
+      "lot_document_snapshot": {
+        "symbol": "1306",
+        "document_date": "2025-08-20",
+        "size": 10,
+        "source": "1306-2025-earnings",
+        "pdf_page_one_based": 1,
+        "full_lot_history_verified": false
+      }
+    },
+    {
+      "symbol": "1321",
+      "announced_on": "2026-08-25",
+      "ratio_new_per_old": 100,
+      "record_date": "2026-10-06",
+      "legal_effective_date": "2026-10-07",
+      "market_price_switch_date": null,
+      "lot_before": 1,
+      "lot_after": 10,
+      "lot_change_date": "2026-10-05",
+      "source": "1321-split",
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "notes": [
+        "Do not infer market price switch solely from trading-unit change; direct price-switch evidence pending",
+        "Current monthly rights index links January-September 2026, not October. Old dated daily ex-rights XLS probes returned 404; no historical ex-date is filled from those missing files."
+      ],
+      "actions_complete": false,
+      "distributions_complete": false,
+      "qualified_for_backtest": false,
+      "source_url": "https://nextfunds.jp/data/2026/td_260825a.pdf",
+      "source_sha256": "4249029d796782fc55bf82d46a87519edf68e52c641029bc439dbd1012fde623",
+      "observed_at": "2026-11-21T13:40:36.750346+00:00",
+      "lot_change_status": "issuer_followup_reports_effected_2026-10-05",
+      "lot_change_followup_source": "1321-issuer-split-followup",
+      "candidate_market_price_switch_date": "2026-10-05",
+      "market_date_status": "candidate_supported_by_monthly_segments_not_directly_confirmed",
+      "monthly_segment_source": "1321-monthly-202610",
+      "monthly_segments": [
+        {
+          "symbol": "1321",
+          "year_month": "202610",
+          "name": "ＮＥＸＴ　ＦＵＮＤＳ　日経２２５連動型上場投信　受益証券",
+          "first_date": "2026-10-01",
+          "last_date": "2026-10-02",
+          "open": 69880.0,
+          "high": 71820.0,
+          "low": 69850.0,
+          "close": 71040.0,
+          "total_volume": 742346,
+          "tostnet_volume": 9531,
+          "non_tostnet_volume": 732815,
+          "days_traded": 2,
+          "published_monthly_unit": 10.0,
+          "corporate_action_note": "新株落ち  ",
+          "unit_warning": "Month-level field; not effective-date lot history"
+        },
+        {
+          "symbol": "1321",
+          "year_month": "202610",
+          "name": "ＮＥＸＴ　ＦＵＮＤＳ　日経２２５連動型上場投信　受益証券",
+          "first_date": "2026-10-05",
+          "last_date": "2026-10-30",
+          "open": 723.3,
+          "high": 736.9,
+          "low": 640.5,
+          "close": 657.7,
+          "total_volume": 500222400,
+          "tostnet_volume": 55025100,
+          "non_tostnet_volume": 445197300,
+          "days_traded": 19,
+          "published_monthly_unit": 10.0,
+          "corporate_action_note": "新株落ち  ",
+          "unit_warning": "Month-level field; not effective-date lot history"
+        }
+      ],
+      "issuer_site_history_warning": "Issuer explicitly says pre-effective-date exchange prices, volumes and NAV are split-adjusted on its website; not raw contemporaneous OHLCV."
+    },
+    {
+      "symbol": "2558",
+      "announced_on": "2025-12-26",
+      "ratio_new_per_old": 10,
+      "record_date": "2026-06-08",
+      "legal_effective_date": "2026-06-09",
+      "market_price_switch_date": "2026-06-05",
+      "lot_before": 1,
+      "lot_after": 1,
+      "lot_changed": false,
+      "source": "2558-split",
+      "pages": [
+        1,
+        2
+      ],
+      "notes": [
+        "Creation/redemption suspension is not exchange trading suspension"
+      ],
+      "actions_complete": false,
+      "distributions_complete": false,
+      "qualified_for_backtest": false,
+      "source_url": "https://www2.jpx.co.jp/disc/25590/140120251226527420.pdf",
+      "source_sha256": "9d1417eb48efa47ad8d93113f6d6f10bda7a751029ef8faf844cd80e08ad0e4a",
+      "observed_at": "2026-11-21T13:40:37.171338+00:00"
+    },
+    {
+      "symbol": "1346",
+      "source": null,
+      "status": "full_action_and_lot_history_unverified",
+      "actions_complete": false,
+      "distributions_complete": false,
+      "qualified_for_backtest": false
+    }
+  ],
+  "distribution_status": "all_symbols_incomplete",
+  "requests_this_turn": {
+    "public_html_success": 3,
+    "specific_historical_exrights_xls_404": 2,
+    "retries": 0,
+    "authenticated_calls": 0
+  },
+  "no_pnl": true,
+  "supersedes": "data/results/corporate-action-evidence-2026-11-22-v2.json"
+}

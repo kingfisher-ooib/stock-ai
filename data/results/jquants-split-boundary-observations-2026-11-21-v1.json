@@ -1,0 +1,110 @@
+{
+  "role": "raw_boundary_observations_not_action_history_or_profitability",
+  "rows": [
+    {
+      "symbol": "1306",
+      "date": "2026-03-27",
+      "raw_ohlcv": {
+        "O": 3799.0,
+        "H": 3848.0,
+        "L": 3777.0,
+        "C": 3827.0,
+        "Vo": 2077820.0
+      },
+      "provider_adjustment_factor": 1.0,
+      "source_sha256": "d36cb0c5b23efd198a40e602d407ec84a80cf63d44f7ab8df7b6e2c7ca55d0cc"
+    },
+    {
+      "symbol": "1306",
+      "date": "2026-03-30",
+      "raw_ohlcv": {
+        "O": 370.0,
+        "H": 376.4,
+        "L": 367.4,
+        "C": 376.4,
+        "Vo": 7975490.0
+      },
+      "provider_adjustment_factor": 0.1,
+      "source_sha256": "d36cb0c5b23efd198a40e602d407ec84a80cf63d44f7ab8df7b6e2c7ca55d0cc"
+    },
+    {
+      "symbol": "1306",
+      "date": "2026-03-31",
+      "raw_ohlcv": {
+        "O": 371.3,
+        "H": 379.3,
+        "L": 369.1,
+        "C": 371.4,
+        "Vo": 25178030.0
+      },
+      "provider_adjustment_factor": 1.0,
+      "source_sha256": "d36cb0c5b23efd198a40e602d407ec84a80cf63d44f7ab8df7b6e2c7ca55d0cc"
+    },
+    {
+      "symbol": "1306",
+      "date": "2026-04-01",
+      "raw_ohlcv": {
+        "O": 383.5,
+        "H": 389.2,
+        "L": 381.3,
+        "C": 389.2,
+        "Vo": 19862090.0
+      },
+      "provider_adjustment_factor": 1.0,
+      "source_sha256": "d36cb0c5b23efd198a40e602d407ec84a80cf63d44f7ab8df7b6e2c7ca55d0cc"
+    },
+    {
+      "symbol": "2558",
+      "date": "2026-06-04",
+      "raw_ohlcv": {
+        "O": 34880.0,
+        "H": 35110.0,
+        "L": 34700.0,
+        "C": 34900.0,
+        "Vo": 20132.0
+      },
+      "provider_adjustment_factor": 1.0,
+      "source_sha256": "0edc6ba96bfe0121250c7dbccb30b2fca5d09a2490f026f9df874d7b307cdfb1"
+    },
+    {
+      "symbol": "2558",
+      "date": "2026-06-05",
+      "raw_ohlcv": {
+        "O": 3495.0,
+        "H": 3525.0,
+        "L": 3462.0,
+        "C": 3477.0,
+        "Vo": 93449.0
+      },
+      "provider_adjustment_factor": 0.1,
+      "source_sha256": "0edc6ba96bfe0121250c7dbccb30b2fca5d09a2490f026f9df874d7b307cdfb1"
+    },
+    {
+      "symbol": "2558",
+      "date": "2026-06-08",
+      "raw_ohlcv": {
+        "O": 3397.0,
+        "H": 3450.0,
+        "L": 3389.0,
+        "C": 3404.0,
+        "Vo": 270567.0
+      },
+      "provider_adjustment_factor": 1.0,
+      "source_sha256": "0edc6ba96bfe0121250c7dbccb30b2fca5d09a2490f026f9df874d7b307cdfb1"
+    },
+    {
+      "symbol": "2558",
+      "date": "2026-06-09",
+      "raw_ohlcv": {
+        "O": 3409.0,
+        "H": 3424.0,
+        "L": 3392.0,
+        "C": 3424.0,
+        "Vo": 89315.0
+      },
+      "provider_adjustment_factor": 1.0,
+      "source_sha256": "0edc6ba96bfe0121250c7dbccb30b2fca5d09a2490f026f9df874d7b307cdfb1"
+    }
+  ],
+  "qualified_for_backtest": false
+}

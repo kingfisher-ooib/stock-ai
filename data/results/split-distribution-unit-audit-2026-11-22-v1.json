@@ -1,0 +1,60 @@
+{
+  "role": "dimensional_reconciliation_not_trade_input",
+  "created_at": "2026-11-22T07:07:15.186581+00:00",
+  "input_sha256": {
+    "data/results/multiyear-distribution-evidence-2026-11-22-v3.json": "96cff67174fdf6f68ee06d9a2857b778506aff2dd3f278bf7f090e0ded3e3642",
+    "data/results/corporate-action-evidence-2026-11-22-v2.json": "c1b7d634947584d61adc488e195806047a55dc11f1426413df1cc02712e40914",
+    "data/results/multiyear-distribution-evidence-2026-11-22-v4.json": "b10c6d467d70a51f08a80ffbf0cd571a5ba272277a19096067f501d7a0ee6d1d"
+  },
+  "rows": [
+    {
+      "symbol": "1475",
+      "period_label": "2024-08",
+      "original_quoted_amount_yen": "35",
+      "original_quoted_units": "1",
+      "yen_per_pre_split_entitlement_unit": "35",
+      "ratio_new_per_old": "10",
+      "derived_yen_per_post_split_unit": "3.5",
+      "identity_yen_for_one_old_entitlement_unit": "35.0",
+      "amount_source": "1475-202408-earnings",
+      "amount_source_sha256": "6edca78d8dd953e952a9da1190e172a4e882f17b6c3580ffa983174c43e9290b",
+      "market_price_switch_date": "2024-08-08",
+      "split_record_date": "2024-08-12",
+      "legal_effective_date": "2024-08-13",
+      "distribution_exdate_evidence": "issuer_announced_2024-08-08",
+      "engine_status": "same_day_split_and_distribution_unsupported",
+      "qualified_for_backtest": false,
+      "notes": [
+        "Unit identity only; not actual holdings, income, a fill or strategy PnL.",
+        "Never apply a pre-split per-unit dividend to post-split quantity.",
+        "No silent reordering, date shifting, merging into price, or omission of either action."
+      ]
+    },
+    {
+      "symbol": "2558",
+      "period_label": "2026-06",
+      "original_quoted_amount_yen": "155",
+      "original_quoted_units": "1",
+      "yen_per_pre_split_entitlement_unit": "155",
+      "ratio_new_per_old": "10",
+      "derived_yen_per_post_split_unit": "15.5",
+      "identity_yen_for_one_old_entitlement_unit": "155.0",
+      "amount_source": "2558-202606-earnings",
+      "amount_source_sha256": "d6088fb8aca20ecf278c6e118f92bfc4afcc2a4df0641606f5a79c0fcb2d4692",
+      "market_price_switch_date": "2026-06-05",
+      "split_record_date": "2026-06-08",
+      "legal_effective_date": "2026-06-09",
+      "distribution_exdate_evidence": "candidate_2026-06-05_not_direct_distribution_confirmation",
+      "engine_status": "same_day_split_and_distribution_unsupported",
+      "qualified_for_backtest": false,
+      "notes": [
+        "Unit identity only; not actual holdings, income, a fill or strategy PnL.",
+        "Never apply a pre-split per-unit dividend to post-split quantity.",
+        "No silent reordering, date shifting, merging into price, or omission of either action."
+      ]
+    }
+  ],
+  "qualified_for_backtest": false,
+  "pnl_runs": 0,
+  "limitation": "2558 same-day dividend/split collision is conditional on a candidate dividend ex-date; split market date alone does not certify dividend ex-date."
+}

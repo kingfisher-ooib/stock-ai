@@ -1,0 +1,14 @@
+[
+  {
+    "format": "jquants_range_v1",
+    "directory": "data/raw/jquants-free-range-20261121T145539300336Z",
+    "manifest_sha256": "e55b81485467b5415b38e603a7691aad95e1a58af87751150bcd18d51d6f4e24",
+    "price_evidence": "data/results/jpx-20251024-price-audit-v1.json",
+    "evidence_sha256": "449c2e42fe6631f01aa342c2edf5b80f4236d17c62100e003255cb55b770f64d"
+  },
+  {
+    "format": "jquants_range_v1",
+    "directory": "data/raw/jquants-free-increment-20261123T063905378831Z",
+    "manifest_sha256": "31bb12c21fe278ef18d0a4ccf642f21ac46765e1697f47a7af9c1d50611f1ed5"
+  }
+]

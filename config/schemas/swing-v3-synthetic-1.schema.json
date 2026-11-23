@@ -1,0 +1,707 @@
+{
+  "$defs": {
+    "AmountRevision": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "available_at": {
+          "title": "Available At",
+          "type": "string"
+        },
+        "revision_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Revision Id",
+          "type": "string"
+        },
+        "event_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Event Id",
+          "type": "string"
+        },
+        "supersedes_revision_id": {
+          "anyOf": [
+            {
+              "maxLength": 160,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Supersedes Revision Id"
+        },
+        "quoted_amount": {
+          "maxLength": 64,
+          "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$",
+          "title": "Quoted Amount",
+          "type": "string"
+        },
+        "quoted_units": {
+          "exclusiveMinimum": 0,
+          "title": "Quoted Units",
+          "type": "integer"
+        },
+        "quote_unit_basis_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Quote Unit Basis Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "estimate",
+            "final",
+            "correction"
+          ],
+          "title": "Status",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "available_at",
+        "revision_id",
+        "event_id",
+        "supersedes_revision_id",
+        "quoted_amount",
+        "quoted_units",
+        "quote_unit_basis_id",
+        "status"
+      ],
+      "title": "AmountRevision",
+      "type": "object"
+    },
+    "Bar": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "available_at": {
+          "title": "Available At",
+          "type": "string"
+        },
+        "symbol": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Symbol",
+          "type": "string"
+        },
+        "session_date": {
+          "title": "Session Date",
+          "type": "string"
+        },
+        "unit_basis_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Unit Basis Id",
+          "type": "string"
+        },
+        "open": {
+          "maxLength": 64,
+          "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$",
+          "title": "Open",
+          "type": "string"
+        },
+        "high": {
+          "maxLength": 64,
+          "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$",
+          "title": "High",
+          "type": "string"
+        },
+        "low": {
+          "maxLength": 64,
+          "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$",
+          "title": "Low",
+          "type": "string"
+        },
+        "close": {
+          "maxLength": 64,
+          "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$",
+          "title": "Close",
+          "type": "string"
+        },
+        "volume": {
+          "exclusiveMinimum": 0,
+          "title": "Volume",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "source_id",
+        "available_at",
+        "symbol",
+        "session_date",
+        "unit_basis_id",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume"
+      ],
+      "title": "Bar",
+      "type": "object"
+    },
+    "CashEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "available_at": {
+          "title": "Available At",
+          "type": "string"
+        },
+        "event_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Event Id",
+          "type": "string"
+        },
+        "scheduled_payment_date": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Scheduled Payment Date"
+        },
+        "cash_available_at": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Cash Available At"
+        },
+        "status": {
+          "enum": [
+            "schedule_only",
+            "observed",
+            "explicit_research_assumption"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "amount": {
+          "maxLength": 64,
+          "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$",
+          "title": "Amount",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "available_at",
+        "event_id",
+        "scheduled_payment_date",
+        "cash_available_at",
+        "status",
+        "amount"
+      ],
+      "title": "CashEvidence",
+      "type": "object"
+    },
+    "Entitlement": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "available_at": {
+          "title": "Available At",
+          "type": "string"
+        },
+        "event_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Event Id",
+          "type": "string"
+        },
+        "symbol": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Symbol",
+          "type": "string"
+        },
+        "last_cum_session": {
+          "title": "Last Cum Session",
+          "type": "string"
+        },
+        "ex_session": {
+          "title": "Ex Session",
+          "type": "string"
+        },
+        "distribution_record_date": {
+          "title": "Distribution Record Date",
+          "type": "string"
+        },
+        "quote_unit_basis_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Quote Unit Basis Id",
+          "type": "string"
+        },
+        "date_evidence": {
+          "enum": [
+            "direct",
+            "definition",
+            "calendar_candidate"
+          ],
+          "title": "Date Evidence",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "available_at",
+        "event_id",
+        "symbol",
+        "last_cum_session",
+        "ex_session",
+        "distribution_record_date",
+        "quote_unit_basis_id",
+        "date_evidence"
+      ],
+      "title": "Entitlement",
+      "type": "object"
+    },
+    "LotRule": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "available_at": {
+          "title": "Available At",
+          "type": "string"
+        },
+        "symbol": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Symbol",
+          "type": "string"
+        },
+        "effective_session": {
+          "title": "Effective Session",
+          "type": "string"
+        },
+        "size": {
+          "exclusiveMinimum": 0,
+          "title": "Size",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "source_id",
+        "available_at",
+        "symbol",
+        "effective_session",
+        "size"
+      ],
+      "title": "LotRule",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "origin": {
+          "enum": [
+            "synthetic",
+            "official"
+          ],
+          "title": "Origin",
+          "type": "string"
+        },
+        "locator": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Locator",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "retrieved_at": {
+          "title": "Retrieved At",
+          "type": "string"
+        },
+        "document_date": {
+          "title": "Document Date",
+          "type": "string"
+        },
+        "available_at": {
+          "title": "Available At",
+          "type": "string"
+        },
+        "availability_basis": {
+          "enum": [
+            "synthetic",
+            "observed",
+            "documented_publication",
+            "historical_assumption",
+            "unconfirmed"
+          ],
+          "title": "Availability Basis",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "origin",
+        "locator",
+        "sha256",
+        "retrieved_at",
+        "document_date",
+        "available_at",
+        "availability_basis"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "SplitEvent": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "available_at": {
+          "title": "Available At",
+          "type": "string"
+        },
+        "event_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Event Id",
+          "type": "string"
+        },
+        "symbol": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Symbol",
+          "type": "string"
+        },
+        "ratio_new_per_old": {
+          "maxLength": 64,
+          "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$",
+          "title": "Ratio New Per Old",
+          "type": "string"
+        },
+        "market_switch_date": {
+          "title": "Market Switch Date",
+          "type": "string"
+        },
+        "legal_effective_date": {
+          "title": "Legal Effective Date",
+          "type": "string"
+        },
+        "split_record_date": {
+          "title": "Split Record Date",
+          "type": "string"
+        },
+        "from_basis_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "From Basis Id",
+          "type": "string"
+        },
+        "to_basis_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "To Basis Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "available_at",
+        "event_id",
+        "symbol",
+        "ratio_new_per_old",
+        "market_switch_date",
+        "legal_effective_date",
+        "split_record_date",
+        "from_basis_id",
+        "to_basis_id"
+      ],
+      "title": "SplitEvent",
+      "type": "object"
+    },
+    "SyntheticExecutionRule": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "available_at": {
+          "title": "Available At",
+          "type": "string"
+        },
+        "symbol": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Symbol",
+          "type": "string"
+        },
+        "start_session": {
+          "title": "Start Session",
+          "type": "string"
+        },
+        "end_session": {
+          "title": "End Session",
+          "type": "string"
+        },
+        "tick_yen": {
+          "maxLength": 64,
+          "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$",
+          "title": "Tick Yen",
+          "type": "string"
+        },
+        "fee_per_side": {
+          "maxLength": 64,
+          "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$",
+          "title": "Fee Per Side",
+          "type": "string"
+        },
+        "spread_bps": {
+          "maxLength": 64,
+          "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$",
+          "title": "Spread Bps",
+          "type": "string"
+        },
+        "slippage_bps": {
+          "maxLength": 64,
+          "pattern": "^(0|[1-9][0-9]*)(\\.[0-9]+)?$",
+          "title": "Slippage Bps",
+          "type": "string"
+        },
+        "assumption_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Assumption Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "available_at",
+        "symbol",
+        "start_session",
+        "end_session",
+        "tick_yen",
+        "fee_per_side",
+        "spread_bps",
+        "slippage_bps",
+        "assumption_id"
+      ],
+      "title": "SyntheticExecutionRule",
+      "type": "object"
+    },
+    "UnitBasis": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        },
+        "available_at": {
+          "title": "Available At",
+          "type": "string"
+        },
+        "basis_id": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Basis Id",
+          "type": "string"
+        },
+        "symbol": {
+          "maxLength": 160,
+          "minLength": 1,
+          "title": "Symbol",
+          "type": "string"
+        },
+        "effective_session": {
+          "title": "Effective Session",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "available_at",
+        "basis_id",
+        "symbol",
+        "effective_session"
+      ],
+      "title": "UnitBasis",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "stock-ai-swing-v3-synthetic-1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "synthetic": {
+      "const": true,
+      "title": "Synthetic",
+      "type": "boolean"
+    },
+    "calendar_source_id": {
+      "maxLength": 160,
+      "minLength": 1,
+      "title": "Calendar Source Id",
+      "type": "string"
+    },
+    "sessions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Sessions",
+      "type": "array"
+    },
+    "symbols": {
+      "items": {
+        "maxLength": 160,
+        "minLength": 1,
+        "type": "string"
+      },
+      "title": "Symbols",
+      "type": "array"
+    },
+    "evaluation_start_session": {
+      "title": "Evaluation Start Session",
+      "type": "string"
+    },
+    "evaluation_end_session": {
+      "title": "Evaluation End Session",
+      "type": "string"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/Source"
+      },
+      "title": "Sources",
+      "type": "array"
+    },
+    "unit_bases": {
+      "items": {
+        "$ref": "#/$defs/UnitBasis"
+      },
+      "title": "Unit Bases",
+      "type": "array"
+    },
+    "bars": {
+      "items": {
+        "$ref": "#/$defs/Bar"
+      },
+      "title": "Bars",
+      "type": "array"
+    },
+    "lots": {
+      "items": {
+        "$ref": "#/$defs/LotRule"
+      },
+      "title": "Lots",
+      "type": "array"
+    },
+    "splits": {
+      "items": {
+        "$ref": "#/$defs/SplitEvent"
+      },
+      "title": "Splits",
+      "type": "array"
+    },
+    "entitlements": {
+      "items": {
+        "$ref": "#/$defs/Entitlement"
+      },
+      "title": "Entitlements",
+      "type": "array"
+    },
+    "amount_revisions": {
+      "items": {
+        "$ref": "#/$defs/AmountRevision"
+      },
+      "title": "Amount Revisions",
+      "type": "array"
+    },
+    "cash_evidence": {
+      "items": {
+        "$ref": "#/$defs/CashEvidence"
+      },
+      "title": "Cash Evidence",
+      "type": "array"
+    },
+    "execution_rules": {
+      "items": {
+        "$ref": "#/$defs/SyntheticExecutionRule"
+      },
+      "title": "Execution Rules",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "synthetic",
+    "calendar_source_id",
+    "sessions",
+    "symbols",
+    "evaluation_start_session",
+    "evaluation_end_session",
+    "sources",
+    "unit_bases",
+    "bars",
+    "lots",
+    "splits",
+    "entitlements",
+    "amount_revisions",
+    "cash_evidence",
+    "execution_rules"
+  ],
+  "title": "Snapshot",
+  "type": "object"
+}

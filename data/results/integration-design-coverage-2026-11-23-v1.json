@@ -1,0 +1,183 @@
+{
+  "role": "design_traceability_not_implementation_or_market_certification",
+  "created_at": "2026-11-22T21:53:20.430720+00:00",
+  "design": {
+    "path": "docs/multi-etf/integration-design-2026-11-23-v1.md",
+    "sha256": "356e65655a7bdf82dee8a88c074c369700fb059b98228ec05da07a32a27d53c7"
+  },
+  "requirements": [
+    {
+      "id": "R01",
+      "name": "execution_feasibility",
+      "implementation_units": [
+        "I1",
+        "I3",
+        "I5"
+      ],
+      "design_status": "specified_for_v3_research_scope",
+      "v3_acceptance_passed": false
+    },
+    {
+      "id": "R02",
+      "name": "split_distribution_units",
+      "implementation_units": [
+        "I1",
+        "I2",
+        "I4"
+      ],
+      "design_status": "specified_for_v3_research_scope",
+      "v3_acceptance_passed": false
+    },
+    {
+      "id": "R03",
+      "name": "information_timing",
+      "implementation_units": [
+        "I1",
+        "I2",
+        "I5"
+      ],
+      "design_status": "specified_for_v3_research_scope",
+      "v3_acceptance_passed": false
+    },
+    {
+      "id": "R04",
+      "name": "cash_and_slots",
+      "implementation_units": [
+        "I3",
+        "I4",
+        "I5"
+      ],
+      "design_status": "specified_for_v3_research_scope",
+      "v3_acceptance_passed": false
+    },
+    {
+      "id": "R05",
+      "name": "comparison_reproducibility",
+      "implementation_units": [
+        "I1",
+        "I5",
+        "I6"
+      ],
+      "design_status": "specified_for_v3_research_scope",
+      "v3_acceptance_passed": false
+    },
+    {
+      "id": "R06",
+      "name": "metrics_uncertainty",
+      "implementation_units": [
+        "I2",
+        "I6"
+      ],
+      "design_status": "specified_for_v3_research_scope",
+      "v3_acceptance_passed": false
+    },
+    {
+      "id": "R07",
+      "name": "explicit_scope",
+      "implementation_units": [
+        "I1",
+        "I6"
+      ],
+      "design_status": "specified_for_v3_research_scope",
+      "v3_acceptance_passed": false
+    }
+  ],
+  "implementation_units": [
+    {
+      "id": "I1",
+      "status": "not_implemented_in_integrated_v3",
+      "planned_acceptance_cases": [
+        "reject_unknown_unit_basis",
+        "reject_missing_calendar_and_warmup",
+        "reject_future_information",
+        "reject_unversioned_source_and_hash_mismatch"
+      ],
+      "verified_v3_test_names": []
+    },
+    {
+      "id": "I2",
+      "status": "not_implemented_in_integrated_v3",
+      "planned_acceptance_cases": [
+        "same_day_split_distribution_prior_units",
+        "sale_before_final_amount_retains_entitlement",
+        "late_revision_does_not_rewrite_orders",
+        "unknown_decision_equity_halts_period",
+        "cash_receivable_no_double_count"
+      ],
+      "verified_v3_test_names": []
+    },
+    {
+      "id": "I3",
+      "status": "not_implemented_in_integrated_v3",
+      "planned_acceptance_cases": [
+        "cash_and_slot_reservations_no_reuse",
+        "no_same_open_reallocation",
+        "late_cash_not_usable_before_available_at",
+        "expired_order_release_idempotent"
+      ],
+      "verified_v3_test_names": []
+    },
+    {
+      "id": "I4",
+      "status": "not_implemented_in_integrated_v3",
+      "planned_acceptance_cases": [
+        "split_preserves_total_basis",
+        "stop_and_quantity_use_same_split_basis",
+        "fractional_or_unsellable_position_halts",
+        "income_revisions_attributed_after_exit"
+      ],
+      "verified_v3_test_names": []
+    },
+    {
+      "id": "I5",
+      "status": "not_implemented_in_integrated_v3",
+      "planned_acceptance_cases": [
+        "all_accounts_same_fixed_period",
+        "unknown_execution_is_not_fabricated_no_fill",
+        "opening_gap_does_not_cancel_prior_entry_retroactively",
+        "prior_close_daily_loss_exits_next_open",
+        "frozen_orders_unchanged_by_restatement"
+      ],
+      "verified_v3_test_names": []
+    },
+    {
+      "id": "I6",
+      "status": "not_implemented_in_integrated_v3",
+      "planned_acceptance_cases": [
+        "cash_and_trade_pnl_reconcile",
+        "report_decision_and_restated_dd_separately",
+        "insufficient_trades_ci_is_null_with_reason",
+        "no_real_run_without_registration_and_budget",
+        "all_excluded_saved_without_pnl"
+      ],
+      "verified_v3_test_names": []
+    }
+  ],
+  "scope": {
+    "tax": "pre_tax_only",
+    "fractional_cash_settlement": "unsupported_halt",
+    "legal_register": "not_reproduced",
+    "real_orders": "prohibited",
+    "demo_orders": "prohibited",
+    "real_data_enabled": false,
+    "v3_registered_experiment": null,
+    "v3_executions_authorized": 0
+  },
+  "unresolved_evidence": [
+    "raw_coverage_and_warmup",
+    "record_ex_payment_and_cash_availability",
+    "complete_lot_and_action_history",
+    "point_in_time_amount_estimates",
+    "fee_and_execution_conditions",
+    "untouched_forward_evaluation_period"
+  ],
+  "test_status": {
+    "last_full_passed": 373,
+    "last_full_failed": 0,
+    "rerun_this_step": false,
+    "v3_integration_tests_run": 0
+  },
+  "qualified_for_real_data": false,
+  "new_strategy_comparisons": 0,
+  "new_real_pnl_runs": 0
+}

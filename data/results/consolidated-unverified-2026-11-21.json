@@ -1,0 +1,276 @@
+{
+  "role": "consolidated_unverified_backtest_all_etfs",
+  "generated_at": "2026-11-21",
+  "data_source": "Yahoo Finance (unverified, not JPX official)",
+  "not_profitability_evaluation": true,
+  "disclaimer": "All results are preliminary. Data is not JPX-verified. Split/adjustment handling is incomplete. Not a profitability evaluation.",
+  "adoption_criteria": "All periods positive AND PF>1 AND trades>=30 AND CI lower>0",
+  "results": {
+    "1306": {
+      "status": "preliminary_unverified",
+      "data_source": "Yahoo Finance 1306.T",
+      "note": "Pre-2026-04-01 prices split-adjusted by Yahoo. 2025-10-24 has real data.",
+      "dev": {
+        "hold": {
+          "pnl": 108.99,
+          "trades": 1,
+          "cost": 4.91
+        },
+        "A": {
+          "pnl": -192.25,
+          "trades": 13,
+          "cost": 52.15
+        },
+        "B": {
+          "pnl": -192.37,
+          "trades": 20,
+          "cost": 78.22
+        },
+        "C": {
+          "pnl": 0,
+          "trades": 0,
+          "cost": 0
+        }
+      },
+      "val": {
+        "hold": {
+          "pnl": 1008.38,
+          "trades": 1,
+          "cost": 5.22
+        },
+        "A": {
+          "pnl": -542.9,
+          "trades": 22,
+          "cost": 91.3
+        },
+        "B": {
+          "pnl": 306.83,
+          "trades": 17,
+          "cost": 72.02
+        },
+        "C": {
+          "pnl": -176.86,
+          "trades": 2,
+          "cost": 8.56
+        }
+      },
+      "ref": {
+        "hold": {
+          "pnl": -4191.18,
+          "trades": 1,
+          "cost": 2.58
+        },
+        "A": {
+          "pnl": -135.43,
+          "trades": 6,
+          "cost": 23.63
+        },
+        "B": {
+          "pnl": -177.83,
+          "trades": 5,
+          "cost": 13.33
+        },
+        "C": {
+          "pnl": -32.39,
+          "trades": 1,
+          "cost": 3.59
+        }
+      }
+    },
+    "1475": {
+      "status": "preliminary_unverified_gap_20251024",
+      "data_source": "Yahoo Finance 1475.T",
+      "note": "2025-10-24 null on Yahoo, removed from calendar. 697 bars.",
+      "dev": {
+        "hold": {
+          "pnl": -4324.33,
+          "trades": 1,
+          "cost": 2.59
+        },
+        "A": {
+          "pnl": -104.62,
+          "trades": 15,
+          "cost": 57.92
+        },
+        "B": {
+          "pnl": -138.32,
+          "trades": 19,
+          "cost": 72.72
+        },
+        "C": {
+          "pnl": 0,
+          "trades": 0,
+          "cost": 0
+        }
+      },
+      "val": {
+        "hold": {
+          "pnl": 1067.24,
+          "trades": 1,
+          "cost": 5.46
+        },
+        "A": {
+          "pnl": -640.21,
+          "trades": 20,
+          "cost": 83.91
+        },
+        "B": {
+          "pnl": 113.76,
+          "trades": 12,
+          "cost": 49.44
+        },
+        "C": {
+          "pnl": -173.08,
+          "trades": 3,
+          "cost": 12.08
+        }
+      },
+      "ref": {
+        "hold": {
+          "pnl": 767.46,
+          "trades": 1,
+          "cost": 5.34
+        },
+        "A": {
+          "pnl": -269.27,
+          "trades": 19,
+          "cost": 68.27
+        },
+        "B": {
+          "pnl": -146.59,
+          "trades": 20,
+          "cost": 67.49
+        },
+        "C": {
+          "pnl": -88.27,
+          "trades": 2,
+          "cost": 6.77
+        }
+      }
+    },
+    "1321": {
+      "status": "preliminary_unverified_gap_20251024",
+      "data_source": "Yahoo Finance 1321.T",
+      "note": "2025-10-24 null on Yahoo, removed. 697 bars. 2026-10-07 1:100 split not handled.",
+      "dev": {
+        "hold": {
+          "pnl": 17.84,
+          "trades": 1,
+          "cost": 4.96
+        },
+        "A": {
+          "pnl": -127.44,
+          "trades": 9,
+          "cost": 33.44
+        },
+        "B": {
+          "pnl": -256.66,
+          "trades": 18,
+          "cost": 62.86
+        },
+        "C": {
+          "pnl": -162.68,
+          "trades": 4,
+          "cost": 15.78
+        }
+      },
+      "val": {
+        "hold": {
+          "pnl": 1146.52,
+          "trades": 1,
+          "cost": 5.18
+        },
+        "A": {
+          "pnl": 16.98,
+          "trades": 23,
+          "cost": 87.82
+        },
+        "B": {
+          "pnl": 187.38,
+          "trades": 15,
+          "cost": 53.32
+        },
+        "C": {
+          "pnl": -73.57,
+          "trades": 5,
+          "cost": 18.67
+        }
+      },
+      "ref": {
+        "hold": {
+          "pnl": -4637.99,
+          "trades": 1,
+          "cost": 2.38
+        },
+        "A": {
+          "pnl": -251.23,
+          "trades": 13,
+          "cost": 37.53
+        },
+        "B": {
+          "pnl": -318.25,
+          "trades": 12,
+          "cost": 24.35
+        },
+        "C": {
+          "pnl": 90.96,
+          "trades": 7,
+          "cost": 20.94
+        }
+      }
+    },
+    "1346": {
+      "status": "UNTRADEABLE",
+      "reason": "1 lot (1口) = 34,620-63,630 yen. 5% of 100,000 = 5,000 yen. Cannot buy 1 lot.",
+      "dev": {
+        "hold": {
+          "pnl": 0,
+          "trades": 0
+        }
+      },
+      "val": {
+        "hold": {
+          "pnl": 0,
+          "trades": 0
+        }
+      },
+      "ref": {
+        "hold": {
+          "pnl": 0,
+          "trades": 0
+        }
+      }
+    },
+    "2558": {
+      "status": "UNTRADEABLE_BEFORE_202606_LIMITED_AFTER",
+      "reason": "Pre-2026-06: 1 lot = ~35,000 yen > 5,000 yen limit. Post-2026-06 split: ~3,400 yen, 1 lot possible but only 3 months of data.",
+      "dev": {
+        "hold": {
+          "pnl": 0,
+          "trades": 0
+        }
+      },
+      "val": {
+        "hold": {
+          "pnl": 0,
+          "trades": 0
+        }
+      },
+      "ref": {
+        "hold": {
+          "pnl": 0,
+          "trades": 0
+        },
+        "A": {
+          "pnl": -77.0,
+          "trades": 4
+        },
+        "B": {
+          "pnl": -105.45,
+          "trades": 3
+        }
+      }
+    }
+  },
+  "conclusion": "No strategy meets adoption criteria for any ETF. All strategies lose money in at least 2 of 3 periods. 1346/2558 are untradeable with 10万円 and 5% position ratio."
+}

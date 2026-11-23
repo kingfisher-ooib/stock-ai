@@ -1,0 +1,133 @@
+{
+  "role": "distribution_revision_and_rejected_schedule_audit_not_backtest_input",
+  "created_at": "2026-11-23T07:03:11.778708+00:00",
+  "prior_distribution_ledger_sha256": "b10c6d467d70a51f08a80ffbf0cd571a5ba272277a19096067f501d7a0ee6d1d",
+  "sources": [
+    {
+      "name": "1346-estimate-202507",
+      "url": "https://www2.jpx.co.jp/disc/13480/140120250714513334.pdf",
+      "started_at": "2026-11-23T07:02:00.249300+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://www2.jpx.co.jp/disc/13480/140120250714513334.pdf",
+      "path": "data/raw/distribution-revisions-20261123T070200249068Z/1346-estimate-202507.pdf",
+      "bytes": 80960,
+      "sha256": "dc791102ff08393e88f6421160bf04ea7f37fb6005910a8b1d8119db231383d1",
+      "retrieved_at": "2026-11-23T07:02:00.464776+00:00"
+    },
+    {
+      "name": "1475-current-schedule",
+      "url": "https://www.blackrock.com/jp/individual/ja/literature/distribution-information/ishares-tse-listed-distribution-schedule-ja-jp.pdf",
+      "started_at": "2026-11-23T07:02:00.464800+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://www.blackrock.com/jp/individual/ja/literature/distribution-information/ishares-tse-listed-distribution-schedule-ja-jp.pdf",
+      "path": "data/raw/distribution-revisions-20261123T070200249068Z/1475-current-schedule.pdf",
+      "bytes": 440527,
+      "sha256": "2e7efb064778bb9f0aceb41c4ba099ddd619aa68fc52c0db1f55aaf939d0a02d",
+      "retrieved_at": "2026-11-23T07:02:00.993669+00:00"
+    },
+    {
+      "name": "1346-202507",
+      "url": "https://www2.jpx.co.jp/disc/13460/140120250716515745.pdf",
+      "started_at": "2026-11-21T15:04:07.203914+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://www2.jpx.co.jp/disc/13460/140120250716515745.pdf",
+      "file": "1346-202507.pdf",
+      "sha256": "fc2803ec03fc9cf19fcb1cad69cc7604e53ed2e6f9ff185a4140d65f8b39bdda",
+      "bytes": 3222,
+      "retrieved_at": "2026-11-21T15:04:07.378369+00:00",
+      "path": "data/raw/distribution-evidence-20261121T150406367329Z/1346-202507.pdf"
+    }
+  ],
+  "amount_revisions": [
+    {
+      "revision_id": "1346-202507-estimate",
+      "event_key": "1346-2025-07",
+      "supersedes_revision_id": null,
+      "symbol": "1346",
+      "period_label": "2025-07",
+      "status": "estimate",
+      "quoted_amount_yen": "391",
+      "quoted_units": "1",
+      "document_date": "2025-07-14",
+      "calculation_as_of_date": "2025-07-11",
+      "available_at": null,
+      "availability_status": "historical_publication_time_unconfirmed",
+      "source_path": "data/raw/distribution-revisions-20261123T070200249068Z/1346-estimate-202507.pdf",
+      "source_sha256": "dc791102ff08393e88f6421160bf04ea7f37fb6005910a8b1d8119db231383d1",
+      "source_url": "https://www2.jpx.co.jp/disc/13480/140120250714513334.pdf",
+      "observed_at": "2026-11-23T07:02:00.464776+00:00",
+      "pdf_page_one_based": 1,
+      "visually_checked": true,
+      "qualified_for_backtest": false
+    },
+    {
+      "revision_id": "1346-202507-final",
+      "event_key": "1346-2025-07",
+      "supersedes_revision_id": "1346-202507-estimate",
+      "symbol": "1346",
+      "period_label": "2025-07",
+      "status": "final",
+      "quoted_amount_yen": "390",
+      "quoted_units": "1",
+      "document_date": "2025-07-16",
+      "calculation_as_of_date": "2025-07-16",
+      "available_at": null,
+      "availability_status": "historical_publication_time_unconfirmed",
+      "source_path": "data/raw/distribution-evidence-20261121T150406367329Z/1346-202507.pdf",
+      "source_sha256": "fc2803ec03fc9cf19fcb1cad69cc7604e53ed2e6f9ff185a4140d65f8b39bdda",
+      "source_url": "https://www2.jpx.co.jp/disc/13460/140120250716515745.pdf",
+      "observed_at": "2026-11-21T15:04:07.378369+00:00",
+      "pdf_page_one_based": 1,
+      "visually_checked": true,
+      "qualified_for_backtest": false
+    }
+  ],
+  "per_unit_revision_delta_yen": "-1",
+  "delta_is_trade_pnl": false,
+  "schedule_rejections": [
+    {
+      "symbol": "1475",
+      "source_path": "data/raw/distribution-revisions-20261123T070200249068Z/1475-current-schedule.pdf",
+      "source_sha256": "2e7efb064778bb9f0aceb41c4ba099ddd619aa68fc52c0db1f55aaf939d0a02d",
+      "source_url": "https://www.blackrock.com/jp/individual/ja/literature/distribution-information/ishares-tse-listed-distribution-schedule-ja-jp.pdf",
+      "observed_at": "2026-11-23T07:02:00.993669+00:00",
+      "pdf_page_one_based": 1,
+      "visually_checked": true,
+      "status": "REJECTED_FOR_HISTORICAL_EXDATE_IMPORT",
+      "document_heading_year": 2026,
+      "document_as_of_date": "2026-11-16",
+      "printed_biannual_ex_dates": [
+        "2027-02-06",
+        "2027-08-06"
+      ],
+      "issues": [
+        "The biannual group including 1475 prints 2027 dates under a 2026 heading",
+        "Printed 2027-02-06 ex-date is Saturday; no historical ex-date inferred",
+        "The mutable current URL is not evidence of its contents before any target event"
+      ],
+      "automatic_year_correction": false,
+      "imported_ex_dates": [],
+      "qualified_for_backtest": false
+    }
+  ],
+  "historical_available_at_confirmed": false,
+  "qualified_for_backtest": false,
+  "pnl_runs_this_step": 0,
+  "adopted_strategies": [],
+  "source_requests": {
+    "saved_public_pdf": 2,
+    "retries": 0,
+    "authenticated_api": 0,
+    "preliminary_browser_fetch_failures": [
+      {
+        "url": "https://maxis.am.mufg.jp/etf_fund/topics/__icsFiles/afieldfile/2025/01/14/20250114_181346.pdf",
+        "http_status": 403,
+        "retry": false,
+        "used_as_numeric_evidence": false
+      }
+    ]
+  }
+}

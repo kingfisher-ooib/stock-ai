@@ -1,0 +1,281 @@
+{
+  "role": "consolidated_research_readiness_not_profitability",
+  "created_at": "2026-11-22T01:58:01.649178+00:00",
+  "status": "NO_ADOPTED_STRATEGY_EVIDENCE_INCOMPLETE",
+  "input_sha256": {
+    "data/results/swing-fixed-period-coverage-2026-11-21-v3.json": "ca983b0a615c0d3bd3cc425d74a5165113892af1a87a9d89a3ccbdabcb049f90",
+    "data/results/distribution-evidence-2026-11-22-v3.json": "f6354e92c9c27cc3874c0d278fc6142261c6ef8f9f7ec851bce64e825e6212fb",
+    "data/results/initial-affordability-2025-2026-11-22-v1.json": "1c80e67d971110a0b78b3766a7f36c72c5e9fbf0e7120df1c064e1c1debf7f08",
+    "data/results/etf-tick-grid-audit-2026-11-22-v1.json": "a669422905584eb7f43867b57b7d5b163017f1736cbda82264f0bdf9fbb0a0ee",
+    "data/results/broker-execution-evidence-2026-11-22-v1.json": "9d58d8d8a9569fe0ccfcd9fc72f2cfb3261135b726904534e014e7a5ff0d9572",
+    "data/results/multi-etf-swing-preflight-2026-11-22-v1.json": "dd7f7ad880cba7facd9e826c057de5a6b25dde79bd1b8934b05532812d4bc093",
+    "data/results/multi-etf-swing-v2-synthetic-2026-11-22-v1.json": "3c34c89f08092ddca29bba112364add716593b3d115cfb0f9c6d94b93607388b"
+  },
+  "raw_coverage_reaudit_equal": true,
+  "inventory": [
+    {
+      "symbol": "1475",
+      "expected_sessions": 698,
+      "raw_available": 487,
+      "raw_missing": 211,
+      "independently_price_checked": 1,
+      "validation_2025": {
+        "expected": 243,
+        "source_audited": 1,
+        "missing": 242,
+        "raw_available": 243,
+        "provider_no_trade": 0
+      },
+      "distribution_amount_records": 2,
+      "distribution_exdate_records": 0,
+      "distribution_record_date_records": 2,
+      "payment_start_report_records": 2,
+      "conditional_initial_cap_sessions": 243,
+      "conditional_tick_checked_sessions": 163,
+      "eligible_for_real_pnl": false,
+      "exclusion_reasons": [
+        "fixed_period_raw_coverage_incomplete",
+        "full_lot_and_corporate_action_history_unverified",
+        "distribution_history_incomplete",
+        "actual_daily_bands_and_restrictions_unverified",
+        "execution_cost_and_allocation_unverified",
+        "v1_execution_chronology_blocked",
+        "v2_synthetic_only",
+        "no_untouched_evaluation_period"
+      ],
+      "independent_crosscheck_count_is_informational": true,
+      "raw_integrity_audited_for_available_records": true
+    },
+    {
+      "symbol": "1306",
+      "expected_sessions": 698,
+      "raw_available": 487,
+      "raw_missing": 211,
+      "independently_price_checked": 1,
+      "validation_2025": {
+        "expected": 243,
+        "source_audited": 1,
+        "missing": 242,
+        "raw_available": 243,
+        "provider_no_trade": 0
+      },
+      "distribution_amount_records": 1,
+      "distribution_exdate_records": 1,
+      "distribution_record_date_records": 1,
+      "payment_start_report_records": 1,
+      "conditional_initial_cap_sessions": 0,
+      "conditional_tick_checked_sessions": 163,
+      "eligible_for_real_pnl": false,
+      "exclusion_reasons": [
+        "fixed_period_raw_coverage_incomplete",
+        "full_lot_and_corporate_action_history_unverified",
+        "distribution_history_incomplete",
+        "actual_daily_bands_and_restrictions_unverified",
+        "execution_cost_and_allocation_unverified",
+        "v1_execution_chronology_blocked",
+        "v2_synthetic_only",
+        "no_untouched_evaluation_period"
+      ],
+      "independent_crosscheck_count_is_informational": true,
+      "raw_integrity_audited_for_available_records": true
+    },
+    {
+      "symbol": "1321",
+      "expected_sessions": 698,
+      "raw_available": 487,
+      "raw_missing": 211,
+      "independently_price_checked": 1,
+      "validation_2025": {
+        "expected": 243,
+        "source_audited": 1,
+        "missing": 242,
+        "raw_available": 243,
+        "provider_no_trade": 0
+      },
+      "distribution_amount_records": 1,
+      "distribution_exdate_records": 1,
+      "distribution_record_date_records": 1,
+      "payment_start_report_records": 1,
+      "conditional_initial_cap_sessions": 0,
+      "conditional_tick_checked_sessions": 163,
+      "eligible_for_real_pnl": false,
+      "exclusion_reasons": [
+        "fixed_period_raw_coverage_incomplete",
+        "full_lot_and_corporate_action_history_unverified",
+        "distribution_history_incomplete",
+        "actual_daily_bands_and_restrictions_unverified",
+        "execution_cost_and_allocation_unverified",
+        "v1_execution_chronology_blocked",
+        "v2_synthetic_only",
+        "no_untouched_evaluation_period"
+      ],
+      "independent_crosscheck_count_is_informational": true,
+      "raw_integrity_audited_for_available_records": true
+    },
+    {
+      "symbol": "1346",
+      "expected_sessions": 698,
+      "raw_available": 487,
+      "raw_missing": 211,
+      "independently_price_checked": 1,
+      "validation_2025": {
+        "expected": 243,
+        "source_audited": 1,
+        "missing": 242,
+        "raw_available": 243,
+        "provider_no_trade": 0
+      },
+      "distribution_amount_records": 2,
+      "distribution_exdate_records": 0,
+      "distribution_record_date_records": 0,
+      "payment_start_report_records": 0,
+      "conditional_initial_cap_sessions": 0,
+      "conditional_tick_checked_sessions": 163,
+      "eligible_for_real_pnl": false,
+      "exclusion_reasons": [
+        "fixed_period_raw_coverage_incomplete",
+        "full_lot_and_corporate_action_history_unverified",
+        "distribution_history_incomplete",
+        "actual_daily_bands_and_restrictions_unverified",
+        "execution_cost_and_allocation_unverified",
+        "v1_execution_chronology_blocked",
+        "v2_synthetic_only",
+        "no_untouched_evaluation_period"
+      ],
+      "independent_crosscheck_count_is_informational": true,
+      "raw_integrity_audited_for_available_records": true
+    },
+    {
+      "symbol": "2558",
+      "expected_sessions": 698,
+      "raw_available": 487,
+      "raw_missing": 211,
+      "independently_price_checked": 1,
+      "validation_2025": {
+        "expected": 243,
+        "source_audited": 1,
+        "missing": 242,
+        "raw_available": 243,
+        "provider_no_trade": 0
+      },
+      "distribution_amount_records": 2,
+      "distribution_exdate_records": 0,
+      "distribution_record_date_records": 0,
+      "payment_start_report_records": 0,
+      "conditional_initial_cap_sessions": 0,
+      "conditional_tick_checked_sessions": 163,
+      "eligible_for_real_pnl": false,
+      "exclusion_reasons": [
+        "fixed_period_raw_coverage_incomplete",
+        "full_lot_and_corporate_action_history_unverified",
+        "distribution_history_incomplete",
+        "actual_daily_bands_and_restrictions_unverified",
+        "execution_cost_and_allocation_unverified",
+        "v1_execution_chronology_blocked",
+        "v2_synthetic_only",
+        "no_untouched_evaluation_period"
+      ],
+      "independent_crosscheck_count_is_informational": true,
+      "raw_integrity_audited_for_available_records": true
+    }
+  ],
+  "comparison": [
+    {
+      "symbol": "1475",
+      "cash_definition_yen": 0,
+      "hold": null,
+      "A": null,
+      "B": null,
+      "C": null,
+      "max_drawdown": null,
+      "expectancy": null,
+      "reason": "not_evaluated_due_to_unmet_gates"
+    },
+    {
+      "symbol": "1306",
+      "cash_definition_yen": 0,
+      "hold": null,
+      "A": null,
+      "B": null,
+      "C": null,
+      "max_drawdown": null,
+      "expectancy": null,
+      "reason": "not_evaluated_due_to_unmet_gates"
+    },
+    {
+      "symbol": "1321",
+      "cash_definition_yen": 0,
+      "hold": null,
+      "A": null,
+      "B": null,
+      "C": null,
+      "max_drawdown": null,
+      "expectancy": null,
+      "reason": "not_evaluated_due_to_unmet_gates"
+    },
+    {
+      "symbol": "1346",
+      "cash_definition_yen": 0,
+      "hold": null,
+      "A": null,
+      "B": null,
+      "C": null,
+      "max_drawdown": null,
+      "expectancy": null,
+      "reason": "not_evaluated_due_to_unmet_gates"
+    },
+    {
+      "symbol": "2558",
+      "cash_definition_yen": 0,
+      "hold": null,
+      "A": null,
+      "B": null,
+      "C": null,
+      "max_drawdown": null,
+      "expectancy": null,
+      "reason": "not_evaluated_due_to_unmet_gates"
+    }
+  ],
+  "adopted_strategies": [],
+  "untouched_period": null,
+  "ai_assessment": "improvement_unknown; prerequisites not met; existing models retained",
+  "research_test_status": {
+    "last_pytest_passed": 325,
+    "last_pytest_failed": 0,
+    "rerun_this_document_only_step": false
+  },
+  "priority_actions": [
+    {
+      "priority": 1,
+      "task": "resolve full dated instrument action, lot and distribution record/ex/payment evidence; preserve unknowns"
+    },
+    {
+      "priority": 2,
+      "task": "obtain missing fixed-period raw OHLCV through permitted public/manual sources; no paid API"
+    },
+    {
+      "priority": 3,
+      "task": "verify actual daily bands, tick history, spread/slippage and execution allocation assumptions"
+    },
+    {
+      "priority": 4,
+      "task": "register a separately qualified real-data experiment only after the gates; retain exploratory label without untouched data"
+    },
+    {
+      "priority": 5,
+      "task": "future local paper observation and then independent AI study if prerequisites met"
+    }
+  ],
+  "qualified_real_pnl_runs": 0,
+  "new_real_pnl_runs_this_step": 0,
+  "supersedes": {
+    "path": "data/results/research-readiness-2026-11-22-v1.json",
+    "sha256": "570a6096012adb3e0293f6bd35894d2b4882699e19994379a8cccf18b2480e83",
+    "reason": "clarify qualified versus withdrawn invalid trials; separate independent crosscheck count from required gate"
+  },
+  "limitations": [
+    "Withdrawn invalid trials remain in history; zero refers to qualified runs and this step only",
+    "Independent source crosscheck count is informational, not a new all-days dual-source requirement",
+    "Actual hypothetical order allocations cannot be retrospectively observed; execution assumptions require evidence and uncertainty assessment, not invented allocations"
+  ]
+}

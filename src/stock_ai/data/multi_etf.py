@@ -13,7 +13,30 @@ def timestamp(value):
     return result
 
 
+def _synthetic_provenance_reasons(data):
+    """Consistency guard, not proof that arbitrary caller-supplied data is genuine."""
+    reasons = []
+    source = data.get('calendar_source')
+    if not isinstance(source, str) or not source.startswith('synthetic '):
+        reasons.append('synthetic_calendar_origin')
+    if data.get('not_verified'):
+        reasons.append('unverified_market_data_marker')
+    fixture_sources = ('synthetic', 'synthetic fixture')
+    for instrument in data['instruments'].values():
+        if any(b.get('source') != 'synthetic fixture' for b in instrument['bars']):
+            reasons.append('synthetic_bar_origin')
+        if any(e.get('source') not in fixture_sources for e in instrument['actions']):
+            reasons.append('synthetic_action_origin')
+        if any(e.get('source') not in fixture_sources for e in instrument['lots'] if 'source' in e):
+            reasons.append('synthetic_lot_origin')
+    return sorted(set(reasons))
+
+
 def audit_dataset(data):
+    if type(data.get('synthetic', False)) is not bool:
+        raise ValueError('synthetic flag must be boolean')
+    if data.get('synthetic') and _synthetic_provenance_reasons(data):
+        raise ValueError('synthetic provenance conflicts with input sources')
     calendar = data['calendar']
     if not calendar or calendar != sorted(set(calendar)):
         raise ValueError('invalid calendar')
@@ -37,8 +60,11 @@ def audit_dataset(data):
                 or lots[0]['date'] > calendar[0]):
             raise ValueError('lot history required')
         for event in lots:
+            date.fromisoformat(event['date'])
             if type(event['size']) is not int or event['size'] < 1:
                 raise ValueError('invalid lot')
+            if 'known_at' in event:
+                timestamp(event['known_at'])
         for bar in bars:
             o, h, l, c, v = [float(bar[k]) for k in ('open','high','low','close','volume')]
             if not all(isfinite(x) for x in (o,h,l,c,v)) or not 0 < l <= min(o,c) <= max(o,c) <= h or v <= 0 or not v.is_integer():
@@ -90,15 +116,23 @@ def load_dataset(path, *, sha256, as_of):
     data = json.loads(raw)
     audit_dataset(data)
     boundary = timestamp(as_of)
-    # Entire version must have been observable. Do not silently truncate coverage.
+    # Check every recorded observation/knowledge time, without truncating coverage.
+    # Legacy lots have no knowledge timestamp; this cannot establish their PIT provenance.
     if any(timestamp(b['observed_at']) > boundary for i in data['instruments'].values() for b in i['bars']):
         raise ValueError('snapshot not yet observed as of requested time')
+    if any(timestamp(e['known_at']) > boundary for i in data['instruments'].values() for e in i['actions']):
+        raise ValueError('corporate action not yet known as of requested time')
+    if any(timestamp(e['known_at']) > boundary for i in data['instruments'].values()
+           for e in i['lots'] if 'known_at' in e):
+        raise ValueError('lot metadata not yet known as of requested time')
     return data
 
 
 def quality_reasons(data, instrument):
+    if type(data.get('synthetic', False)) is not bool:
+        return ['invalid_synthetic_flag']
     if data.get('synthetic'):
-        return []
+        return _synthetic_provenance_reasons(data)
     checks = ('ohlcv_verified','calendar_verified','lot_history_verified',
               'actions_complete','distributions_complete','execution_cost_verified')
     return [key for key in checks if instrument.get('verification', {}).get(key) is not True

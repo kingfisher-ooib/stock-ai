@@ -7,7 +7,7 @@ from pathlib import Path
 
 import yaml
 
-from stock_ai.backtest.swing import SwingConfig, run_swing, summarize_swing
+from stock_ai.backtest.swing import SwingConfig, execution_model_reasons, run_swing, summarize_swing
 from stock_ai.data.multi_etf import load_dataset, quality_reasons
 from stock_ai.data.synthetic import synthetic_dataset
 
@@ -57,6 +57,13 @@ def main():
     else:
         report['exclusions']={s:['No qualified versioned raw OHLCV, calendar, corporate actions, distributions and execution costs']
                               for s in settings['priority']}
+    if not args.synthetic:
+        # Stop the whole registered comparison before any baseline or strategy
+        # PnL is computed; partial baselines must not masquerade as a comparison.
+        report['execution_exclusions']={s:execution_model_reasons(s) for s in ('A','B','C')}
+        if data:
+            report['status']='NO_ADOPTED_STRATEGY_EXECUTION_MODEL_BLOCKED'
+            data=None
     if data:
         if not args.synthetic:
             report['status']='EXPLORATORY_COMPLETE_REQUIRES_UNTOUCHED_PERIOD'

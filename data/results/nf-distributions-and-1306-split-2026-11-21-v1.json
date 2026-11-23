@@ -1,0 +1,135 @@
+{
+  "role": "partial_distribution_and_split_evidence",
+  "created_at": "2026-11-21T13:47:12.087367+00:00",
+  "sources": [
+    {
+      "name": "2025-july-schedule",
+      "url": "https://nextfunds.jp/data/2025/div-skd_250702a.pdf",
+      "started_at": "2026-11-21T13:44:59.579740+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://nextfunds.jp/data/2025/div-skd_250702a.pdf",
+      "file": "2025-july-schedule.pdf",
+      "sha256": "187aea7bdc64b7fec66dc50397d4c71a9f4ddb26fca1e8f9af533ce91553b6f0",
+      "bytes": 248671,
+      "retrieved_at": "2026-11-21T13:44:59.679754+00:00",
+      "raw_path": "data/raw/distribution-evidence-20261121T134459579515Z/2025-july-schedule.pdf"
+    },
+    {
+      "name": "1306-2025-final-dividend",
+      "url": "https://nextfunds.jp/data/2025/div_250710a.pdf",
+      "started_at": "2026-11-21T13:44:59.679947+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://nextfunds.jp/data/2025/div_250710a.pdf",
+      "file": "1306-2025-final-dividend.pdf",
+      "sha256": "bd9ac4ba397229964b6177cf43395484e4e05282614eafea66f0c22bd5aa7771",
+      "bytes": 76818,
+      "retrieved_at": "2026-11-21T13:44:59.760643+00:00",
+      "raw_path": "data/raw/distribution-evidence-20261121T134459579515Z/1306-2025-final-dividend.pdf"
+    },
+    {
+      "name": "1321-2025-final-dividend",
+      "url": "https://nextfunds.jp/data/2025/div_250708b.pdf",
+      "started_at": "2026-11-21T13:44:59.760813+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://nextfunds.jp/data/2025/div_250708b.pdf",
+      "file": "1321-2025-final-dividend.pdf",
+      "sha256": "6b180d03c85abb92cb3872b2de5317f8e70f531b27db715682e28a830dbb94a0",
+      "bytes": 87876,
+      "retrieved_at": "2026-11-21T13:44:59.842322+00:00",
+      "raw_path": "data/raw/distribution-evidence-20261121T134459579515Z/1321-2025-final-dividend.pdf"
+    },
+    {
+      "name": "1306-2025-earnings",
+      "url": "https://www2.jpx.co.jp/disc/13060/140120250820544536.pdf",
+      "started_at": "2026-11-21T13:44:59.842515+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://www2.jpx.co.jp/disc/13060/140120250820544536.pdf",
+      "file": "1306-2025-earnings.pdf",
+      "sha256": "49d17bf701397b780dc32c38c4af225cb42b694af9f84788b52301d52228c39b",
+      "bytes": 1547785,
+      "retrieved_at": "2026-11-21T13:45:00.167661+00:00",
+      "raw_path": "data/raw/distribution-evidence-20261121T134459579515Z/1306-2025-earnings.pdf"
+    },
+    {
+      "name": "1306-exrights-202603",
+      "url": "https://www.jpx.co.jp/markets/statistics-equities/monthly/t13vrt0000013821-att/17_kenri2603.pdf",
+      "started_at": "2026-11-21T13:46:11.271267+00:00",
+      "retry_count": 0,
+      "status": 200,
+      "final_url": "https://www.jpx.co.jp/markets/statistics-equities/monthly/t13vrt0000013821-att/17_kenri2603.pdf",
+      "file": "1306-exrights-202603.pdf",
+      "sha256": "3a33fc9599871a88c516b57e9d1255db57581dd6c3491082202e0a80d7219945",
+      "bytes": 228104,
+      "retrieved_at": "2026-11-21T13:46:11.541614+00:00",
+      "raw_path": "data/raw/split-exrights-evidence-20261121T134611271013Z/1306-exrights-202603.pdf"
+    }
+  ],
+  "distributions": [
+    {
+      "symbol": "1306",
+      "declared_yen": "6950",
+      "declared_units": 100,
+      "yen_per_contemporaneous_unit": "69.5",
+      "ex_date": "2025-07-09",
+      "ex_date_evidence_status": "issuer_published_schedule_not_independently_exchange_confirmed",
+      "record_date": "2025-07-10",
+      "final_amount_announcement_date": "2025-07-10",
+      "payment_start_date": "2025-08-18",
+      "payment_date_status": "issuer_reported_payment_start",
+      "source_pages_one_based": [
+        1
+      ],
+      "amount_source": "1306-2025-final-dividend",
+      "ex_date_source": "2025-july-schedule",
+      "payment_report_source": "1306-2025-earnings",
+      "qualified_for_backtest": false,
+      "complete_history": false
+    },
+    {
+      "symbol": "1321",
+      "declared_yen": "7230",
+      "declared_units": 10,
+      "yen_per_contemporaneous_unit": "723",
+      "ex_date": "2025-07-07",
+      "ex_date_evidence_status": "issuer_published_schedule_not_independently_exchange_confirmed",
+      "record_date": "2025-07-08",
+      "final_amount_announcement_date": "2025-07-08",
+      "payment_start_date": "2025-08-15",
+      "payment_date_status": "scheduled_payment_start",
+      "source_pages_one_based": [
+        1
+      ],
+      "amount_source": "1321-2025-final-dividend",
+      "ex_date_source": "2025-july-schedule",
+      "payment_report_source": null,
+      "qualified_for_backtest": false,
+      "complete_history": false
+    }
+  ],
+  "split_update": {
+    "symbol": "1306",
+    "split_ex_rights_date": "2026-03-30",
+    "record_date": "2026-03-31",
+    "legal_effective_date": "2026-04-01",
+    "ratio_new_per_old": 10,
+    "ex_date_source": "1306-exrights-202603",
+    "pdf_page_one_based": 3,
+    "announced_at": null,
+    "publication_time_unverified": true
+  },
+  "lot_snapshot": {
+    "symbol": "1306",
+    "document_date": "2025-08-20",
+    "size": 10,
+    "source": "1306-2025-earnings",
+    "pdf_page_one_based": 1,
+    "full_lot_history_verified": false
+  },
+  "qualified_for_backtest": false,
+  "authenticated_api_calls": 0,
+  "pnl_runs": 0
+}

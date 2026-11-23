@@ -1,0 +1,106 @@
+{
+  "role": "synthetic_gross_entitlement_accounting_not_cash_or_strategy_pnl",
+  "created_at": "2026-11-22T23:03:08.679619+00:00",
+  "artifact_sha256": {
+    "src/stock_ai/backtest/entitlement_v3.py": "c90ab774f2f870523b01243ea0f179c24ffef866917f6d9705b345e08e9e3eff",
+    "tests/test_entitlement_v3.py": "546f87e55ac1d91f793e2f77b9e9e564f631dcd21fa2e33bd88e6f0b47143be6",
+    "docs/multi-etf/v3-entitlement-implementation-2026-11-23-v1.md": "a8a01943ee35515cf546fca58928e857af113879c7a81f5c49dc891435609abb"
+  },
+  "fixture_dependencies_sha256": {
+    "src/stock_ai/data/swing_v3_schema.py": "bf4d59f216428c530bdc8cdf72b1637261d5180072da4ce447cdd4f98a33dc64",
+    "tests/test_swing_v3_schema.py": "ba794fe763f8268ea8f5b00520ce6ccd41ea80e828288d2dc7e324c7c42309fe"
+  },
+  "sealed_snapshot_sha256": "7896f357918f618ec4d8cb25d348b53e9756f425d527edcd2dd0208f0b085237",
+  "prior_decision_history_sha256": "28a2eb1b5e3d4692ad2b559df5bc1c367b15c8aa23072670f379a736f451ebc5",
+  "prior_history_unchanged_after_restatement": true,
+  "rights": [
+    {
+      "event_id": "div",
+      "position_id": "position-X",
+      "symbol": "ETF-X",
+      "quantity": 3,
+      "unit_basis_id": "ETF-X-old",
+      "last_cum_session": "2025-03-31",
+      "captured_at": "2025-04-01T00:00:00+00:00"
+    }
+  ],
+  "prior_decision": {
+    "as_of": "2025-04-01T07:00:00Z",
+    "mode": "decision",
+    "lines": [
+      {
+        "event_id": "div",
+        "position_id": "position-X",
+        "revision_id": "estimate",
+        "amount": "21"
+      }
+    ],
+    "total": "21",
+    "status": "COMPLETE"
+  },
+  "restated": {
+    "as_of": "2025-04-04T07:00:00Z",
+    "mode": "restated",
+    "lines": [
+      {
+        "event_id": "div",
+        "position_id": "position-X",
+        "revision_id": "final",
+        "amount": "24"
+      }
+    ],
+    "total": "24",
+    "status": "COMPLETE"
+  },
+  "updated_decision": {
+    "as_of": "2025-04-04T07:00:00Z",
+    "mode": "decision",
+    "lines": [
+      {
+        "event_id": "div",
+        "position_id": "position-X",
+        "revision_id": "final",
+        "amount": "24"
+      }
+    ],
+    "total": "24",
+    "status": "COMPLETE"
+  },
+  "changes": [
+    {
+      "recorded_at": "2025-04-01T07:00:00Z",
+      "event_id": "div",
+      "position_id": "position-X",
+      "old_revision_id": null,
+      "new_revision_id": "estimate",
+      "old_amount": null,
+      "new_amount": "21",
+      "delta": null
+    },
+    {
+      "recorded_at": "2025-04-04T07:00:00Z",
+      "event_id": "div",
+      "position_id": "position-X",
+      "old_revision_id": "estimate",
+      "new_revision_id": "final",
+      "old_amount": "21",
+      "new_amount": "24",
+      "delta": "3"
+    }
+  ],
+  "tests": {
+    "targeted_passed": 27,
+    "full_passed": 452,
+    "failed": 0,
+    "full_seconds": 1.86
+  },
+  "qualified_for_real_data": false,
+  "new_strategy_comparisons": 0,
+  "real_pnl_runs": 0,
+  "limitations": [
+    "Gross attributed amount, not unpaid balance; do not add directly to cash.",
+    "No cash movement, orders, current holdings, cost basis or strategy runner.",
+    "Sealed synthetic snapshot; forward source-version extension unsupported.",
+    "Past decision frames preserved; past order invariance awaits I5."
+  ]
+}

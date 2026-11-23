@@ -1,0 +1,106 @@
+{
+  "role": "synthetic_accounting_identity_not_strategy_pnl",
+  "created_at": "2026-11-22T11:35:16.868325+00:00",
+  "synthetic": true,
+  "qualified_for_real_data": false,
+  "steps": [
+    {
+      "state": {
+        "as_of": "2025-01-07",
+        "positions": [
+          [
+            "ETF-X",
+            30
+          ]
+        ],
+        "cash": "100",
+        "receivables": [
+          {
+            "event_id": "d-X",
+            "symbol": "ETF-X",
+            "amount": "21",
+            "cash_available_date": "2025-01-09"
+          }
+        ],
+        "processed_ids": [
+          "d-X",
+          "s-X"
+        ]
+      },
+      "prior_order_cash": "100",
+      "distribution_credits": [
+        {
+          "event_id": "d-X",
+          "symbol": "ETF-X",
+          "amount": "21",
+          "cash_available_date": "2025-01-09"
+        }
+      ]
+    },
+    {
+      "state": {
+        "as_of": "2025-01-08",
+        "positions": [
+          [
+            "ETF-X",
+            30
+          ]
+        ],
+        "cash": "100",
+        "receivables": [
+          {
+            "event_id": "d-X",
+            "symbol": "ETF-X",
+            "amount": "21",
+            "cash_available_date": "2025-01-09"
+          }
+        ],
+        "processed_ids": [
+          "d-X",
+          "s-X"
+        ]
+      },
+      "prior_order_cash": "100",
+      "distribution_credits": []
+    },
+    {
+      "state": {
+        "as_of": "2025-01-09",
+        "positions": [
+          [
+            "ETF-X",
+            30
+          ]
+        ],
+        "cash": "121",
+        "receivables": [],
+        "processed_ids": [
+          "d-X",
+          "s-X"
+        ]
+      },
+      "prior_order_cash": "100",
+      "distribution_credits": []
+    }
+  ],
+  "artifact_sha256": {
+    "docs/multi-etf/corporate-ledger-design-2026-11-22-v1.md": "cf894960d4c9de5239e6dec9320f82a45db3b15c8fdb513038e9f935fb6b7587",
+    "src/stock_ai/backtest/corporate_ledger.py": "9f59ff64f7fb632cc1500d2849b8b2a722f813b3f0eff64ba2e0aac5f76cc35f",
+    "tests/test_corporate_ledger.py": "da30b3341a2fd214b9d6fc90e3b4cf4e23add1e2f2e6382ac53fe7f8988325ed"
+  },
+  "tests": {
+    "targeted_passed": 30,
+    "full_passed": 373,
+    "failed": 0,
+    "full_seconds": 1.71
+  },
+  "strategy_comparisons": 0,
+  "real_pnl_runs": 0,
+  "orders_sent": 0,
+  "limitations": [
+    "Standalone prototype, not connected to either swing engine.",
+    "Prices, fills, trade PnL and performance metrics are absent.",
+    "Payment availability and prior-close unit basis are explicit synthetic inputs.",
+    "Post-ex-date final amount discovery, withholding, fractional cash settlement and legal-register tracking unsupported."
+  ]
+}

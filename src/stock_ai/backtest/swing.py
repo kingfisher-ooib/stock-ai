@@ -9,6 +9,14 @@ from stock_ai.data.multi_etf import audit_dataset, history_at, lot_at, quality_r
 from stock_ai.features.technical import compute_features
 
 
+def execution_model_reasons(strategy):
+    """Known chronology defects in frozen v1; data-verification flags cannot fix them."""
+    if strategy in ('A', 'B', 'C'):
+        return ['opening_price_lower_bound_cancellation_not_preordered',
+                'open_equity_stop_filled_at_same_open']
+    return []
+
+
 @dataclass(frozen=True)
 class SwingConfig:
     initial_cash: float = 100000
@@ -70,6 +78,18 @@ def run_swing(data, *, strategy, start, end, config=None, priority=None):
     indices = [i for i,d in enumerate(calendar) if start <= d <= end]
     if not indices or calendar[indices[0]] != start or calendar[indices[-1]] != end:
         raise ValueError('empty or incomplete period')
+    if not data.get('synthetic') and data['availability_mode'] == 'observed':
+        # Validate before simulation, including baselines and the final session.
+        # Historical warmup is first used at the first decision, not its own date.
+        used_indices = range(indices[-1]+1) if strategy in ('A','B','C') else indices
+        for index in used_indices:
+            first_use_day = calendar[max(index, indices[0])]
+            decision_time = datetime.combine(date.fromisoformat(first_use_day), time(23,59), timezone.utc)
+            if any(timestamp(i['bars'][index]['observed_at']) > decision_time for i in instruments.values()):
+                raise ValueError('decision uses a bar not yet observed; explicit historical assumption required')
+    if not data.get('synthetic') and execution_model_reasons(strategy):
+        raise ValueError('legacy swing execution is synthetic-only: '
+                         + ', '.join(execution_model_reasons(strategy)))
     cash = cfg.initial_cash
     positions, pending, exits, receivables = {}, {}, set(), []
     trades, curve, rejections, fills = [], [], [], []
@@ -78,6 +98,9 @@ def run_swing(data, *, strategy, start, end, config=None, priority=None):
 
     def sell(symbol, price, day, index, reason):
         nonlocal cash, total_cost
+        if positions[symbol]['quantity'] % lot_at(instruments[symbol], day):
+            # Odd-lot handling is not modelled; never invent an executable sale.
+            raise ValueError('position cannot be sold in current lot; odd-lot handling unsupported')
         p = positions.pop(symbol)
         cost = p['quantity'] * price * cfg.impact + cfg.fee_per_side
         proceeds = p['quantity'] * price - cost
@@ -114,7 +137,10 @@ def run_swing(data, *, strategy, start, end, config=None, priority=None):
                     receivables.append(dict(pay_date=e['pay_date'], value=income))
         open_equity = cash + sum(r['value'] for r in receivables) + sum(
             p['quantity'] * instruments[s]['bars'][index]['open'] for s,p in positions.items())
-        daily_stop = open_equity - previous_equity <= -previous_equity*cfg.max_daily_loss_ratio
+        # The frozen buy-and-hold comparator has no stop-loss; only the active
+        # swing strategies use the portfolio daily loss control.
+        daily_stop = (strategy in ('A', 'B', 'C')
+                      and open_equity - previous_equity <= -previous_equity*cfg.max_daily_loss_ratio)
         sold = set()
         for symbol in list(positions):
             if daily_stop or symbol in exits:
@@ -129,7 +155,7 @@ def run_swing(data, *, strategy, start, end, config=None, priority=None):
                 budget = min(available, cfg.initial_cash * min(cfg.max_position_ratio, 1/len(order)))
                 q = floor((budget-cfg.fee_per_side)/(price*(1+cfg.impact))/lot)*lot
                 if q > 0:
-                    pending[s] = dict(quantity=q, limit=float('inf'), stop=0)
+                    pending[s] = dict(quantity=q, limit=float('inf'), stop=0, lot=lot)
         for symbol in order:
             if symbol not in pending or symbol in positions:
                 continue
@@ -141,6 +167,7 @@ def run_swing(data, *, strategy, start, end, config=None, priority=None):
             # Pending orders crossing actions/lot changes expire, avoiding stale quantities.
             corporate_day = any(e['date'] == day for e in instruments[symbol]['actions'])
             if (daily_stop or symbol in sold or len(positions) >= cfg.max_positions
+                    or p['lot'] != lot_at(instruments[symbol],day)
                     or q % lot_at(instruments[symbol],day) or corporate_day
                     or price > p['limit'] or price <= p['stop'] or debit > min(cash,available)):
                 rejections.append(dict(date=day,symbol=symbol,reason='execution_or_risk_constraint'))
@@ -165,10 +192,6 @@ def run_swing(data, *, strategy, start, end, config=None, priority=None):
         previous_equity = equity
         if index == indices[-1] or strategy in ('cash','hold'):
             continue
-        if not data.get('synthetic') and data['availability_mode'] == 'observed':
-            decision_time = datetime.combine(date.fromisoformat(day), time(23,59), timezone.utc)
-            if any(timestamp(i['bars'][index]['observed_at']) > decision_time for i in instruments.values()):
-                raise ValueError('decision uses a bar not yet observed; explicit historical assumption required')
         for s,p in positions.items():
             h = history_at(instruments[s],index)
             _,_,sma = signal(h,strategy)
@@ -192,7 +215,7 @@ def run_swing(data, *, strategy, start, end, config=None, priority=None):
             if q <= 0:
                 rejections.append(dict(date=day,symbol=s,reason='minimum_lot_or_budget'))
                 continue
-            pending[s] = dict(quantity=q,limit=limit,stop=stop)
+            pending[s] = dict(quantity=q,limit=limit,stop=stop,lot=lot)
             remaining -= q*entry+cfg.fee_per_side
     return dict(strategy=strategy,config=asdict(cfg),curve=curve,trades=trades,fills=fills,
                 rejections=rejections,total_cost=total_cost,synthetic=data.get('synthetic',False))

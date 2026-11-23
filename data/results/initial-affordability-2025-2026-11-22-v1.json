@@ -1,0 +1,81 @@
+{
+  "role": "conditional_initial_cap_feasibility_not_backtest",
+  "recorded_at": "2026-11-21T15:11:35.827272+00:00",
+  "config_sha256": "e56eee7a7d6978f2757717bed79e908c9ef0ed1b9b4b5f05d3488e8bce7f57b4",
+  "initial_cash_yen": "100000",
+  "initial_position_cap_yen": "5000.00",
+  "rows": [
+    {
+      "symbol": "1475",
+      "lot_snapshot": 10,
+      "lot_snapshot_source": "1475-202502",
+      "lot_history_verified": false,
+      "raw_source_path": "data/raw/jquants-free-range-20261121T145539300336Z/1475-page1.json",
+      "raw_source_sha256": "9ef8fab128c28c0099dbfdc8cfcaaf250f58a4f3661bdcd782f010aa769a3522",
+      "sessions": 243,
+      "minimum_one_lot_open_notional_yen": "2354.0",
+      "maximum_one_lot_open_notional_yen": "3548.0",
+      "sessions_notional_le_initial_cap": 243,
+      "sessions_notional_gt_initial_cap": 0
+    },
+    {
+      "symbol": "1306",
+      "lot_snapshot": 10,
+      "lot_snapshot_source": "1306-2025-earnings",
+      "lot_history_verified": false,
+      "raw_source_path": "data/raw/jquants-free-range-20261121T145539300336Z/1306-page1.json",
+      "raw_source_sha256": "d36cb0c5b23efd198a40e602d407ec84a80cf63d44f7ab8df7b6e2c7ca55d0cc",
+      "sessions": 243,
+      "minimum_one_lot_open_notional_yen": "24100.0",
+      "maximum_one_lot_open_notional_yen": "35980.0",
+      "sessions_notional_le_initial_cap": 0,
+      "sessions_notional_gt_initial_cap": 243
+    },
+    {
+      "symbol": "1321",
+      "lot_snapshot": 1,
+      "lot_snapshot_source": "1321-202507-tanshin",
+      "lot_history_verified": false,
+      "raw_source_path": "data/raw/jquants-free-range-20261121T145539300336Z/1321-page1.json",
+      "raw_source_sha256": "71af5efa7aef280764467bf0e0efc322191da16cd789924e7a5c6a47493f9bf6",
+      "sessions": 243,
+      "minimum_one_lot_open_notional_yen": "32450.0",
+      "maximum_one_lot_open_notional_yen": "54390.0",
+      "sessions_notional_le_initial_cap": 0,
+      "sessions_notional_gt_initial_cap": 243
+    },
+    {
+      "symbol": "1346",
+      "lot_snapshot": 1,
+      "lot_snapshot_source": "1346-202501-tanshin",
+      "lot_history_verified": false,
+      "raw_source_path": "data/raw/jquants-free-range-20261121T145539300336Z/1346-page1.json",
+      "raw_source_sha256": "4ea0854c8ba767e66aa99ba8435770e2c2624c9e4b2c27d716b0878b68755069",
+      "sessions": 243,
+      "minimum_one_lot_open_notional_yen": "32190.0",
+      "maximum_one_lot_open_notional_yen": "54460.0",
+      "sessions_notional_le_initial_cap": 0,
+      "sessions_notional_gt_initial_cap": 243
+    },
+    {
+      "symbol": "2558",
+      "lot_snapshot": 1,
+      "lot_snapshot_source": "2558-202506-tanshin",
+      "lot_history_verified": false,
+      "raw_source_path": "data/raw/jquants-free-range-20261121T145539300336Z/2558-page1.json",
+      "raw_source_sha256": "0edc6ba96bfe0121250c7dbccb30b2fca5d09a2490f026f9df874d7b307cdfb1",
+      "sessions": 243,
+      "minimum_one_lot_open_notional_yen": "20380.0",
+      "maximum_one_lot_open_notional_yen": "31140.0",
+      "sessions_notional_le_initial_cap": 0,
+      "sessions_notional_gt_initial_cap": 243
+    }
+  ],
+  "qualified_for_backtest": false,
+  "assumptions": [
+    "documented lot snapshot assumed unchanged for diagnostic only; not certified history",
+    "each daily opening price compared against fixed initial-equity cap; not evolving NAV",
+    "fees spread slippage risk stop and signals omitted, passing cap does not establish executable order",
+    "no trade or PnL computed; no universe or parameter changes"
+  ]
+}

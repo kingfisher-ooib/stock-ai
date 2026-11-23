@@ -1,0 +1,9 @@
+[
+  {
+    "format": "jquants_range_v1",
+    "directory": "data/raw/jquants-free-range-20261121T145539300336Z",
+    "manifest_sha256": "e55b81485467b5415b38e603a7691aad95e1a58af87751150bcd18d51d6f4e24",
+    "price_evidence": "data/results/jpx-20251024-price-audit-v1.json",
+    "evidence_sha256": "449c2e42fe6631f01aa342c2edf5b80f4236d17c62100e003255cb55b770f64d"
+  }
+]

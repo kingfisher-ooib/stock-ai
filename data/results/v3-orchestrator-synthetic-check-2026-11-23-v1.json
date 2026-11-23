@@ -1,0 +1,56 @@
+{
+  "role": "synthetic_I5_test_record_not_strategy_comparison",
+  "created_at": "2026-11-23T06:00:53.123666+00:00",
+  "synthetic": true,
+  "qualified_for_real_data": false,
+  "artifact_sha256": {
+    "src/stock_ai/backtest/swing_v3.py": "bb26f6188bf046bfda01e011048ef51e33e70bed77b574512f6b05de42dd37f5",
+    "src/stock_ai/backtest/terminal_v3.py": "61ccd9877fd0db7a8188ffe5b6a2eb45273cddc0fefc5b842e30401ee557f10d",
+    "tests/test_swing_v3.py": "18f763c239903d25ac01443925864797d169c1f4166c47e0228d3248ba0acde0",
+    "docs/multi-etf/v3-orchestrator-plan-2026-11-23-v1.md": "caf7fba1f02d35d0fe992e8b411aa8a302f62ec1ae0a0efaea1b593053935149",
+    "docs/multi-etf/v3-orchestrator-implementation-2026-11-23-v1.md": "4da72071c0038de034e4edd6b545ea25949becb3d88a184948523df25c102dfc"
+  },
+  "dependency_sha256": {
+    "src/stock_ai/backtest/positions_v3.py": "74f2ba6aab6bf8fbf9909faf1a9272a0111c49e3b2ee8e768e993a3d886bc7c2",
+    "src/stock_ai/backtest/cash_v3.py": "32a72f5f32dda24173214368595a17b84e5bfbf32a7d200b7e2d7bbe7468d8ec",
+    "src/stock_ai/backtest/entitlement_v3.py": "c90ab774f2f870523b01243ea0f179c24ffef866917f6d9705b345e08e9e3eff",
+    "src/stock_ai/data/swing_v3_schema.py": "bf4d59f216428c530bdc8cdf72b1637261d5180072da4ce447cdd4f98a33dc64",
+    "src/stock_ai/backtest/swing.py": "ee75751719aae3f7a501b9afe9cde00c16329838f1aa71b930374c609d39605d",
+    "tests/test_swing_v3_schema.py": "ba794fe763f8268ea8f5b00520ce6ccd41ea80e828288d2dc7e324c7c42309fe"
+  },
+  "tests": {
+    "targeted_passed": 25,
+    "full_passed": 533,
+    "failed": 0,
+    "full_seconds": 2.36
+  },
+  "failure_history": [
+    {
+      "phase": "initial_targeted",
+      "passed": 18,
+      "failed": 1,
+      "test": "test_daily_loss_at_close_sells_at_following_open",
+      "reason": "next usable session not covered",
+      "resolution": "separate final-opening valuation cash path; frozen I3/I4 unchanged"
+    },
+    {
+      "phase": "after_fix",
+      "passed": 19,
+      "failed": 0
+    },
+    {
+      "phase": "expanded",
+      "passed": 25,
+      "failed": 0
+    }
+  ],
+  "new_strategy_comparisons_outside_tests": 0,
+  "real_pnl_runs": 0,
+  "registered_real_experiment": null,
+  "limitations": [
+    "Synthetic full opening/closing execution assumptions only.",
+    "No real market or brokerage execution certification.",
+    "Metrics, comprehensive failure persistence and experiment runner pending I6.",
+    "No untouched evaluation period; no adopted strategy."
+  ]
+}

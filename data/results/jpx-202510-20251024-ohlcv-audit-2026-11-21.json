@@ -1,0 +1,184 @@
+{
+  "role": "jpx_official_ohlcv_visual_audit_202510",
+  "not_profitability_evaluation": true,
+  "generated_at_jst": "2026-11-21T21:58:00+09:00",
+  "generated_at_utc": "2026-11-21T12:58:00+00:00",
+  "supersedes": null,
+  "preserved_previous_records": [
+    "data/raw/manual-jpx-202403-v1 (1475 2024-03-29 一次資料照合、保持)",
+    "data/results/1475-20240329-official-price-audit-2026-11-21.json (保持)"
+  ],
+  "source": {
+    "title": "JPX 株価情報（過去分） 2025年10月",
+    "provider": "Japan Exchange Group, Inc.",
+    "url": "https://www.jpx.co.jp/markets/statistics-equities/daily/tvdivq0000001jan-att/202510.pdf",
+    "url_basis": "ユーザーのブラウザ表示URL。PDFメタCreationDate=2026-10-06T14:39:21+09:00(iText生成日)。実際のダウンロード日時は未確認。observed_atは今回(2026-11-21 21:55 JST)の目視確認時刻。",
+    "sha256": "66b56b6ac1d3c23c4ca939e8d85df7d4bb4eea62b46f4f6dafa7f2bedf5c32a4",
+    "sha256_matches_handoff": true,
+    "bytes": 8132660,
+    "pages": 1349,
+    "producer": "iText Core 9.0.0 (AGPL)",
+    "registered_dir_gitignored": "data/raw/manual-jpx-202510-v1",
+    "registered_manifest": "data/raw/manual-jpx-202510-v1/manifest.json",
+    "visual_evidence_dir_gitignored": "data/raw/jpx-202510-visual-audit-2026-11-21",
+    "qualified_for_backtest": false
+  },
+  "file_structure": {
+    "columns": [
+      "約定年月日",
+      "銘柄コード",
+      "銘柄名称",
+      "前場始値",
+      "前場高値",
+      "前場安値",
+      "前場終値",
+      "後場始値",
+      "後場高値",
+      "後場安値",
+      "後場終値"
+    ],
+    "price_basis": "raw (当時の実取引単位・未調整)",
+    "currency": "JPY",
+    "volume_column_present": false,
+    "volume_check": "全1349ページ中37ページをサンプリングしても『出来高』『売買代金』の文言は0件。該当ページの画像目視でも前場/後場のOHLC8列のみで出来高列は存在しない。",
+    "printed_folio": "本文にページ番号(folio)は表示されない。位置はPDFページインデックス(1始まり=pdfinfo/pdftoppm)と0始まりの両方を併記。"
+  },
+  "verification_method": {
+    "render_tool": "poppler pdftoppm -png -r 150 (Codex bundled runtime)",
+    "rendered_pages_1based": [
+      935,
+      936,
+      940
+    ],
+    "text_cross_check": "pdfplumber/pypdfでテキスト抽出を試み、一度成功して画像と突合。ただし全ページ順走査は非確定的(0件を返す場合あり)のため、値の一次根拠は画像目視。",
+    "no_reverse_from_monthly": true,
+    "no_price_fabrication": true
+  },
+  "date_under_review": "2025-10-24",
+  "targets": {
+    "1306": {
+      "code_in_pdf": "13060",
+      "name": "NEXT FUNDS TOPIX連動型上場投信",
+      "security_type": "受益証券",
+      "pdf_page_1based": 935,
+      "pdf_page_0based": 934,
+      "confirmed": true,
+      "ohlcv": {
+        "am_open": 3427,
+        "am_high": 3436,
+        "am_low": 3413,
+        "am_close": 3434,
+        "pm_open": 3435,
+        "pm_high": 3439,
+        "pm_low": 3424,
+        "pm_close": 3425,
+        "unit": "円",
+        "price_basis": "raw"
+      },
+      "volume": "この出所には出来高列が不存在。取得不可。",
+      "note": "画像目視で確認。一度のテキスト抽出とも一致。"
+    },
+    "1321": {
+      "code_in_pdf": "13210",
+      "name": "NEXT FUNDS 日経225連動型上場投信",
+      "security_type": "受益証券",
+      "pdf_page_1based": 935,
+      "pdf_page_0based": 934,
+      "confirmed": true,
+      "ohlcv": {
+        "am_open": 50990,
+        "am_high": 51220,
+        "am_low": 50810,
+        "am_close": 51190,
+        "pm_open": 51190,
+        "pm_high": 51300,
+        "pm_low": 51080,
+        "pm_close": 51170,
+        "unit": "円",
+        "price_basis": "raw"
+      },
+      "volume": "この出所には出来高列が不存在。取得不可。",
+      "note": "画像目視で確認。2026-10の1→100分割・単位1→10は本対象日(2025-10-24)より後。この日は分割前の実取引単位。"
+    },
+    "1346": {
+      "code_in_pdf": "13460",
+      "name": "MAXIS 日経225上場投信",
+      "security_type": "受益証券",
+      "pdf_page_1based": 935,
+      "pdf_page_0based": 934,
+      "confirmed": true,
+      "ohlcv": {
+        "am_open": 51010,
+        "am_high": 51270,
+        "am_low": 50870,
+        "am_close": 51240,
+        "pm_open": 51220,
+        "pm_high": 51350,
+        "pm_low": 51150,
+        "pm_close": 51190,
+        "unit": "円",
+        "price_basis": "raw"
+      },
+      "volume": "この出所には出来高列が不存在。取得不可。",
+      "note": "画像目視で確認。1口の実取引単位の値。5%配分上限(5,000円)で1口が買えない可能性は別確認。"
+    },
+    "2558": {
+      "code_in_pdf": "25580",
+      "name": "MAXIS 米国株式（S&P500）上場投信",
+      "security_type": "受益証券",
+      "pdf_page_1based": 940,
+      "pdf_page_0based": 939,
+      "confirmed": true,
+      "ohlcv": {
+        "am_open": 29640,
+        "am_high": 29725,
+        "am_low": 29605,
+        "am_close": 29710,
+        "pm_open": 29710,
+        "pm_high": 29800,
+        "pm_low": 29685,
+        "pm_close": 29755,
+        "unit": "円",
+        "price_basis": "raw"
+      },
+      "volume": "この出所には出来高列が不存在。取得不可。",
+      "note": "画像目視で確認。"
+    },
+    "1475": {
+      "code_in_pdf_matched": "14750",
+      "name_in_pdf": "iShares Core TOPIX ETF",
+      "security_type": "受益証券",
+      "pdf_page_1based": 936,
+      "pdf_page_0based": 935,
+      "confirmed_as_research_target_1475": false,
+      "ohlcv_observed_for_14750": {
+        "am_open": 337.8,
+        "am_high": 338.5,
+        "am_low": 336.3,
+        "am_close": 338.2,
+        "pm_open": 338.1,
+        "pm_high": 338.7,
+        "pm_low": 337.2,
+        "pm_close": 337.7,
+        "unit": "円",
+        "price_basis": "raw"
+      },
+      "volume": "この出所には出来高列が不存在。取得不可。",
+      "note": "PDFの14750はiShares Core TOPIX ETFで、研究対象の1475(2024-03-29監査時の野村アセットマネジメント日経225、分割前約28,670円水準)とは別銘柄。2025-10-24に旧1475相当の行は存在しない。銘柄同一性・継続性は未確認。この値を1475の値として扱うことはしない。"
+    }
+  },
+  "quality_gate": {
+    "ohlcv_verified": false,
+    "reason": "出来高(V)がこの原本に存在しないためVが取得不可。1475の銘柄同一性・継続性が未確認。分割/併合/売買単位/分配権利日・支払日の照合は未了。",
+    "pnl_calculated": false,
+    "profitability_verdict": "indeterminate (収益性は判断不能)",
+    "adopted_strategy": null
+  },
+  "conclusions": [
+    "2025-10-24のOHLC(前場/後場)は1306/1321/1346/2558について一次資料(画像)で確認できた。値はraw実取引単位。",
+    "出来高(V)はこのJPX原本に列として存在しないため、この出所では取得できない。",
+    "1475は14750(iShares Core TOPIX ETF)と混同不可。旧1475相当の行は2025-10-24に存在しない。銘柄同一性・継続性は未確認。",
+    "品質ゲート未達のため損益(PnL)は計算しない。収益性は判断不能、採用戦略なし。",
+    "過去のsynthetic=Trueによる無効な損益計算は採否判断から撤回済み(訂正記録を参照)。"
+  ]
+}

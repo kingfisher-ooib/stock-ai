@@ -1,0 +1,42 @@
+{
+  "experiment_id": "multi-etf-swing-v1-20261121",
+  "config_sha256": "e56eee7a7d6978f2757717bed79e908c9ef0ed1b9b4b5f05d3488e8bce7f57b4",
+  "plan_sha256": "96c1bf403415522d3f872bb7b3b762cc74fbf6149f4b450be848dd8b5b6e22c3",
+  "status": "NO_ADOPTED_STRATEGY_DATA_INSUFFICIENT",
+  "adopted_strategies": [],
+  "untouched_period": null,
+  "ai_calls": 0,
+  "results": [],
+  "exclusions": {
+    "1475": [
+      "No qualified versioned raw OHLCV, calendar, corporate actions, distributions and execution costs"
+    ],
+    "1306": [
+      "No qualified versioned raw OHLCV, calendar, corporate actions, distributions and execution costs"
+    ],
+    "1321": [
+      "No qualified versioned raw OHLCV, calendar, corporate actions, distributions and execution costs"
+    ],
+    "1346": [
+      "No qualified versioned raw OHLCV, calendar, corporate actions, distributions and execution costs"
+    ],
+    "2558": [
+      "No qualified versioned raw OHLCV, calendar, corporate actions, distributions and execution costs"
+    ]
+  },
+  "execution_exclusions": {
+    "A": [
+      "opening_price_lower_bound_cancellation_not_preordered",
+      "open_equity_stop_filled_at_same_open"
+    ],
+    "B": [
+      "opening_price_lower_bound_cancellation_not_preordered",
+      "open_equity_stop_filled_at_same_open"
+    ],
+    "C": [
+      "opening_price_lower_bound_cancellation_not_preordered",
+      "open_equity_stop_filled_at_same_open"
+    ]
+  },
+  "run_count": 0
+}

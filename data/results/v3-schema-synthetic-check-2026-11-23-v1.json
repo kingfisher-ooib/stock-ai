@@ -1,0 +1,32 @@
+{
+  "role": "synthetic_schema_validation_not_strategy_pnl",
+  "created_at": "2026-11-22T22:30:54.674652+00:00",
+  "schema_version": "stock-ai-swing-v3-synthetic-1",
+  "synthetic": true,
+  "qualified_for_real_data": false,
+  "artifact_sha256": {
+    "src/stock_ai/data/swing_v3_schema.py": "bf4d59f216428c530bdc8cdf72b1637261d5180072da4ce447cdd4f98a33dc64",
+    "tests/test_swing_v3_schema.py": "ba794fe763f8268ea8f5b00520ce6ccd41ea80e828288d2dc7e324c7c42309fe",
+    "config/schemas/swing-v3-synthetic-1.schema.json": "c7483bc6f9b3930115309a00891afeb649044fdf8a920f6b704bdb84c09cf995",
+    "docs/multi-etf/v3-schema-implementation-2026-11-23-v1.md": "a5a366fddae01eb31d6e4427cdb7f6193c799fb99ef2427b1a63a761c1945550"
+  },
+  "fixture_sha256": "9ea10928472a48fead2711c5c9570fc618e89b7b7290fc5632813b86c7439087",
+  "source_sha256": "ee1189a92029c319298aa8d530cf8e489e5898c37aa5ff210c9fe6a3cff29190",
+  "observations": {
+    "symbols": 2,
+    "sessions": 70,
+    "bars": 140,
+    "stored_revisions": 2,
+    "revisions_visible_at_prior_close": [
+      "estimate"
+    ]
+  },
+  "tests": {
+    "targeted_passed": 52,
+    "full_passed": 425,
+    "failed": 0,
+    "full_seconds": 1.87
+  },
+  "new_strategy_comparisons": 0,
+  "real_pnl_runs": 0
+}

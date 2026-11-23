@@ -85,7 +85,7 @@ def initialized():
     state, record = initialize_forward_state(
         history,
         base_snapshot_sha256="a" * 64,
-        source_observed_at_utc="2026-03-03T08:00:00+00:00",
+        source_observed_at_utc="2026-03-02T08:00:00+00:00",
     )
     return history, state, [record]
 
@@ -186,6 +186,36 @@ def test_batch_advances_two_dates_with_one_common_observation_time():
     assert records[0]["previous_hash"] == journal[-1]["record_hash"]
     assert records[1]["previous_hash"] == records[0]["record_hash"]
     assert verify_journal(journal + records) == updated["journal_tail_hash"]
+
+
+def test_late_bar_is_recorded_as_retrospective_without_trade_or_equity_change():
+    history, state, journal = initialized()
+    bar = next_bar(source_observed_at_utc="2026-03-04T08:00:00+00:00")
+    updated, record = advance_forward_state(state, history, bar, journal)
+    assert record["evidence_class"] == "retrospective"
+    assert record["settlements"]["trend"] == {
+        "status": "retrospective_not_scored", "net_pnl_yen": 0.0,
+    }
+    assert updated["rules"]["trend"]["equity_yen"] == 100_000.0
+
+
+def test_same_day_bar_with_prior_decision_is_forward_scored():
+    history, state, journal = initialized()
+    updated, record = advance_forward_state(state, history, next_bar(), journal)
+    assert record["evidence_class"] == "forward"
+    assert record["settlements"]["trend"]["status"] == "traded"
+    assert updated["rules"]["trend"]["equity_yen"] != 100_000.0
+
+
+def test_decision_created_after_open_cannot_score_same_day_bar():
+    history = rising_history()
+    state, initial = initialize_forward_state(
+        history, base_snapshot_sha256="a" * 64,
+        source_observed_at_utc="2026-03-03T08:00:00+00:00",
+    )
+    updated, record = advance_forward_state(state, history, next_bar(), [initial])
+    assert record["evidence_class"] == "retrospective"
+    assert updated["rules"]["trend"]["equity_yen"] == 100_000.0
 
 
 def test_batch_failure_on_second_row_leaves_original_state_unchanged():

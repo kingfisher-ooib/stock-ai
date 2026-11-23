@@ -1,0 +1,8 @@
+[
+  {
+    "directory": "data/raw/jquants-20251024-20261121T133610908151Z",
+    "manifest_sha256": "404e6e9704f21b10bd5f7672975ffa4fc2b450128a88726cebfce6c240e84829",
+    "price_evidence": "data/results/jpx-20251024-price-audit-v1.json",
+    "evidence_sha256": "449c2e42fe6631f01aa342c2edf5b80f4236d17c62100e003255cb55b770f64d"
+  }
+]

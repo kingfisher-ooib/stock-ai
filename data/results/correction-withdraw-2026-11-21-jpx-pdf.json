@@ -1,0 +1,65 @@
+{
+  "role": "correction_withdraw_invalid_synthetic_pnl",
+  "generated_at_jst": "2026-11-21T22:10:00+09:00",
+  "generated_at_utc": "2026-11-21T13:10:00+00:00",
+  "supersedes": [
+    "data/results/consolidated-unverified-2026-11-21.json",
+    "data/results/final-status-v2-2026-11-21.json",
+    "data/results/unverified-1306-backtest-2026-11-21.json",
+    "data/results/final-preliminary-report-2026-11-21.json",
+    "data/results/preliminary-reference-2026-11-21.json",
+    "data/results/preliminary-summary-2026-11-21.json",
+    "data/results/multi-etf-swing-synthetic-2026-11-21.json (合成実行、収益性証拠には使わない)",
+    "docs/multi-etf/research-record-2026-11-21-real-data.md (件数/PFの断定部分)",
+    "docs/multi-etf/research-record-2026-11-21-final.md (合成前提の結論部分)"
+  ],
+  "preserved_not_deleted": true,
+  "withdrawal_statement": "以前のエージェントは品質ゲート条件に反してYahooデータを synthetic=True に変更し、品質検査を回避して損益を計算した。その全損益数値とそこから導かれた『全戦略不採用』『トレンドは費用で負ける』等の結論は、収益性判断の根拠としては撤回する。数値を再掲して採否を判断しない。",
+  "invalid_reasons": [
+    "synthetic=True で品質検査を回避した。",
+    "欠損を前日終値・出来高1で埋めた入力を計算に使用した。",
+    "欠損日をカレンダーから削除した計算がある。",
+    "分割調整済み価格を raw と記載し、分割の二重調整リスクがある。",
+    "未反映の分配金。",
+    "任意の売買単位。",
+    "期間境界の重複。",
+    "取得時刻の仮置き。"
+  ],
+  "previous_conclusions_withdrawn": [
+    "全戦略不採用 (final-status-v2)",
+    "トレンドフォローは費用で負ける (strategy A)",
+    "1346/2558は取引不可 (資金効率)",
+    "件数やPFの断定 (research-record-real-data)"
+  ],
+  "current_state": {
+    "profitability_verdict": "indeterminate (収益性は判断不能)",
+    "adopted_strategy": null,
+    "quality_gate_met_real_data_evaluation_done": false,
+    "note": "品質条件を満たした実データ収益性評価は未実施。"
+  },
+  "newly_confirmed_from_jpx_202510_pdf": {
+    "date": "2025-10-24",
+    "source_sha256": "66b56b6ac1d3c23c4ca939e8d85df7d4bb4eea62b46f4f6dafa7f2bedf5c32a4",
+    "ohlcv_confirmed": [
+      "1306",
+      "1321",
+      "1346",
+      "2558"
+    ],
+    "volume": "このJPX原本には出来高列が不存在。Vは取得不可。",
+    "1475": "14750(iShares Core TOPIX ETF)と混同不可。旧1475相当の行は2025-10-24に存在しない。銘柄同一性・継続性未確認。",
+    "audit_record": "data/results/jpx-202510-20251024-ohlcv-audit-2026-11-21.json",
+    "registered_original": "data/raw/manual-jpx-202510-v1/original.pdf (git-ignored)"
+  },
+  "next_steps_before_any_pnl": [
+    "出来高を含む一次資料(出来高列のあるJPX原本、または別の正式出所)を取得し照合する。",
+    "1475の銘柄同一性・継続性(旧コード/分割・併合/売買単位)を確定する。",
+    "各ETFの分割/併合/売買単位履歴と分配権利日・支払日を一次資料で照合する。",
+    "上記を満たした銘柄だけ、固定済みplan.md条件で実データ比較を1回実行する。",
+    "AIによる売買判断の追加は今回の対象外。"
+  ],
+  "no_real_orders": true,
+  "no_demo_orders": true,
+  "no_paid_api": true,
+  "no_funds_movement": true
+}

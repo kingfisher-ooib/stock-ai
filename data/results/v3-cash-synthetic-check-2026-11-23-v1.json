@@ -1,0 +1,49 @@
+{
+  "role": "synthetic_cash_and_receivable_identity_not_strategy_pnl",
+  "created_at": "2026-11-22T23:13:48.037903+00:00",
+  "synthetic": true,
+  "qualified_for_real_data": false,
+  "artifact_sha256": {
+    "src/stock_ai/backtest/cash_v3.py": "32a72f5f32dda24173214368595a17b84e5bfbf32a7d200b7e2d7bbe7468d8ec",
+    "tests/test_cash_v3.py": "754728565516a18e2f86961b05cc4e2942baed3e6a75a7b9720791c49b92f249",
+    "docs/multi-etf/v3-cash-implementation-2026-11-23-v1.md": "e703c6c9e779dd1b39380c87a10e92f8df654df524b2a2c9abef26a27cabb480"
+  },
+  "dependency_sha256": {
+    "src/stock_ai/backtest/entitlement_v3.py": "c90ab774f2f870523b01243ea0f179c24ffef866917f6d9705b345e08e9e3eff",
+    "src/stock_ai/data/swing_v3_schema.py": "bf4d59f216428c530bdc8cdf72b1637261d5180072da4ce447cdd4f98a33dc64",
+    "tests/test_swing_v3_schema.py": "ba794fe763f8268ea8f5b00520ce6ccd41ea80e828288d2dc7e324c7c42309fe"
+  },
+  "sealed_snapshot_sha256": "5825cad9ffeaeec9b9ca202c3bc2cd5e00ca8ec28525e3113df3c5bd4f81793f",
+  "before": {
+    "cash": "100000",
+    "unpaid": "24"
+  },
+  "after": {
+    "cash": "100024",
+    "unpaid": "0"
+  },
+  "payments": [
+    {
+      "event_id": "div",
+      "position_id": "position-X",
+      "amount": "24",
+      "revision_id": "final",
+      "recorded_at": "2025-04-10T00:00:00Z"
+    }
+  ],
+  "duplicate_receipt_changes_cash": false,
+  "tests": {
+    "targeted_passed": 36,
+    "full_passed": 488,
+    "failed": 0,
+    "full_seconds": 1.91
+  },
+  "new_strategy_comparisons": 0,
+  "real_pnl_runs": 0,
+  "limitations": [
+    "Synthetic account-total receipt required; never use a per-unit quote as account cash.",
+    "No position/venue/fill authenticity or strategy risk certification.",
+    "Partial/supplemental/withheld payments and repayments unsupported.",
+    "I4-I6 integration and real-market contract pending."
+  ]
+}

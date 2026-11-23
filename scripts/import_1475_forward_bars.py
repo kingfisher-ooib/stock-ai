@@ -53,6 +53,10 @@ def main() -> None:
         }
     print(json.dumps({
         "imported_count": len(records),
+        "forward_bar_count": sum(record["evidence_class"] == "forward" for record in records),
+        "retrospective_bar_count": sum(
+            record["evidence_class"] == "retrospective" for record in records
+        ),
         "period": [records[0]["input_bar"]["bar_date"], records[-1]["input_bar"]["bar_date"]],
         "rules": rule_summary,
         "journal_tail_hash": updated["journal_tail_hash"],

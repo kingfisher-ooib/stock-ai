@@ -1,0 +1,152 @@
+{
+  "role": "raw_range_source_audit_not_backtest_input",
+  "period": [
+    "2026-08-31",
+    "2026-08-31"
+  ],
+  "manifest_sha256": "31bb12c21fe278ef18d0a4ccf642f21ac46765e1697f47a7af9c1d50611f1ed5",
+  "as_of": "2026-11-23T06:40:07.415312+00:00",
+  "inventory": {
+    "1475": {
+      "expected": 1,
+      "raw_ohlcv_sessions": [
+        "2026-08-31"
+      ],
+      "no_trade_sessions": [],
+      "missing_sessions": []
+    },
+    "1306": {
+      "expected": 1,
+      "raw_ohlcv_sessions": [
+        "2026-08-31"
+      ],
+      "no_trade_sessions": [],
+      "missing_sessions": []
+    },
+    "1321": {
+      "expected": 1,
+      "raw_ohlcv_sessions": [
+        "2026-08-31"
+      ],
+      "no_trade_sessions": [],
+      "missing_sessions": []
+    },
+    "1346": {
+      "expected": 1,
+      "raw_ohlcv_sessions": [
+        "2026-08-31"
+      ],
+      "no_trade_sessions": [],
+      "missing_sessions": []
+    },
+    "2558": {
+      "expected": 1,
+      "raw_ohlcv_sessions": [
+        "2026-08-31"
+      ],
+      "no_trade_sessions": [],
+      "missing_sessions": []
+    }
+  },
+  "rows": [
+    {
+      "symbol": "1306",
+      "date": "2026-08-31",
+      "status": "raw_ohlcv_available",
+      "ohlc": {
+        "open": 427.9,
+        "high": 433.5,
+        "low": 426.5,
+        "close": 433.5
+      },
+      "volume": 15956790,
+      "volume_unit": "units",
+      "price_basis": "raw",
+      "turnover_yen": 6877933718.0,
+      "source_sha256": "29b3af7cde545839b738fe19f17f3ff6b4d2bbbffca988ea7fec952fb1b67105",
+      "observed_at": "2026-11-23T06:39:18.513809+00:00",
+      "ohlc_independently_crosschecked": false
+    },
+    {
+      "symbol": "1321",
+      "date": "2026-08-31",
+      "status": "raw_ohlcv_available",
+      "ohlc": {
+        "open": 67050.0,
+        "high": 68630.0,
+        "low": 66860.0,
+        "close": 68630.0
+      },
+      "volume": 292216,
+      "volume_unit": "units",
+      "price_basis": "raw",
+      "turnover_yen": 19790662680.0,
+      "source_sha256": "0c44c3935f806b9733b5d8b0413b155385cd0c11b8d387ed8290dd6636fb462b",
+      "observed_at": "2026-11-23T06:39:31.537250+00:00",
+      "ohlc_independently_crosschecked": false
+    },
+    {
+      "symbol": "1346",
+      "date": "2026-08-31",
+      "status": "raw_ohlcv_available",
+      "ohlc": {
+        "open": 67030.0,
+        "high": 68600.0,
+        "low": 66830.0,
+        "close": 68600.0
+      },
+      "volume": 15224,
+      "volume_unit": "units",
+      "price_basis": "raw",
+      "turnover_yen": 1025578030.0,
+      "source_sha256": "119d81fb3d5167712be1212e61327917619b08dc0b10713db02b414d06e47910",
+      "observed_at": "2026-11-23T06:39:44.537367+00:00",
+      "ohlc_independently_crosschecked": false
+    },
+    {
+      "symbol": "1475",
+      "date": "2026-08-31",
+      "status": "raw_ohlcv_available",
+      "ohlc": {
+        "open": 421.3,
+        "high": 426.9,
+        "low": 419.6,
+        "close": 426.2
+      },
+      "volume": 1989090,
+      "volume_unit": "units",
+      "price_basis": "raw",
+      "turnover_yen": 842419561.0,
+      "source_sha256": "1d77bd94489e034902492a68d9dca4b7801ec3ed0aebeaf2eb90cf8d8f9b3722",
+      "observed_at": "2026-11-23T06:39:05.643147+00:00",
+      "ohlc_independently_crosschecked": false
+    },
+    {
+      "symbol": "2558",
+      "date": "2026-08-31",
+      "status": "raw_ohlcv_available",
+      "ohlc": {
+        "open": 3535.0,
+        "high": 3540.0,
+        "low": 3526.0,
+        "close": 3537.0
+      },
+      "volume": 92548,
+      "volume_unit": "units",
+      "price_basis": "raw",
+      "turnover_yen": 326896948.0,
+      "source_sha256": "fae386bdcdb91d171cdec25a774cac90cf13aa0fd9488e4420624a99cd734947",
+      "observed_at": "2026-11-23T06:39:57.541746+00:00",
+      "ohlc_independently_crosschecked": false
+    }
+  ],
+  "qualified_for_backtest": false,
+  "pnl_runs": 0,
+  "unresolved": [
+    "independent price checks",
+    "no-trade reason and trading halts",
+    "corporate actions and lot history",
+    "distributions and costs",
+    "historical publication timestamps"
+  ]
+}

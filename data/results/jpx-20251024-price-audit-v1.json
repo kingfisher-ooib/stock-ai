@@ -1,0 +1,146 @@
+{
+  "role": "partial_official_price_audit",
+  "source_sha256": "66b56b6ac1d3c23c4ca939e8d85df7d4bb4eea62b46f4f6dafa7f2bedf5c32a4",
+  "source_url": "https://www.jpx.co.jp/markets/statistics-equities/daily/tvdivq0000001jan-att/202510.pdf",
+  "source_page_count": 1349,
+  "checked_at": "2026-11-21T13:16:12.314505+00:00",
+  "acquired_at": null,
+  "qualified_for_backtest": false,
+  "rows": [
+    {
+      "symbol": "1475",
+      "date": "2025-10-24",
+      "pdf_page_one_based": 936,
+      "am_ohlc": [
+        337.8,
+        338.5,
+        336.3,
+        338.2
+      ],
+      "pm_ohlc": [
+        338.1,
+        338.7,
+        337.2,
+        337.7
+      ],
+      "daily_ohlc": {
+        "open": 337.8,
+        "high": 338.7,
+        "low": 336.3,
+        "close": 337.7
+      },
+      "volume": null,
+      "volume_status": "absent_from_source_table",
+      "price_unit": "JPY per unit, contemporaneous quotation",
+      "visually_checked": true
+    },
+    {
+      "symbol": "1306",
+      "date": "2025-10-24",
+      "pdf_page_one_based": 935,
+      "am_ohlc": [
+        3427,
+        3436,
+        3413,
+        3434
+      ],
+      "pm_ohlc": [
+        3435,
+        3439,
+        3424,
+        3425
+      ],
+      "daily_ohlc": {
+        "open": 3427,
+        "high": 3439,
+        "low": 3413,
+        "close": 3425
+      },
+      "volume": null,
+      "volume_status": "absent_from_source_table",
+      "price_unit": "JPY per unit, contemporaneous quotation",
+      "visually_checked": true
+    },
+    {
+      "symbol": "1321",
+      "date": "2025-10-24",
+      "pdf_page_one_based": 935,
+      "am_ohlc": [
+        50990,
+        51220,
+        50810,
+        51190
+      ],
+      "pm_ohlc": [
+        51190,
+        51300,
+        51080,
+        51170
+      ],
+      "daily_ohlc": {
+        "open": 50990,
+        "high": 51300,
+        "low": 50810,
+        "close": 51170
+      },
+      "volume": null,
+      "volume_status": "absent_from_source_table",
+      "price_unit": "JPY per unit, contemporaneous quotation",
+      "visually_checked": true
+    },
+    {
+      "symbol": "1346",
+      "date": "2025-10-24",
+      "pdf_page_one_based": 935,
+      "am_ohlc": [
+        51010,
+        51270,
+        50870,
+        51240
+      ],
+      "pm_ohlc": [
+        51220,
+        51350,
+        51150,
+        51190
+      ],
+      "daily_ohlc": {
+        "open": 51010,
+        "high": 51350,
+        "low": 50870,
+        "close": 51190
+      },
+      "volume": null,
+      "volume_status": "absent_from_source_table",
+      "price_unit": "JPY per unit, contemporaneous quotation",
+      "visually_checked": true
+    },
+    {
+      "symbol": "2558",
+      "date": "2025-10-24",
+      "pdf_page_one_based": 940,
+      "am_ohlc": [
+        29640,
+        29725,
+        29605,
+        29710
+      ],
+      "pm_ohlc": [
+        29710,
+        29800,
+        29685,
+        29755
+      ],
+      "daily_ohlc": {
+        "open": 29640,
+        "high": 29800,
+        "low": 29605,
+        "close": 29755
+      },
+      "volume": null,
+      "volume_status": "absent_from_source_table",
+      "price_unit": "JPY per unit, contemporaneous quotation",
+      "visually_checked": true
+    }
+  ]
+}

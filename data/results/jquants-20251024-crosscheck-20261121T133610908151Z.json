@@ -1,0 +1,193 @@
+{
+  "role": "single_day_source_crosscheck_not_backtest",
+  "qualified_for_backtest": false,
+  "date": "2025-10-24",
+  "credentials_saved": false,
+  "requests": [
+    {
+      "symbol": "1475",
+      "url": "https://api.jquants.com/v2/equities/bars/daily?code=14750&date=2025-10-24",
+      "requested_at": "2026-11-21T13:36:22.222286+00:00",
+      "http_status": 200,
+      "observed_at": "2026-11-21T13:36:22.347795+00:00",
+      "file": "1475.json",
+      "bytes": 283,
+      "sha256": "a630bd4aa369950c0c4ba37fa78c9ebf93a12d30bf3f52b14e1262ec5cb6b3d6",
+      "status": "ohlcv_received_price_match"
+    },
+    {
+      "symbol": "1306",
+      "url": "https://api.jquants.com/v2/equities/bars/daily?code=13060&date=2025-10-24",
+      "requested_at": "2026-11-21T13:36:35.358349+00:00",
+      "http_status": 200,
+      "observed_at": "2026-11-21T13:36:35.474478+00:00",
+      "file": "1306.json",
+      "bytes": 291,
+      "sha256": "923e0f6943292cace4c24a8572b4dfaf9d9786e252812103ee90eb8c15736048",
+      "status": "ohlcv_received_price_match"
+    },
+    {
+      "symbol": "1321",
+      "url": "https://api.jquants.com/v2/equities/bars/daily?code=13210&date=2025-10-24",
+      "requested_at": "2026-11-21T13:36:48.477364+00:00",
+      "http_status": 200,
+      "observed_at": "2026-11-21T13:36:48.590834+00:00",
+      "file": "1321.json",
+      "bytes": 294,
+      "sha256": "857f46cdbe51683b1b7f0663df93e46d75920144e8a7e338a938d9907ab819f8",
+      "status": "ohlcv_received_price_match"
+    },
+    {
+      "symbol": "1346",
+      "url": "https://api.jquants.com/v2/equities/bars/daily?code=13460&date=2025-10-24",
+      "requested_at": "2026-11-21T13:37:01.601751+00:00",
+      "http_status": 200,
+      "observed_at": "2026-11-21T13:37:01.717507+00:00",
+      "file": "1346.json",
+      "bytes": 297,
+      "sha256": "ed941bb6c55044553e6bf9cbf03390d6769ae22a382567e848b9f56cc2e36d24",
+      "status": "ohlcv_received_price_match"
+    },
+    {
+      "symbol": "2558",
+      "url": "https://api.jquants.com/v2/equities/bars/daily?code=25580&date=2025-10-24",
+      "requested_at": "2026-11-21T13:37:14.728323+00:00",
+      "http_status": 200,
+      "observed_at": "2026-11-21T13:37:14.852857+00:00",
+      "file": "2558.json",
+      "bytes": 294,
+      "sha256": "ac7164a730eb4d3b9683999ae88248b090fca5807a0f58a0e80bd40f9b6c2049",
+      "status": "ohlcv_received_price_match"
+    }
+  ],
+  "rows": [
+    {
+      "symbol": "1475",
+      "date": "2025-10-24",
+      "ohlc": {
+        "open": 337.8,
+        "high": 338.7,
+        "low": 336.3,
+        "close": 337.7
+      },
+      "volume": 646030,
+      "volume_unit": "units",
+      "volume_scope": "TSE on-floor only",
+      "jpx_pdf_page": 936,
+      "price_differences": {
+        "open": 0.0,
+        "high": 0.0,
+        "low": 0.0,
+        "close": 0.0
+      },
+      "ohlc_matches_pdf": true,
+      "volume_source": "J-Quants unadjusted Vo",
+      "raw_response_sha256": "a630bd4aa369950c0c4ba37fa78c9ebf93a12d30bf3f52b14e1262ec5cb6b3d6",
+      "observed_at": "2026-11-21T13:36:22.347795+00:00"
+    },
+    {
+      "symbol": "1306",
+      "date": "2025-10-24",
+      "ohlc": {
+        "open": 3427.0,
+        "high": 3439.0,
+        "low": 3413.0,
+        "close": 3425.0
+      },
+      "volume": 1604650,
+      "volume_unit": "units",
+      "volume_scope": "TSE on-floor only",
+      "jpx_pdf_page": 935,
+      "price_differences": {
+        "open": 0.0,
+        "high": 0.0,
+        "low": 0.0,
+        "close": 0.0
+      },
+      "ohlc_matches_pdf": true,
+      "volume_source": "J-Quants unadjusted Vo",
+      "raw_response_sha256": "923e0f6943292cace4c24a8572b4dfaf9d9786e252812103ee90eb8c15736048",
+      "observed_at": "2026-11-21T13:36:35.474478+00:00"
+    },
+    {
+      "symbol": "1321",
+      "date": "2025-10-24",
+      "ohlc": {
+        "open": 50990.0,
+        "high": 51300.0,
+        "low": 50810.0,
+        "close": 51170.0
+      },
+      "volume": 171135,
+      "volume_unit": "units",
+      "volume_scope": "TSE on-floor only",
+      "jpx_pdf_page": 935,
+      "price_differences": {
+        "open": 0.0,
+        "high": 0.0,
+        "low": 0.0,
+        "close": 0.0
+      },
+      "ohlc_matches_pdf": true,
+      "volume_source": "J-Quants unadjusted Vo",
+      "raw_response_sha256": "857f46cdbe51683b1b7f0663df93e46d75920144e8a7e338a938d9907ab819f8",
+      "observed_at": "2026-11-21T13:36:48.590834+00:00"
+    },
+    {
+      "symbol": "1346",
+      "date": "2025-10-24",
+      "ohlc": {
+        "open": 51010.0,
+        "high": 51350.0,
+        "low": 50870.0,
+        "close": 51190.0
+      },
+      "volume": 13132,
+      "volume_unit": "units",
+      "volume_scope": "TSE on-floor only",
+      "jpx_pdf_page": 935,
+      "price_differences": {
+        "open": 0.0,
+        "high": 0.0,
+        "low": 0.0,
+        "close": 0.0
+      },
+      "ohlc_matches_pdf": true,
+      "volume_source": "J-Quants unadjusted Vo",
+      "raw_response_sha256": "ed941bb6c55044553e6bf9cbf03390d6769ae22a382567e848b9f56cc2e36d24",
+      "observed_at": "2026-11-21T13:37:01.717507+00:00"
+    },
+    {
+      "symbol": "2558",
+      "date": "2025-10-24",
+      "ohlc": {
+        "open": 29640.0,
+        "high": 29800.0,
+        "low": 29605.0,
+        "close": 29755.0
+      },
+      "volume": 20735,
+      "volume_unit": "units",
+      "volume_scope": "TSE on-floor only",
+      "jpx_pdf_page": 940,
+      "price_differences": {
+        "open": 0.0,
+        "high": 0.0,
+        "low": 0.0,
+        "close": 0.0
+      },
+      "ohlc_matches_pdf": true,
+      "volume_source": "J-Quants unadjusted Vo",
+      "raw_response_sha256": "ac7164a730eb4d3b9683999ae88248b090fca5807a0f58a0e80bd40f9b6c2049",
+      "observed_at": "2026-11-21T13:37:14.852857+00:00"
+    }
+  ],
+  "price_audit_sha256": "449c2e42fe6631f01aa342c2edf5b80f4236d17c62100e003255cb55b770f64d",
+  "limitations": [
+    "Volume is provided by J-Quants, not independently matched to a second daily source",
+    "A single day does not qualify a complete dataset",
+    "Acquisition time is not historical publication time"
+  ],
+  "raw_directory": "data/raw/jquants-20251024-20261121T133610908151Z",
+  "status": "SINGLE_DAY_PRICE_MATCH"
+}

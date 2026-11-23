@@ -1,0 +1,85 @@
+{
+  "role": "synthetic_position_cost_basis_accounting_not_strategy_evaluation",
+  "created_at": "2026-11-22T23:55:50.032409+00:00",
+  "synthetic": true,
+  "qualified_for_real_data": false,
+  "artifact_sha256": {
+    "src/stock_ai/backtest/positions_v3.py": "74f2ba6aab6bf8fbf9909faf1a9272a0111c49e3b2ee8e768e993a3d886bc7c2",
+    "tests/test_positions_v3.py": "4a8e3e9af22d209cbcf400958e98c7d1b65a92d6b9b896d07ab23897bf86786a",
+    "docs/multi-etf/v3-positions-implementation-2026-11-23-v1.md": "e35738bd4015bfebed8946be0044852d43a0505f2776e5000eabe901e63cb218"
+  },
+  "dependency_sha256": {
+    "src/stock_ai/backtest/cash_v3.py": "32a72f5f32dda24173214368595a17b84e5bfbf32a7d200b7e2d7bbe7468d8ec",
+    "src/stock_ai/backtest/entitlement_v3.py": "c90ab774f2f870523b01243ea0f179c24ffef866917f6d9705b345e08e9e3eff",
+    "src/stock_ai/data/swing_v3_schema.py": "bf4d59f216428c530bdc8cdf72b1637261d5180072da4ce447cdd4f98a33dc64",
+    "tests/test_swing_v3_schema.py": "ba794fe763f8268ea8f5b00520ce6ccd41ea80e828288d2dc7e324c7c42309fe"
+  },
+  "sealed_snapshot_sha256": "7896f357918f618ec4d8cb25d348b53e9756f425d527edcd2dd0208f0b085237",
+  "entry": {
+    "position_id": "position-X",
+    "symbol": "ETF-X",
+    "quantity": 3,
+    "unit_basis_id": "ETF-X-old",
+    "total_cost_basis": "301",
+    "stop": "90",
+    "entry_session": "2025-03-31"
+  },
+  "split_position": {
+    "position_id": "position-X",
+    "symbol": "ETF-X",
+    "quantity": 30,
+    "unit_basis_id": "ETF-X-new",
+    "total_cost_basis": "301",
+    "stop": "9",
+    "entry_session": "2025-03-31"
+  },
+  "rights": [
+    {
+      "event_id": "div",
+      "position_id": "position-X",
+      "symbol": "ETF-X",
+      "quantity": 3,
+      "unit_basis_id": "ETF-X-old",
+      "last_cum_session": "2025-03-31",
+      "captured_at": "2025-04-01T00:00:00+00:00"
+    }
+  ],
+  "trade": {
+    "sell_id": "exit-X",
+    "position_id": "position-X",
+    "symbol": "ETF-X",
+    "quantity": 30,
+    "entry_session": "2025-03-31",
+    "exit_session": "2025-04-02",
+    "total_cost_basis": "301",
+    "net_proceeds": "299",
+    "price_pnl": "-2",
+    "holding_sessions": 2,
+    "exit_price": "10",
+    "exit_fee": "1",
+    "decision_at": "2025-04-01T07:00:00Z",
+    "reason": "test-only"
+  },
+  "attribution": {
+    "position_id": "position-X",
+    "as_of": "2025-04-04T07:00:00Z",
+    "mode": "restated",
+    "price_pnl": "-2",
+    "distribution_income": "24",
+    "net_pnl": "22"
+  },
+  "tests": {
+    "targeted_passed": 20,
+    "full_passed": 508,
+    "failed": 0,
+    "full_seconds": 1.95
+  },
+  "new_strategy_comparisons": 0,
+  "real_pnl_runs": 0,
+  "limitations": [
+    "Synthetic full opening fill assumption; no real execution feasibility claim.",
+    "Price and attribution PnL are fixture accounting, not a strategy result.",
+    "Signal/risk sizing/daily loss/holding limits/end-close liquidation await I5.",
+    "Real-market input contract remains disabled."
+  ]
+}

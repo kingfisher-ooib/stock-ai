@@ -1,0 +1,30 @@
+{
+  "role": "final_status_report_2026-11-21_v2",
+  "status": "NO_ADOPTED_STRATEGY",
+  "adopted_strategies": [],
+  "conclusion": "全5銘柄・全3戦略が採用基準を満たさない。1346/2558は取引不可。1475/1306/1321は全期間プラスではない。",
+  "real_data_backtest_run": true,
+  "real_data_backtest_verified": false,
+  "data_source": "Yahoo Finance (unverified)",
+  "tests": {
+    "passed": 114,
+    "failed": 0,
+    "command": "PYTHONPATH=src .venv/bin/python -m pytest -q"
+  },
+  "exclusions": {
+    "1346": "1口=34,620-63,630円。5%上限5,000円で取引不可。",
+    "2558": "分割前1口=約35,000円。5%上限で取引不可。分割後は3ヶ月のみ。",
+    "1475": "2025-10-24欠損。企業行動・分配金未反映。JPX照合未了。全戦略が全期間プラスではない。",
+    "1306": "企業行動・分配金未反映。JPX照合未了。全戦略が全期間プラスではない。",
+    "1321": "2025-10-24欠損。2026-10分割未反映。JPX照合未了。全戦略が全期間プラスではない。"
+  },
+  "key_findings": [
+    "Strategy A (トレンド): 全銘柄・全期間でマイナス。トレンドフォローは費用で負ける。",
+    "Strategy B (押し目): 検証期間のみプラス。開発・既視期間でマイナス。一貫性なし。",
+    "Strategy C (ブレイク): 発動自体が稀で、発動時もマイナス。",
+    "単純保有: 開発・検証期間でプラスだが、既視期間で大幅マイナス。",
+    "1346/2558: 10万円・5%配分で取引不可。資金効率の問題。"
+  ],
+  "ai_decision": "4条件未達のためAI検証計画は作らない。AIの可能性は否定しない。",
+  "no_real_orders": true
+}
